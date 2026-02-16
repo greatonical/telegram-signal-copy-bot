@@ -237,8 +237,9 @@ async def main():
         except Exception as e:
             logger.error(f"❌ Error handling message: {e}", exc_info=True)
 
-    # Start the client
+    # Start the client (with phone number to avoid interactive prompt)
     async with client:
+        await client.start(phone=PHONE_NUMBER)
         # Get current user info
         me = await client.get_me()
         logger.info(f"✓ Bot started as {me.first_name} (@{me.username})")

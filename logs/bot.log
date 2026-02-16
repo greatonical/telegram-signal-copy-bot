@@ -35,3 +35,87 @@
 2026-02-17 00:04:39,380 - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
 2026-02-17 00:04:39,381 - INFO - Shutting down bot...
 2026-02-17 00:04:39,381 - INFO - Bot shut down successfully
+2026-02-17 00:11:55,813 - __main__ - INFO - Monitoring 6 source(s) with 9 mapping(s)
+2026-02-17 00:11:55,819 - __main__ - ERROR - ❌ Bot crashed: __aenter__
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/bot.py", line 287, in <module>
+    asyncio.run(main())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/bot.py", line 241, in main
+    async with client.start(phone=PHONE_NUMBER):
+AttributeError: __aenter__
+2026-02-17 00:12:14,705 - __main__ - INFO - Monitoring 6 source(s) with 9 mapping(s)
+2026-02-17 00:12:14,705 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-02-17 00:12:14,706 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-02-17 00:12:17,041 - __main__ - INFO - ✓ Bot started as TheFXgod (@the_FXgod)
+2026-02-17 00:12:17,041 - __main__ - INFO - ✓ Monitoring 6 source(s) with 9 mapping(s)
+2026-02-17 00:12:17,042 - __main__ - INFO - ================================================================================
+2026-02-17 00:12:17,042 - __main__ - INFO - ACTIVE MAPPINGS:
+2026-02-17 00:12:17,042 - __main__ - INFO - ================================================================================
+2026-02-17 00:12:17,727 - __main__ - INFO - 1. Pro Trader (-1003354980634) → Topic #394
+2026-02-17 00:12:17,727 - __main__ - INFO -    ↓
+2026-02-17 00:12:17,727 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #258
+2026-02-17 00:12:17,728 - __main__ - INFO - 
+2026-02-17 00:12:17,728 - __main__ - INFO - 2. Pro Trader (-1003354980634) → Topic #4
+2026-02-17 00:12:17,728 - __main__ - INFO -    ↓
+2026-02-17 00:12:17,728 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #255
+2026-02-17 00:12:17,728 - __main__ - INFO - 
+2026-02-17 00:12:17,728 - __main__ - INFO - 3. Pro Trader (-1003354980634) → Topic #5
+2026-02-17 00:12:17,728 - __main__ - INFO -    ↓
+2026-02-17 00:12:17,728 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #242
+2026-02-17 00:12:17,729 - __main__ - INFO - 
+2026-02-17 00:12:17,729 - __main__ - INFO - 4. Pro Trader (-1003354980634) → Topic #1
+2026-02-17 00:12:17,729 - __main__ - INFO -    ↓
+2026-02-17 00:12:17,729 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #1
+2026-02-17 00:12:17,729 - __main__ - INFO - 
+2026-02-17 00:12:18,655 - telethon.network.mtprotosender - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-02-17 00:12:18,656 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-02-17 00:12:18,658 - __main__ - INFO - 
+✓ Bot stopped by user
+2026-02-17 00:12:24,509 - __main__ - INFO - Monitoring 6 source(s) with 9 mapping(s)
+2026-02-17 00:12:24,511 - __main__ - ERROR - ❌ Bot crashed: __aenter__
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/bot.py", line 287, in <module>
+    asyncio.run(main())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/bot.py", line 241, in main
+    async with client.start(phone=PHONE_NUMBER):
+AttributeError: __aenter__
+2026-02-17 00:13:59,463 - __main__ - INFO - Monitoring 6 source(s) with 9 mapping(s)
+2026-02-17 00:13:59,463 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-02-17 00:13:59,464 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-02-17 00:14:02,020 - __main__ - INFO - ✓ Bot started as TheFXgod (@the_FXgod)
+2026-02-17 00:14:02,020 - __main__ - INFO - ✓ Monitoring 6 source(s) with 9 mapping(s)
+2026-02-17 00:14:02,020 - __main__ - INFO - ================================================================================
+2026-02-17 00:14:02,020 - __main__ - INFO - ACTIVE MAPPINGS:
+2026-02-17 00:14:02,020 - __main__ - INFO - ================================================================================
+2026-02-17 00:14:02,570 - __main__ - INFO - 1. Pro Trader (-1003354980634) → Topic #394
+2026-02-17 00:14:02,571 - __main__ - INFO -    ↓
+2026-02-17 00:14:02,571 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #258
+2026-02-17 00:14:02,571 - __main__ - INFO - 
+2026-02-17 00:14:02,571 - __main__ - INFO - 2. Pro Trader (-1003354980634) → Topic #4
+2026-02-17 00:14:02,571 - __main__ - INFO -    ↓
+2026-02-17 00:14:02,571 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #255
+2026-02-17 00:14:02,571 - __main__ - INFO - 
+2026-02-17 00:14:02,571 - __main__ - INFO - 3. Pro Trader (-1003354980634) → Topic #5
+2026-02-17 00:14:02,572 - __main__ - INFO -    ↓
+2026-02-17 00:14:02,572 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #242
+2026-02-17 00:14:02,572 - __main__ - INFO - 
+2026-02-17 00:14:02,572 - __main__ - INFO - 4. Pro Trader (-1003354980634) → Topic #1
+2026-02-17 00:14:02,572 - __main__ - INFO -    ↓
+2026-02-17 00:14:02,572 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #1
+2026-02-17 00:14:02,572 - __main__ - INFO - 
+2026-02-17 00:14:03,727 - __main__ - INFO - 5. Pro Trader Results (-1003719256941)
+2026-02-17 00:14:03,727 - __main__ - INFO -    ↓
+2026-02-17 00:14:03,727 - __main__ - INFO -    Result group. (-1003865081218)
+2026-02-17 00:14:03,727 - __main__ - INFO - 
+2026-02-17 00:14:04,126 - telethon.network.mtprotosender - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-02-17 00:14:04,127 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-02-17 00:14:04,131 - __main__ - INFO - 
+✓ Bot stopped by user
