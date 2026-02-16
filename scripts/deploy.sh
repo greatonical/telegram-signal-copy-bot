@@ -33,6 +33,11 @@ echo "✓ Stopping existing container..."
 docker stop "$CONTAINER_NAME" 2>/dev/null || true
 docker rm "$CONTAINER_NAME" 2>/dev/null || true
 
+# Clear old session files to prevent authentication conflicts
+echo "✓ Clearing old session files..."
+rm -rf "$APP_DIR/sessions"/*
+echo "  Session directory cleaned"
+
 # Build new Docker image
 echo "✓ Building Docker image..."
 docker build -t "$IMAGE_NAME" .
