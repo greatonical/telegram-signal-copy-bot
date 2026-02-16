@@ -60,6 +60,9 @@ fly secrets set PHONE_NUMBER=your_phone_number
 
 **Get your credentials from**: https://my.telegram.org/apps
 
+> [!NOTE]
+> Session files are already included in your Git repository, so the bot will use your existing authenticated session automatically. No additional authentication needed!
+
 #### 4. Deploy!
 ```bash
 fly deploy

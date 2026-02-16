@@ -43,6 +43,3 @@ setup-secrets.sh
 .github/
 fly.toml
 
-# Session and log files (mounted as volumes)
-sessions/
-logs/

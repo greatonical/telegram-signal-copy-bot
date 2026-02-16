@@ -13,13 +13,16 @@ primary_region = "lhr"  # Change to your preferred region (iad=US East, lhr=Lond
   # Sensitive vars (API_ID, API_HASH, PHONE_NUMBER) should be set via: fly secrets set KEY=value
 
 [mounts]
-  # Persistent volume for session files (prevents re-authentication on every deploy)
+  # OPTIONAL: Persistent volume for session files
+  # Session files are already included in the Docker image from Git
+  # This volume provides additional persistence if you want to update sessions without redeploying
   source = "telegram_sessions"
   destination = "/app/sessions"
   initial_size = "1gb"
 
 [mounts]
-  # Persistent volume for logs
+  # OPTIONAL: Persistent volume for logs
+  # Keeps logs across deployments for debugging
   source = "telegram_logs"
   destination = "/app/logs"
   initial_size = "1gb"
