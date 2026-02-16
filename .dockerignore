@@ -10,14 +10,6 @@ __pycache__/
 *.so
 .Python
 
-# Session files (persisted via volume mounts)
-sessions/
-*.session
-*.session-journal
-
-# Logs (persisted via volume mounts)
-logs/
-
 # Virtual environment
 venv/
 env/

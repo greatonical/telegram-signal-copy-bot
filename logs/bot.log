@@ -169,3 +169,41 @@ AttributeError: __aenter__
 2026-02-17 00:23:18,636 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
 2026-02-17 00:23:18,637 - __main__ - INFO - 
 ✓ Service stopped by user
+2026-02-17 00:37:45,223 - __main__ - INFO - Monitoring 6 source(s) with 9 mapping(s)
+2026-02-17 00:37:45,223 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-02-17 00:37:45,223 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-02-17 00:37:48,288 - __main__ - INFO - ✓ Bot started as TheFXgod (@the_FXgod)
+2026-02-17 00:37:48,288 - __main__ - INFO - ✓ Monitoring 6 source(s) with 9 mapping(s)
+2026-02-17 00:37:48,288 - __main__ - INFO - ================================================================================
+2026-02-17 00:37:48,288 - __main__ - INFO - ACTIVE MAPPINGS:
+2026-02-17 00:37:48,288 - __main__ - INFO - ================================================================================
+2026-02-17 00:37:48,912 - __main__ - INFO - 1. Pro Trader (-1003354980634) → Topic #394
+2026-02-17 00:37:48,912 - __main__ - INFO -    ↓
+2026-02-17 00:37:48,912 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #258
+2026-02-17 00:37:48,912 - __main__ - INFO - 
+2026-02-17 00:37:48,912 - __main__ - INFO - 2. Pro Trader (-1003354980634) → Topic #4
+2026-02-17 00:37:48,912 - __main__ - INFO -    ↓
+2026-02-17 00:37:48,912 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #255
+2026-02-17 00:37:48,912 - __main__ - INFO - 
+2026-02-17 00:37:48,912 - __main__ - INFO - 3. Pro Trader (-1003354980634) → Topic #5
+2026-02-17 00:37:48,912 - __main__ - INFO -    ↓
+2026-02-17 00:37:48,912 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #242
+2026-02-17 00:37:48,913 - __main__ - INFO - 
+2026-02-17 00:37:48,913 - __main__ - INFO - 4. Pro Trader (-1003354980634) → Topic #1
+2026-02-17 00:37:48,913 - __main__ - INFO -    ↓
+2026-02-17 00:37:48,913 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #1
+2026-02-17 00:37:48,913 - __main__ - INFO - 
+2026-02-17 00:37:49,427 - __main__ - INFO - 5. Pro Trader Results (-1003719256941)
+2026-02-17 00:37:49,428 - __main__ - INFO -    ↓
+2026-02-17 00:37:49,428 - __main__ - INFO -    Result group. (-1003865081218)
+2026-02-17 00:37:49,428 - __main__ - INFO - 
+2026-02-17 00:37:49,582 - __main__ - INFO - 6. IQ Ideas (-1003157087401)
+2026-02-17 00:37:49,582 - __main__ - INFO -    ↓
+2026-02-17 00:37:49,582 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #268
+2026-02-17 00:37:49,582 - __main__ - INFO - 
+2026-02-17 00:37:49,774 - __main__ - INFO - 7. INFINITY PIPS (-1003683230844)
+2026-02-17 00:37:49,774 - __main__ - INFO -    ↓
+2026-02-17 00:37:49,774 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #259
+2026-02-17 00:37:49,774 - __main__ - INFO - 
+2026-02-17 00:37:50,247 - __main__ - INFO - 
+✓ Bot stopped by user
