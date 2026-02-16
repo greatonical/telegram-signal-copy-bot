@@ -237,50 +237,50 @@ async def main():
         except Exception as e:
             logger.error(f"❌ Error handling message: {e}", exc_info=True)
 
-    # Start the client (with phone number to avoid interactive prompt)
-    async with client:
-        await client.start(phone=PHONE_NUMBER)
-        # Get current user info
-        me = await client.get_me()
-        logger.info(f"✓ Bot started as {me.first_name} (@{me.username})")
-        logger.info(
-            f"✓ Monitoring {len(source_ids)} source(s) with {len(FORWARD_MAPPINGS)} mapping(s)"
-        )
-        logger.info("=" * 80)
-        logger.info("ACTIVE MAPPINGS:")
-        logger.info("=" * 80)
+    # Start the client (with phone number to avoid interactive prompt in Docker)
+    await client.start(phone=PHONE_NUMBER)
 
-        # Print detailed mapping summary with names
-        for idx, mapping in enumerate(FORWARD_MAPPINGS, 1):
-            source_id = mapping["source_id"]
-            source_name = await forwarder.get_entity_name(source_id)
-            source_topic_id = mapping.get("source_topic_id")
+    # Get current user info
+    me = await client.get_me()
+    logger.info(f"✓ Bot started as {me.first_name} (@{me.username})")
+    logger.info(
+        f"✓ Monitoring {len(source_ids)} source(s) with {len(FORWARD_MAPPINGS)} mapping(s)"
+    )
+    logger.info("=" * 80)
+    logger.info("ACTIVE MAPPINGS:")
+    logger.info("=" * 80)
 
-            target_id = mapping["target_id"]
-            target_name = await forwarder.get_entity_name(target_id)
-            target_topic_id = mapping.get("target_topic_id")
+    # Print detailed mapping summary with names
+    for idx, mapping in enumerate(FORWARD_MAPPINGS, 1):
+        source_id = mapping["source_id"]
+        source_name = await forwarder.get_entity_name(source_id)
+        source_topic_id = mapping.get("source_topic_id")
 
-            # Build source string
-            source_str = f"{source_name} ({source_id})"
-            if source_topic_id:
-                source_str += f" → Topic #{source_topic_id}"
+        target_id = mapping["target_id"]
+        target_name = await forwarder.get_entity_name(target_id)
+        target_topic_id = mapping.get("target_topic_id")
 
-            # Build target string
-            target_str = f"{target_name} ({target_id})"
-            if target_topic_id:
-                target_str += f" → Topic #{target_topic_id}"
+        # Build source string
+        source_str = f"{source_name} ({source_id})"
+        if source_topic_id:
+            source_str += f" → Topic #{source_topic_id}"
 
-            logger.info(f"{idx}. {source_str}")
-            logger.info(f"   ↓")
-            logger.info(f"   {target_str}")
-            logger.info("")
+        # Build target string
+        target_str = f"{target_name} ({target_id})"
+        if target_topic_id:
+            target_str += f" → Topic #{target_topic_id}"
 
-        logger.info("=" * 80)
-        logger.info("✓ Waiting for messages...")
-        logger.info("=" * 80)
+        logger.info(f"{idx}. {source_str}")
+        logger.info(f"   ↓")
+        logger.info(f"   {target_str}")
+        logger.info("")
 
-        # Keep the bot running
-        await client.run_until_disconnected()
+    logger.info("=" * 80)
+    logger.info("✓ Waiting for messages...")
+    logger.info("=" * 80)
+
+    # Keep the bot running
+    await client.run_until_disconnected()
 
 
 if __name__ == "__main__":
