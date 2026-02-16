@@ -3,7 +3,7 @@
 # Other platforms (Railway, Render, etc.) will auto-detect the Dockerfile
 
 app = "telegram-signal-copy-bot"
-primary_region = "iad"  # Change to your preferred region (iad=US East, lhr=London, fra=Frankfurt, etc.)
+primary_region = "lhr"  # Change to your preferred region (iad=US East, lhr=London, fra=Frankfurt, etc.)
 
 [build]
   # Fly.io will automatically detect and use your Dockerfile
