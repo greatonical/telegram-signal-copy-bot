@@ -1,0 +1,48 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documentation
+README.md
+*.md
+
+# Development files
+.env.example
+telegram-userbot-guide.md
+get_forum_topics.py
+list_groups.py
+main.py
+
+# Deployment files (not needed in container)
+deploy.sh
+setup-vps.sh
+setup-secrets.sh
+.github/
+fly.toml
+
+# Session and log files (mounted as volumes)
+sessions/
+logs/

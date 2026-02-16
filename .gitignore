@@ -1,12 +1,12 @@
-# Environment variables
-.env
+# Environment variables - tracked for deployment
+# .env
 
-# Telegram session files
-*.session
-*.session-journal
+# Telegram session files - tracked for deployment persistence
+# *.session
+# *.session-journal
 
-# Logs
-logs/
+# Logs - tracked for deployment persistence
+# logs/
 
 # Python
 __pycache__/

@@ -159,76 +159,37 @@ Now it will start monitoring and forwarding! **Subsequent runs**: No OTP needed,
 4. **Verify forward**: Check target group receives the message
 5. **Check logs**: Review `logs/bot.log` for any errors
 
-## Deployment (VPS)
+## Deployment
 
-### Option A: Screen/Tmux (Quick)
+### 🚀 Easy Deployment (Recommended)
+
+Deploy to cloud platforms with automatic Git-based deployment:
+
+**See [EASY_DEPLOY.md](EASY_DEPLOY.md) for detailed guides on:**
+- **Fly.io** (Free tier, recommended)
+- **Railway** ($5/month, simplest)
+- **Render** (Free tier available)
+- **DigitalOcean App Platform**
+
+All platforms auto-detect your Dockerfile and deploy in minutes! ✨
+
+### 🖥️ VPS Deployment (Advanced)
+
+For manual VPS deployment with GitHub Actions:
+
+**See [DEPLOYMENT.md](DEPLOYMENT.md)** for setting up automated deployment to your own VPS.
+
+### 🏃 Quick Local Testing
 
 ```bash
+# Screen/Tmux (Quick)
 screen -S telegram-bot
-python main.py
+python bot.py
 # Press Ctrl+A+D to detach
 ```
 
 Reattach later: `screen -r telegram-bot`
 
-### Option B: Systemd (Recommended)
-
-Create `/etc/systemd/system/telegram-bot.service`:
-
-```ini
-[Unit]
-Description=Telegram Signal Forwarder Bot
-After=network.target
-
-[Service]
-Type=simple
-User=your_username
-WorkingDirectory=/path/to/telegram-signal-copy-bot
-Environment="PATH=/path/to/telegram-signal-copy-bot/venv/bin"
-ExecStart=/path/to/telegram-signal-copy-bot/venv/bin/python main.py
-Restart=always
-RestartSec=10
-
-[Install]
-WantedBy=multi-user.target
-```
-
-Enable and start:
-
-```bash
-sudo systemctl enable telegram-bot
-sudo systemctl start telegram-bot
-sudo systemctl status telegram-bot
-```
-
-View logs:
-
-```bash
-sudo journalctl -u telegram-bot -f
-```
-
-### Option C: Docker
-
-Create `Dockerfile`:
-
-```dockerfile
-FROM python:3.11-slim
-
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-
-COPY . .
-
-CMD ["python", "main.py"]
-```
-
-Build and run:
-
-```bash
-docker build -t telegram-signal-bot .
-docker run -d --name telegram-bot --restart unless-stopped telegram-signal-bot
-```
 
 ## Configuration Options
 
@@ -300,14 +261,22 @@ python main.py  # Re-authenticate
 
 ```
 telegram-signal-copy-bot/
-├── main.py                 # Main bot script
+├── bot.py                  # Main bot script
 ├── list_groups.py          # Helper: List all your groups with IDs
+├── get_forum_topics.py     # Helper: List forum topics
 ├── config.py               # Configuration settings
 ├── .env                    # API credentials (create from .env.example)
 ├── .env.example            # Template for credentials
 ├── .gitignore              # Git exclusions
 ├── requirements.txt        # Python dependencies
+├── Dockerfile              # Docker configuration
+├── fly.toml                # Fly.io configuration
 ├── README.md               # This file
+├── EASY_DEPLOY.md          # Easy deployment guide (Fly.io, Railway, etc.)
+├── DEPLOYMENT.md           # VPS deployment guide
+├── .github/workflows/      # GitHub Actions
+│   ├── deploy.yml          # VPS deployment workflow
+│   └── fly-deploy.yml      # Fly.io deployment workflow
 ├── logs/                   # Log files directory
 │   └── bot.log             # Application logs
 └── sessions/               # Telegram session files

@@ -1,0 +1,449 @@
+2026-02-14 21:23:03,491 - INFO - Starting Telegram Signal Bot...
+2026-02-14 21:23:03,491 - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2026-02-14 21:23:03,492 - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2026-02-14 21:23:04,789 - INFO - First time login detected. Please authenticate.
+2026-02-14 21:23:04,790 - ERROR - Authentication failed: bytes or str expected, not <class 'NoneType'>
+2026-02-14 21:23:04,791 - ERROR - Fatal error: bytes or str expected, not <class 'NoneType'>
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 57, in start
+    await self._authenticate()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 93, in _authenticate
+    await self.client.send_code_request(config.PHONE_NUMBER)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/auth.py", line 446, in send_code_request
+    result = await self(functions.auth.SendCodeRequest(
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 72, in _call
+    future = sender.send(request, ordered=ordered)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/network/mtprotosender.py", line 182, in send
+    state = RequestState(request)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/network/requeststate.py", line 17, in __init__
+    self.data = bytes(request)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/tl/tlobject.py", line 194, in __bytes__
+    return self._bytes()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/tl/functions/auth.py", line 730, in _bytes
+    self.serialize_bytes(self.phone_number),
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/tl/tlobject.py", line 112, in serialize_bytes
+    raise TypeError(
+TypeError: bytes or str expected, not <class 'NoneType'>
+2026-02-14 21:23:04,798 - INFO - Shutting down bot...
+2026-02-14 21:23:04,798 - INFO - Disconnecting from 149.154.167.51:443/TcpFull...
+2026-02-14 21:23:04,799 - INFO - Disconnection from 149.154.167.51:443/TcpFull complete!
+2026-02-14 21:23:04,801 - INFO - Bot shut down successfully
+2026-02-14 21:23:04,801 - ERROR - Bot crashed: bytes or str expected, not <class 'NoneType'>
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 202, in main
+    await bot.start()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 57, in start
+    await self._authenticate()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 93, in _authenticate
+    await self.client.send_code_request(config.PHONE_NUMBER)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/auth.py", line 446, in send_code_request
+    result = await self(functions.auth.SendCodeRequest(
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 72, in _call
+    future = sender.send(request, ordered=ordered)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/network/mtprotosender.py", line 182, in send
+    state = RequestState(request)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/network/requeststate.py", line 17, in __init__
+    self.data = bytes(request)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/tl/tlobject.py", line 194, in __bytes__
+    return self._bytes()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/tl/functions/auth.py", line 730, in _bytes
+    self.serialize_bytes(self.phone_number),
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/tl/tlobject.py", line 112, in serialize_bytes
+    raise TypeError(
+TypeError: bytes or str expected, not <class 'NoneType'>
+2026-02-14 21:23:24,379 - INFO - Starting Telegram Signal Bot...
+2026-02-14 21:23:24,379 - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2026-02-14 21:23:24,379 - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2026-02-14 21:23:26,070 - INFO - First time login detected. Please authenticate.
+2026-02-14 21:23:26,567 - ERROR - Authentication failed: The api_id/api_hash combination is invalid (caused by SendCodeRequest)
+2026-02-14 21:23:26,567 - ERROR - Fatal error: The api_id/api_hash combination is invalid (caused by SendCodeRequest)
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 57, in start
+    await self._authenticate()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 93, in _authenticate
+    await self.client.send_code_request(config.PHONE_NUMBER)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/auth.py", line 446, in send_code_request
+    result = await self(functions.auth.SendCodeRequest(
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 92, in _call
+    result = await future
+telethon.errors.rpcerrorlist.ApiIdInvalidError: The api_id/api_hash combination is invalid (caused by SendCodeRequest)
+2026-02-14 21:23:26,571 - INFO - Shutting down bot...
+2026-02-14 21:23:26,572 - INFO - Disconnecting from 149.154.167.51:443/TcpFull...
+2026-02-14 21:23:26,572 - INFO - Disconnection from 149.154.167.51:443/TcpFull complete!
+2026-02-14 21:23:26,575 - INFO - Bot shut down successfully
+2026-02-14 21:23:26,575 - ERROR - Bot crashed: The api_id/api_hash combination is invalid (caused by SendCodeRequest)
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 202, in main
+    await bot.start()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 57, in start
+    await self._authenticate()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 93, in _authenticate
+    await self.client.send_code_request(config.PHONE_NUMBER)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/auth.py", line 446, in send_code_request
+    result = await self(functions.auth.SendCodeRequest(
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 92, in _call
+    result = await future
+telethon.errors.rpcerrorlist.ApiIdInvalidError: The api_id/api_hash combination is invalid (caused by SendCodeRequest)
+2026-02-14 21:23:56,963 - INFO - Starting Telegram Signal Bot...
+2026-02-14 21:23:56,963 - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2026-02-14 21:23:56,963 - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2026-02-14 21:23:58,266 - INFO - First time login detected. Please authenticate.
+2026-02-14 21:23:58,666 - ERROR - Authentication failed: The api_id/api_hash combination is invalid (caused by SendCodeRequest)
+2026-02-14 21:23:58,666 - ERROR - Fatal error: The api_id/api_hash combination is invalid (caused by SendCodeRequest)
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 57, in start
+    await self._authenticate()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 93, in _authenticate
+    await self.client.send_code_request(config.PHONE_NUMBER)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/auth.py", line 446, in send_code_request
+    result = await self(functions.auth.SendCodeRequest(
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 92, in _call
+    result = await future
+telethon.errors.rpcerrorlist.ApiIdInvalidError: The api_id/api_hash combination is invalid (caused by SendCodeRequest)
+2026-02-14 21:23:58,669 - INFO - Shutting down bot...
+2026-02-14 21:23:58,669 - INFO - Disconnecting from 149.154.167.51:443/TcpFull...
+2026-02-14 21:23:58,670 - INFO - Disconnection from 149.154.167.51:443/TcpFull complete!
+2026-02-14 21:23:58,671 - INFO - Bot shut down successfully
+2026-02-14 21:23:58,672 - ERROR - Bot crashed: The api_id/api_hash combination is invalid (caused by SendCodeRequest)
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 202, in main
+    await bot.start()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 57, in start
+    await self._authenticate()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 93, in _authenticate
+    await self.client.send_code_request(config.PHONE_NUMBER)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/auth.py", line 446, in send_code_request
+    result = await self(functions.auth.SendCodeRequest(
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 92, in _call
+    result = await future
+telethon.errors.rpcerrorlist.ApiIdInvalidError: The api_id/api_hash combination is invalid (caused by SendCodeRequest)
+2026-02-14 21:24:24,996 - INFO - Starting Telegram Signal Bot...
+2026-02-14 21:24:24,996 - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2026-02-14 21:24:24,996 - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2026-02-14 21:24:26,487 - INFO - First time login detected. Please authenticate.
+2026-02-14 21:24:27,004 - ERROR - Authentication failed: The phone number is invalid (caused by SendCodeRequest)
+2026-02-14 21:24:27,004 - ERROR - Fatal error: The phone number is invalid (caused by SendCodeRequest)
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 57, in start
+    await self._authenticate()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 93, in _authenticate
+    await self.client.send_code_request(config.PHONE_NUMBER)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/auth.py", line 446, in send_code_request
+    result = await self(functions.auth.SendCodeRequest(
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 92, in _call
+    result = await future
+telethon.errors.rpcerrorlist.PhoneNumberInvalidError: The phone number is invalid (caused by SendCodeRequest)
+2026-02-14 21:24:27,010 - INFO - Shutting down bot...
+2026-02-14 21:24:27,010 - INFO - Disconnecting from 149.154.167.51:443/TcpFull...
+2026-02-14 21:24:27,012 - INFO - Disconnection from 149.154.167.51:443/TcpFull complete!
+2026-02-14 21:24:27,014 - INFO - Bot shut down successfully
+2026-02-14 21:24:27,014 - ERROR - Bot crashed: The phone number is invalid (caused by SendCodeRequest)
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 202, in main
+    await bot.start()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 57, in start
+    await self._authenticate()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 93, in _authenticate
+    await self.client.send_code_request(config.PHONE_NUMBER)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/auth.py", line 446, in send_code_request
+    result = await self(functions.auth.SendCodeRequest(
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 92, in _call
+    result = await future
+telethon.errors.rpcerrorlist.PhoneNumberInvalidError: The phone number is invalid (caused by SendCodeRequest)
+2026-02-14 21:24:34,374 - INFO - Starting Telegram Signal Bot...
+2026-02-14 21:24:34,374 - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2026-02-14 21:24:34,374 - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2026-02-14 21:24:35,822 - INFO - First time login detected. Please authenticate.
+2026-02-14 21:24:36,437 - INFO - Phone migrated to 4
+2026-02-14 21:24:36,437 - INFO - Reconnecting to new data center 4
+2026-02-14 21:24:37,052 - INFO - Disconnecting from 149.154.167.51:443/TcpFull...
+2026-02-14 21:24:37,053 - INFO - Disconnection from 149.154.167.51:443/TcpFull complete!
+2026-02-14 21:24:37,054 - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-02-14 21:24:39,206 - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-02-14 21:24:40,431 - INFO - OTP code sent to +2349161651940
+2026-02-14 21:27:09,297 - INFO - Authentication successful!
+2026-02-14 21:27:09,497 - INFO - Logged in as: TheFXgod (@the_FXgod)
+2026-02-14 21:27:09,952 - ERROR - Group verification failed: Could not find the input entity for PeerChannel(channel_id=2095814822) (PeerChannel). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+2026-02-14 21:27:09,953 - ERROR - Fatal error: Could not find the input entity for PeerChannel(channel_id=2095814822) (PeerChannel). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 66, in start
+    await self._verify_group_access()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 117, in _verify_group_access
+    source = await self.client.get_entity(self.source_group)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 298, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 475, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerChannel(channel_id=2095814822) (PeerChannel). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+2026-02-14 21:27:09,956 - INFO - Shutting down bot...
+2026-02-14 21:27:09,956 - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-02-14 21:27:09,957 - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-02-14 21:27:09,960 - INFO - Bot shut down successfully
+2026-02-14 21:27:09,960 - ERROR - Bot crashed: Could not find the input entity for PeerChannel(channel_id=2095814822) (PeerChannel). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 202, in main
+    await bot.start()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 66, in start
+    await self._verify_group_access()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 117, in _verify_group_access
+    source = await self.client.get_entity(self.source_group)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 298, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 475, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerChannel(channel_id=2095814822) (PeerChannel). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+2026-02-14 21:57:57,843 - __main__ - INFO - Monitoring 1 source(s) with 4 mapping(s)
+2026-02-14 21:57:57,844 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-02-14 21:57:57,844 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-02-14 21:58:00,263 - __main__ - INFO - ✓ Bot started as TheFXgod (@the_FXgod)
+2026-02-14 21:58:00,264 - __main__ - INFO - ✓ Monitoring 1 sources
+2026-02-14 21:58:00,264 - __main__ - INFO - ✓ Waiting for messages...
+2026-02-14 21:58:00,264 - __main__ - INFO -   1. -1003354980634#394 → -1003657608293#258
+2026-02-14 21:58:00,264 - __main__ - INFO -   2. -1003354980634#4 → -1003657608293#255
+2026-02-14 21:58:00,264 - __main__ - INFO -   3. -1003354980634#5 → -1003657608293#242
+2026-02-14 21:58:00,264 - __main__ - INFO -   4. -1003354980634#1 → -1003657608293#1
+2026-02-14 22:10:37,605 - __main__ - INFO - Monitoring 2 source(s) with 5 mapping(s)
+2026-02-14 22:10:37,605 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-02-14 22:10:37,606 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-02-14 22:10:40,279 - __main__ - INFO - ✓ Bot started as TheFXgod (@the_FXgod)
+2026-02-14 22:10:40,280 - __main__ - INFO - ✓ Monitoring 2 sources
+2026-02-14 22:10:40,280 - __main__ - INFO - ✓ Waiting for messages...
+2026-02-14 22:10:40,280 - __main__ - INFO -   1. -1003354980634#394 → -1003657608293#258
+2026-02-14 22:10:40,280 - __main__ - INFO -   2. -1003354980634#4 → -1003657608293#255
+2026-02-14 22:10:40,281 - __main__ - INFO -   3. -1003354980634#5 → -1003657608293#242
+2026-02-14 22:10:40,281 - __main__ - INFO -   4. -1003354980634#1 → -1003657608293#1
+2026-02-14 22:10:40,281 - __main__ - INFO -   5. -1003719256941 → -1003865081218
+2026-02-14 22:13:45,639 - telethon.network.mtprotosender - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-02-14 22:13:45,640 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-02-14 22:13:45,642 - telethon.network.mtprotosender - INFO - Not disconnecting (already have no connection)
+2026-02-14 22:13:45,644 - __main__ - INFO - 
+✓ Bot stopped by user
+2026-02-14 22:13:47,843 - __main__ - INFO - Monitoring 2 source(s) with 5 mapping(s)
+2026-02-14 22:13:47,843 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-02-14 22:13:47,844 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-02-14 22:13:49,826 - __main__ - INFO - ✓ Bot started as TheFXgod (@the_FXgod)
+2026-02-14 22:13:49,827 - __main__ - INFO - ✓ Monitoring 2 source(s) with 5 mapping(s)
+2026-02-14 22:13:49,827 - __main__ - INFO - ================================================================================
+2026-02-14 22:13:49,827 - __main__ - INFO - ACTIVE MAPPINGS:
+2026-02-14 22:13:49,827 - __main__ - INFO - ================================================================================
+2026-02-14 22:13:50,544 - __main__ - INFO - 1. Pro Trader (-1003354980634) → Topic #394
+2026-02-14 22:13:50,545 - __main__ - INFO -    ↓
+2026-02-14 22:13:50,545 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #258
+2026-02-14 22:13:50,545 - __main__ - INFO - 
+2026-02-14 22:13:50,545 - __main__ - INFO - 2. Pro Trader (-1003354980634) → Topic #4
+2026-02-14 22:13:50,545 - __main__ - INFO -    ↓
+2026-02-14 22:13:50,545 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #255
+2026-02-14 22:13:50,545 - __main__ - INFO - 
+2026-02-14 22:13:50,545 - __main__ - INFO - 3. Pro Trader (-1003354980634) → Topic #5
+2026-02-14 22:13:50,545 - __main__ - INFO -    ↓
+2026-02-14 22:13:50,545 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #242
+2026-02-14 22:13:50,545 - __main__ - INFO - 
+2026-02-14 22:13:50,545 - __main__ - INFO - 4. Pro Trader (-1003354980634) → Topic #1
+2026-02-14 22:13:50,545 - __main__ - INFO -    ↓
+2026-02-14 22:13:50,545 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #1
+2026-02-14 22:13:50,545 - __main__ - INFO - 
+2026-02-14 22:13:51,126 - __main__ - INFO - 5. Pro Trader Results (-1003719256941)
+2026-02-14 22:13:51,126 - __main__ - INFO -    ↓
+2026-02-14 22:13:51,128 - __main__ - INFO -    Result group. (-1003865081218)
+2026-02-14 22:13:51,128 - __main__ - INFO - 
+2026-02-14 22:13:51,128 - __main__ - INFO - ================================================================================
+2026-02-14 22:13:51,129 - __main__ - INFO - ✓ Waiting for messages...
+2026-02-14 22:13:51,129 - __main__ - INFO - ================================================================================
+2026-02-14 22:15:21,245 - telethon.network.mtprotosender - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-02-14 22:15:21,245 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-02-14 22:15:21,245 - telethon.client.telegrambaseclient - ERROR - Unhandled exception from keepalive_handle after cancelling <class '_asyncio.Task'> (<Task finished name='Task-8' coro=<UpdateMethods._keepalive_loop() done, defined at /Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/updates.py:485> exception=OperationalError('database is locked')>)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
+    self._run_once()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/selectors.py", line 562, in select
+    kev_list = self._selector.control(None, max_ev, timeout)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/helpers.py", line 176, in _cancel
+    await task
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/updates.py", line 521, in _keepalive_loop
+    await self._save_states_and_entities()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/telegrambaseclient.py", line 701, in _save_states_and_entities
+    self.session.process_entities(
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/sessions/sqlite.py", line 301, in process_entities
+    c.executemany(
+sqlite3.OperationalError: database is locked
+2026-02-14 22:15:21,255 - telethon.network.mtprotosender - INFO - Not disconnecting (already have no connection)
+2026-02-14 22:15:21,256 - telethon.client.telegrambaseclient - ERROR - Unhandled exception from keepalive_handle after cancelling <class '_asyncio.Task'> (<Task finished name='Task-8' coro=<UpdateMethods._keepalive_loop() done, defined at /Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/updates.py:485> exception=OperationalError('database is locked')>)
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
+    self._run_once()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 1854, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/selectors.py", line 562, in select
+    kev_list = self._selector.control(None, max_ev, timeout)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/helpers.py", line 176, in _cancel
+    await task
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/helpers.py", line 176, in _cancel
+    await task
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/updates.py", line 521, in _keepalive_loop
+    await self._save_states_and_entities()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/telegrambaseclient.py", line 701, in _save_states_and_entities
+    self.session.process_entities(
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/sessions/sqlite.py", line 301, in process_entities
+    c.executemany(
+sqlite3.OperationalError: database is locked
+2026-02-14 22:15:21,258 - __main__ - INFO - 
+✓ Bot stopped by user
+2026-02-14 22:15:27,179 - INFO - Starting Telegram Signal Bot...
+2026-02-14 22:15:27,179 - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-02-14 22:15:27,179 - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-02-14 22:15:28,761 - INFO - Session loaded successfully.
+2026-02-14 22:15:28,940 - INFO - Logged in as: TheFXgod (@the_FXgod)
+2026-02-14 22:15:29,315 - INFO - Source group verified: Pro Trader
+2026-02-14 22:15:29,535 - INFO - Target group verified: Pro Traders
+2026-02-14 22:15:29,535 - INFO - Monitoring group -1003354980634 for new signals...
+2026-02-14 22:15:29,535 - INFO - Forwarding to group -1003657608293
+2026-02-14 22:15:29,535 - INFO - Bot is running. Press Ctrl+C to stop.
+2026-02-14 22:15:33,061 - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-02-14 22:15:33,061 - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-02-14 22:15:33,065 - INFO - Shutting down bot...
+2026-02-14 22:15:33,066 - INFO - Bot shut down successfully
+2026-02-14 22:21:53,304 - telethon.network.mtprotosender - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-02-14 22:21:53,305 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-02-14 22:21:53,307 - telethon.network.mtprotosender - INFO - Not disconnecting (already have no connection)
+2026-02-14 22:21:53,308 - __main__ - INFO - 
+✓ Bot stopped by user
+2026-02-14 22:21:55,945 - __main__ - INFO - Monitoring 5 source(s) with 8 mapping(s)
+2026-02-14 22:21:55,945 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-02-14 22:21:55,946 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-02-14 22:21:58,235 - __main__ - INFO - ✓ Bot started as TheFXgod (@the_FXgod)
+2026-02-14 22:21:58,235 - __main__ - INFO - ✓ Monitoring 5 source(s) with 8 mapping(s)
+2026-02-14 22:21:58,235 - __main__ - INFO - ================================================================================
+2026-02-14 22:21:58,235 - __main__ - INFO - ACTIVE MAPPINGS:
+2026-02-14 22:21:58,235 - __main__ - INFO - ================================================================================
+2026-02-14 22:21:58,804 - __main__ - INFO - 1. Pro Trader (-1003354980634) → Topic #394
+2026-02-14 22:21:58,805 - __main__ - INFO -    ↓
+2026-02-14 22:21:58,805 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #258
+2026-02-14 22:21:58,805 - __main__ - INFO - 
+2026-02-14 22:21:58,805 - __main__ - INFO - 2. Pro Trader (-1003354980634) → Topic #4
+2026-02-14 22:21:58,805 - __main__ - INFO -    ↓
+2026-02-14 22:21:58,805 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #255
+2026-02-14 22:21:58,805 - __main__ - INFO - 
+2026-02-14 22:21:58,805 - __main__ - INFO - 3. Pro Trader (-1003354980634) → Topic #5
+2026-02-14 22:21:58,806 - __main__ - INFO -    ↓
+2026-02-14 22:21:58,806 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #242
+2026-02-14 22:21:58,806 - __main__ - INFO - 
+2026-02-14 22:21:58,806 - __main__ - INFO - 4. Pro Trader (-1003354980634) → Topic #1
+2026-02-14 22:21:58,806 - __main__ - INFO -    ↓
+2026-02-14 22:21:58,806 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #1
+2026-02-14 22:21:58,806 - __main__ - INFO - 
+2026-02-14 22:21:59,509 - __main__ - INFO - 5. Pro Trader Results (-1003719256941)
+2026-02-14 22:21:59,509 - __main__ - INFO -    ↓
+2026-02-14 22:21:59,509 - __main__ - INFO -    Result group. (-1003865081218)
+2026-02-14 22:21:59,509 - __main__ - INFO - 
+2026-02-14 22:21:59,688 - __main__ - INFO - 6. IQ Ideas (-1003157087401)
+2026-02-14 22:21:59,688 - __main__ - INFO -    ↓
+2026-02-14 22:21:59,688 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #268
+2026-02-14 22:21:59,688 - __main__ - INFO - 
+2026-02-14 22:22:00,069 - __main__ - INFO - 7. INFINITY PIPS (-1003683230844)
+2026-02-14 22:22:00,069 - __main__ - INFO -    ↓
+2026-02-14 22:22:00,069 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #259
+2026-02-14 22:22:00,069 - __main__ - INFO - 
+2026-02-14 22:22:00,739 - __main__ - INFO - 8. OBIOFLAGOS FX COMMUNITY (-1002871747055)
+2026-02-14 22:22:00,739 - __main__ - INFO -    ↓
+2026-02-14 22:22:00,739 - __main__ - INFO -    OBI THE GOD FX community (Africa) (-1003621804175)
+2026-02-14 22:22:00,739 - __main__ - INFO - 
+2026-02-14 22:22:00,739 - __main__ - INFO - ================================================================================
+2026-02-14 22:22:00,739 - __main__ - INFO - ✓ Waiting for messages...
+2026-02-14 22:22:00,739 - __main__ - INFO - ================================================================================
+2026-02-14 22:28:37,964 - telethon.network.mtprotosender - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-02-14 22:28:37,964 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-02-14 22:28:37,966 - telethon.network.mtprotosender - INFO - Not disconnecting (already have no connection)
+2026-02-14 22:28:37,968 - __main__ - INFO - 
+✓ Bot stopped by user
+2026-02-14 22:28:39,521 - __main__ - INFO - Monitoring 6 source(s) with 9 mapping(s)
+2026-02-14 22:28:39,521 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-02-14 22:28:39,522 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-02-14 22:28:42,076 - __main__ - INFO - ✓ Bot started as TheFXgod (@the_FXgod)
+2026-02-14 22:28:42,077 - __main__ - INFO - ✓ Monitoring 6 source(s) with 9 mapping(s)
+2026-02-14 22:28:42,078 - __main__ - INFO - ================================================================================
+2026-02-14 22:28:42,078 - __main__ - INFO - ACTIVE MAPPINGS:
+2026-02-14 22:28:42,078 - __main__ - INFO - ================================================================================
+2026-02-14 22:28:42,755 - __main__ - INFO - 1. Pro Trader (-1003354980634) → Topic #394
+2026-02-14 22:28:42,756 - __main__ - INFO -    ↓
+2026-02-14 22:28:42,756 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #258
+2026-02-14 22:28:42,756 - __main__ - INFO - 
+2026-02-14 22:28:42,756 - __main__ - INFO - 2. Pro Trader (-1003354980634) → Topic #4
+2026-02-14 22:28:42,756 - __main__ - INFO -    ↓
+2026-02-14 22:28:42,757 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #255
+2026-02-14 22:28:42,757 - __main__ - INFO - 
+2026-02-14 22:28:42,757 - __main__ - INFO - 3. Pro Trader (-1003354980634) → Topic #5
+2026-02-14 22:28:42,757 - __main__ - INFO -    ↓
+2026-02-14 22:28:42,757 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #242
+2026-02-14 22:28:42,757 - __main__ - INFO - 
+2026-02-14 22:28:42,757 - __main__ - INFO - 4. Pro Trader (-1003354980634) → Topic #1
+2026-02-14 22:28:42,757 - __main__ - INFO -    ↓
+2026-02-14 22:28:42,758 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #1
+2026-02-14 22:28:42,758 - __main__ - INFO - 
+2026-02-14 22:28:43,351 - __main__ - INFO - 5. Pro Trader Results (-1003719256941)
+2026-02-14 22:28:43,351 - __main__ - INFO -    ↓
+2026-02-14 22:28:43,352 - __main__ - INFO -    Result group. (-1003865081218)
+2026-02-14 22:28:43,352 - __main__ - INFO - 
+2026-02-14 22:28:43,539 - __main__ - INFO - 6. IQ Ideas (-1003157087401)
+2026-02-14 22:28:43,539 - __main__ - INFO -    ↓
+2026-02-14 22:28:43,539 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #268
+2026-02-14 22:28:43,540 - __main__ - INFO - 
+2026-02-14 22:28:43,990 - __main__ - INFO - 7. INFINITY PIPS (-1003683230844)
+2026-02-14 22:28:43,990 - __main__ - INFO -    ↓
+2026-02-14 22:28:43,990 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #259
+2026-02-14 22:28:43,990 - __main__ - INFO - 
+2026-02-14 22:28:44,586 - __main__ - INFO - 8. OBIOFLAGOS FX COMMUNITY (-1002871747055)
+2026-02-14 22:28:44,587 - __main__ - INFO -    ↓
+2026-02-14 22:28:44,587 - __main__ - INFO -    OBI THE GOD FX community (Africa) (-1003621804175)
+2026-02-14 22:28:44,587 - __main__ - INFO - 
+2026-02-14 22:28:45,270 - __main__ - INFO - 9. Ẹkúndayọ̀ Samson, a journal. (-1001941923902)
+2026-02-14 22:28:45,270 - __main__ - INFO -    ↓
+2026-02-14 22:28:45,271 - __main__ - INFO -    Binary Option signals (-1003850746623)
+2026-02-14 22:28:45,271 - __main__ - INFO - 
+2026-02-14 22:28:45,271 - __main__ - INFO - ================================================================================
+2026-02-14 22:28:45,271 - __main__ - INFO - ✓ Waiting for messages...
+2026-02-14 22:28:45,271 - __main__ - INFO - ================================================================================
+2026-02-14 22:29:18,462 - __main__ - INFO - 📨 New message from -1001941923902: Okay...
+2026-02-14 22:29:18,463 - __main__ - INFO - 📨 New message from Ẹkúndayọ̀ Samson, a journal. (-1001941923902): Okay
+2026-02-14 22:29:18,463 - __main__ - INFO -    Copying to 1 target(s)
+2026-02-14 22:29:19,158 - __main__ - INFO -    ✓ [1/1] Copied to Binary Option signals (-1003850746623)
+2026-02-14 22:30:08,009 - telethon.network.mtprotosender - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-02-14 22:30:08,009 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-02-14 22:30:08,014 - telethon.network.mtprotosender - INFO - Not disconnecting (already have no connection)
+2026-02-14 22:30:08,017 - __main__ - INFO - 
+✓ Bot stopped by user
