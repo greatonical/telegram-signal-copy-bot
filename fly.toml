@@ -1,39 +1,27 @@
-# fly.toml app configuration file generated for telegram-signal-copy-bot on 2026-02-16T19:22:33Z
-#
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
+# Fly.io Configuration for Telegram Signal Copy Bot
+# This is a background worker, not a web service
 
 app = 'telegram-signal-copy-bot'
 primary_region = 'lhr'
 
 [build]
 
-[http_service]
-  internal_port = 8080
-  force_https = true
-  auto_stop_machines = 'stop'
-  auto_start_machines = true
-  min_machines_running = 0
-  processes = ['app']
-
-# No [http_service] section - this is a background worker, not a web app
-
-# CRITICAL: Only 1 machine allowed
-# Telegram sessions cannot be used from multiple IPs simultaneously
 [deploy]
-  max_unavailable = 0  # Don't stop old machine until new one is ready
-  
+  strategy = "immediate"
+
+# CRITICAL: Telegram sessions cannot be used from multiple IPs simultaneously
+# We must ensure only 1 machine runs at a time
 [[services]]
-  internal_port = 8080  # Dummy port (not actually used)
+  internal_port = 8080
   protocol = "tcp"
-  auto_stop_machines = false  # Keep running 24/7
+  auto_stop_machines = false
   auto_start_machines = true
   min_machines_running = 1
-  max_machines_running = 1  # CRITICAL: Only 1 machine to prevent session conflicts
+
+  [[services.ports]]
+    port = 8080
 
 # Resource allocation
-[[vm]]
-  memory = '1gb'
-  cpu_kind = 'shared'
-  cpus = 1
-  memory_mb = 256
+[vm]
+  size = "shared-cpu-1x"
+  memory = "256mb"
