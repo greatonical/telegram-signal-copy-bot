@@ -23,5 +23,8 @@ RUN mkdir -p sessions logs
 # Set permissions
 RUN chmod -R 755 /app
 
-# Run the bot
-CMD ["python", "bot.py"]
+# Expose port for API
+EXPOSE 8080
+
+# Run both bot and API server
+CMD ["python", "start.py"]

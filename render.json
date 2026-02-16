@@ -1,0 +1,31 @@
+{
+    "$schema": "https://render.com/schema/render.yaml",
+    "services": [
+        {
+            "type": "web",
+            "name": "telegram-signal-copy-bot",
+            "env": "docker",
+            "region": "oregon",
+            "plan": "free",
+            "healthCheckPath": "/health",
+            "envVars": [
+                {
+                    "key": "API_ID",
+                    "sync": false
+                },
+                {
+                    "key": "API_HASH",
+                    "sync": false
+                },
+                {
+                    "key": "PHONE_NUMBER",
+                    "sync": false
+                },
+                {
+                    "key": "PORT",
+                    "value": "8080"
+                }
+            ]
+        }
+    ]
+}
