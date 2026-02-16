@@ -13,6 +13,19 @@ primary_region = 'lhr'
 
 # No [http_service] section - this is a background worker, not a web app
 
+# CRITICAL: Only 1 machine allowed
+# Telegram sessions cannot be used from multiple IPs simultaneously
+[deploy]
+  max_unavailable = 0  # Don't stop old machine until new one is ready
+  
+[[services]]
+  internal_port = 8080  # Dummy port (not actually used)
+  protocol = "tcp"
+  auto_stop_machines = false  # Keep running 24/7
+  auto_start_machines = true
+  min_machines_running = 1
+  max_machines_running = 1  # CRITICAL: Only 1 machine to prevent session conflicts
+
 # Resource allocation
 [[vm]]
   memory = '256mb'
