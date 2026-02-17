@@ -9,6 +9,7 @@ import logging
 from datetime import datetime
 from telethon import TelegramClient, events
 from telethon.tl.types import Message
+import os
 from config import (
     API_ID,
     API_HASH,
@@ -187,9 +188,68 @@ class SignalForwarder:
                 await asyncio.sleep(FORWARD_DELAY)
 
             except Exception as e:
-                logger.error(
-                    f"   ❌ [{idx}/{len(targets)}] Failed to copy to {target.get('target_id', 'Unknown')}: {e}"
-                )
+                # Check for protected chat restriction
+                # Error format often contains: "You can't forward messages from a protected chat"
+                error_str = str(e).lower()
+                if (
+                    "protected chat" in error_str or "sendmediarequest" in error_str
+                ) and message.media:
+                    logger.warning(
+                        f"   ⚠️ Protected chat detected. Downloading and re-uploading media..."
+                    )
+                    path = None
+                    try:
+                        # Download media to a temp file
+                        path = await message.download_media()
+                        if path:
+                            logger.info(f"   ⬇️ Downloaded media to {path}")
+
+                            # Send with the downloaded file
+                            if target_topic_id:
+                                await self.client.send_message(
+                                    entity=target_entity,
+                                    message=message.text or "",
+                                    file=path,
+                                    formatting_entities=message.entities,
+                                    link_preview=False,
+                                    reply_to=target_topic_id,
+                                )
+                                logger.info(
+                                    f"   ✓ [{idx}/{len(targets)}] Copied (via download) to {target_name} → Topic #{target_topic_id}"
+                                )
+                            else:
+                                await self.client.send_message(
+                                    entity=target_entity,
+                                    message=message.text or "",
+                                    file=path,
+                                    formatting_entities=message.entities,
+                                    link_preview=False,
+                                )
+                                logger.info(
+                                    f"   ✓ [{idx}/{len(targets)}] Copied (via download) to {target_name}"
+                                )
+                        else:
+                            logger.error(
+                                f"   ❌ Failed to download media from protected chat"
+                            )
+
+                    except Exception as upload_e:
+                        logger.error(f"   ❌ Failed to re-upload media: {upload_e}")
+
+                    finally:
+                        # Clean up
+                        if path and os.path.exists(path):
+                            try:
+                                os.remove(path)
+                                logger.debug(f"   🗑️ Deleted temp file {path}")
+                            except Exception as cleanup_e:
+                                logger.warning(
+                                    f"   ⚠️ Failed to delete temp file {path}: {cleanup_e}"
+                                )
+                else:
+                    logger.error(
+                        f"   ❌ [{idx}/{len(targets)}] Failed to copy to {target.get('target_id', 'Unknown')}: {e}"
+                    )
 
 
 async def main():
