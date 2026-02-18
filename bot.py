@@ -30,6 +30,22 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
+class _SuppressTypeNotFound(logging.Filter):
+    """Suppress benign TypeNotFoundError noise from Telethon's network layer.
+
+    This error occurs when Telegram sends a TL object type that the current
+    Telethon version doesn't recognise (e.g. new API types added by Telegram).
+    It is non-fatal and does not affect bot operation.
+    """
+
+    def filter(self, record: logging.LogRecord) -> bool:
+        return "TypeNotFoundError" not in record.getMessage()
+
+
+# Apply filter to the telethon sender logger that emits this error
+logging.getLogger("telethon.network.mtprotosender").addFilter(_SuppressTypeNotFound())
+
+
 class SignalForwarder:
     """Handles message forwarding based on configured mappings"""
 
@@ -78,7 +94,14 @@ class SignalForwarder:
         return index
 
     def get_targets_for_message(self, message: Message):
-        """Get all target destinations for a given message"""
+        """Get all target destinations for a given message.
+
+        Telegram forum topics use three different structures depending on the message:
+          1. Root/first message of a topic: reply_to is None, but message.id == topic_id
+          2. Direct reply to topic root: reply_to.reply_to_msg_id == topic_id,
+             reply_to_top_id is None (or same as reply_to_msg_id)
+          3. Nested reply inside a topic: reply_to.reply_to_top_id == topic_id
+        """
         source_id = (
             message.peer_id.channel_id
             if hasattr(message.peer_id, "channel_id")
@@ -91,25 +114,31 @@ class SignalForwarder:
         # Make it negative (Telegram convention)
         source_id = -1000000000000 - source_id if source_id > 0 else source_id
 
-        # Check if message has a topic (reply_to with reply_to_top_id)
         source_topic_id = None
-        if message.reply_to and hasattr(message.reply_to, "reply_to_top_id"):
-            source_topic_id = message.reply_to.reply_to_top_id
-        elif (
-            message.reply_to
-            and hasattr(message.reply_to, "forum_topic")
-            and message.reply_to.forum_topic
-        ):
-            # Some messages might have the topic in a different field
-            source_topic_id = message.reply_to.reply_to_msg_id
 
-        # Try to find exact match (group + topic)
+        if message.reply_to:
+            reply = message.reply_to
+            # Case 3: nested reply — reply_to_top_id points to the topic root
+            if getattr(reply, "reply_to_top_id", None):
+                source_topic_id = reply.reply_to_top_id
+            # Case 2: direct reply to topic root — only reply_to_msg_id is set
+            elif getattr(reply, "reply_to_msg_id", None):
+                source_topic_id = reply.reply_to_msg_id
+        else:
+            # Case 1: this IS the root/first message of a topic.
+            # Its message.id equals the topic_id in Telegram's forum model.
+            # Check if this message id matches any configured source topic for this group.
+            candidate_key = f"{source_id}#{message.id}"
+            if candidate_key in self.source_to_targets:
+                return self.source_to_targets[candidate_key]
+
+        # Try exact topic match
         if source_topic_id:
             key = f"{source_id}#{source_topic_id}"
             if key in self.source_to_targets:
                 return self.source_to_targets[key]
 
-        # Fall back to group-level match
+        # Fall back to group-level match (no topic filter)
         key = str(source_id)
         return self.source_to_targets.get(key, [])
 

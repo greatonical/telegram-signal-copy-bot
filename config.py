@@ -69,7 +69,7 @@ FORWARD_MAPPINGS = [
         "source_id": -1003354980634,
         "source_topic_id": 5,  # Nova
         "target_id": -1003657608293,
-        "target_topic_id": 242,  # Nova
+        "target_topic_id": 276,  # Nova
     },
     # Topic to Topic: Announcements to General
     {
