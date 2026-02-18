@@ -5,6 +5,7 @@ Supports groups, channels, and forum topics
 """
 
 import asyncio
+import re
 import logging
 from datetime import datetime
 from telethon import TelegramClient, events
@@ -44,6 +45,34 @@ class _SuppressTypeNotFound(logging.Filter):
 
 # Apply filter to the telethon sender logger that emits this error
 logging.getLogger("telethon.network.mtprotosender").addFilter(_SuppressTypeNotFound())
+
+
+# ============================================================================
+# CONTACT INFO FILTER
+# ============================================================================
+# Messages from these source IDs that contain links, phone numbers, or
+# @usernames will be skipped and NOT forwarded.
+CONTACT_FILTER_SOURCES = {
+    -1002871747055,  # OBIOFLAGOS FX COMMUNITY
+    -1003108945324,  # Gilly Options Signals
+}
+
+# Patterns that indicate contact info in message text
+_CONTACT_PATTERNS = re.compile(
+    r"("
+    r"https?://"  # URLs with http/https
+    r"|www\.[a-zA-Z0-9]"  # URLs starting with www.
+    r"|t\.me/"  # Telegram links
+    r"|@[a-zA-Z0-9_]{3,}"  # @usernames
+    r"|\+?[0-9][0-9 .\-]{7,}[0-9]"  # Phone numbers (8+ digits, various formats)
+    r")",
+    re.IGNORECASE,
+)
+
+
+def _contains_contact_info(text: str) -> bool:
+    """Return True if text contains a URL, phone number, or @username."""
+    return bool(_CONTACT_PATTERNS.search(text))
 
 
 class SignalForwarder:
@@ -319,6 +348,15 @@ async def main():
             logger.info(
                 f"📨 New message from {source_id}: {message.message[:50] if message.message else '[Media]'}..."
             )
+
+            # Skip messages with contact info from filtered sources
+            if source_id in CONTACT_FILTER_SOURCES:
+                text = message.message or ""
+                if _contains_contact_info(text):
+                    logger.info(
+                        f"   ⏭️ Skipped (contact info detected) from {source_id}"
+                    )
+                    return
 
             # Forward the message
             await forwarder.forward_message(message)
