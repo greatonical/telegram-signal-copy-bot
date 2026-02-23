@@ -8,15 +8,17 @@ primary_region = 'lhr'
 
 [deploy]
   strategy = "immediate"
+  max_unavailable = 1  # stop old machine before starting new one
 
-# CRITICAL: Telegram sessions cannot be used from multiple IPs simultaneously
-# We must ensure only 1 machine runs at a time
+# CRITICAL: Telegram sessions cannot be used from multiple IPs simultaneously.
+# Only 1 machine must EVER run at a time.
 [[services]]
   internal_port = 8080
   protocol = "tcp"
   auto_stop_machines = false
   auto_start_machines = true
   min_machines_running = 1
+  max_machines_running = 1  # hard cap — never allow 2 machines simultaneously
 
   [[services.ports]]
     port = 8080

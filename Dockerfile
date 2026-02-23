@@ -12,8 +12,14 @@ RUN apt-get update && apt-get install -y \
 # Copy requirements first for better caching
 COPY requirements.txt .
 
-# Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+# Install all pinned/versioned dependencies first (fully cacheable layer)
+RUN pip install --no-cache-dir $(grep -v 'github.com' requirements.txt | tr '\n' ' ')
+
+# Install Telethon from git HEAD — bust this cache on every deploy so we always
+# get the latest commit (which may include new TL constructors Telegram added).
+# Pass --build-arg CACHEBUST=$(date +%s) when building / deploying.
+ARG CACHEBUST=1
+RUN pip install --no-cache-dir git+https://codeberg.org/Lonami/Telethon.git
 
 # Copy application code
 COPY . .

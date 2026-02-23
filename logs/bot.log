@@ -253,3 +253,26 @@ AttributeError: __aenter__
 2026-02-18 18:18:14,849 - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
 2026-02-18 18:18:14,853 - INFO - Shutting down bot...
 2026-02-18 18:18:14,853 - INFO - Bot shut down successfully
+2026-02-23 18:01:15,726 - INFO - Starting Telegram Signal Bot...
+2026-02-23 18:01:15,726 - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2026-02-23 18:01:17,945 - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2026-02-23 18:01:19,156 - INFO - First time login detected. Please authenticate.
+2026-02-23 18:01:19,553 - INFO - Phone migrated to 4
+2026-02-23 18:01:19,554 - INFO - Reconnecting to new data center 4
+2026-02-23 18:01:19,969 - INFO - Disconnecting from 149.154.167.51:443/TcpFull...
+2026-02-23 18:01:19,970 - INFO - Disconnection from 149.154.167.51:443/TcpFull complete!
+2026-02-23 18:01:19,970 - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-02-23 18:01:22,693 - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-02-23 18:01:25,896 - INFO - OTP code sent to +2349161651940
+2026-02-23 18:01:38,764 - WARNING - 2FA is enabled on this account
+2026-02-23 18:03:42,635 - INFO - Authentication successful!
+2026-02-23 18:03:42,991 - INFO - Logged in as: TheFXgod (@the_FXgod)
+2026-02-23 18:03:43,619 - INFO - Source group verified: Pro Trader
+2026-02-23 18:03:44,061 - INFO - Target group verified: Pro Traders
+2026-02-23 18:03:44,061 - INFO - Monitoring group -1003354980634 for new signals...
+2026-02-23 18:03:44,062 - INFO - Forwarding to group -1003657608293
+2026-02-23 18:03:44,062 - INFO - Bot is running. Press Ctrl+C to stop.
+2026-02-23 18:04:15,744 - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-02-23 18:04:15,744 - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-02-23 18:04:15,747 - INFO - Shutting down bot...
+2026-02-23 18:04:15,747 - INFO - Bot shut down successfully

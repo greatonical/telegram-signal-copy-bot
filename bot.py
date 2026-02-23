@@ -9,6 +9,8 @@ import re
 import logging
 from datetime import datetime
 from telethon import TelegramClient, events
+from telethon.errors.common import TypeNotFoundError
+from telethon.errors import AuthKeyDuplicatedError
 from telethon.tl.types import Message
 import os
 from config import (
@@ -406,8 +408,32 @@ async def main():
     logger.info("✓ Waiting for messages...")
     logger.info("=" * 80)
 
-    # Keep the bot running
-    await client.run_until_disconnected()
+    # Keep the bot running — auto-reconnect on TypeNotFoundError (Telegram sends
+    # new TL constructor types that older Telethon builds don't recognise; this
+    # is non-fatal and does NOT affect bot operation).
+    #
+    # AuthKeyDuplicatedError means the session was used from two different IPs at
+    # the same time (e.g. overlapping deploys). The session is now revoked by
+    # Telegram — reconnecting is pointless and will keep failing. We exit cleanly
+    # so Fly.io restarts with a single fresh connection.
+    while True:
+        try:
+            await client.run_until_disconnected()
+            break  # clean disconnect (e.g. KeyboardInterrupt forwarded)
+        except AuthKeyDuplicatedError:
+            logger.error(
+                "🔑 AuthKeyDuplicatedError: session used from two IPs simultaneously — "
+                "session is now revoked. Exiting so it can be restarted cleanly."
+            )
+            raise  # let start.py / Fly.io restart the process
+        except TypeNotFoundError as e:
+            logger.warning(
+                f"⚠️  Telethon TypeNotFoundError (unknown TL constructor — harmless): {e}. "
+                "Reconnecting in 5 s..."
+            )
+            await asyncio.sleep(5)
+            # Re-connect and keep the same handlers alive
+            await client.connect()
 
 
 if __name__ == "__main__":
