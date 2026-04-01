@@ -309,3 +309,54 @@ AttributeError: __aenter__
 2026-02-28 22:00:54,689 - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
 2026-02-28 22:00:54,691 - INFO - Shutting down bot...
 2026-02-28 22:00:54,691 - INFO - Bot shut down successfully
+2026-03-24 15:22:28,256 - __main__ - INFO - Monitoring 6 source(s) with 9 mapping(s)
+2026-03-24 15:22:28,257 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-03-24 15:22:28,257 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-03-24 15:22:30,055 - __main__ - INFO - ✓ Bot started as TheFXgod (@the_FXgod)
+2026-03-24 15:22:30,055 - __main__ - INFO - ✓ Monitoring 6 source(s) with 9 mapping(s)
+2026-03-24 15:22:30,055 - __main__ - INFO - ================================================================================
+2026-03-24 15:22:30,055 - __main__ - INFO - ACTIVE MAPPINGS:
+2026-03-24 15:22:30,055 - __main__ - INFO - ================================================================================
+2026-03-24 15:22:30,408 - __main__ - INFO - 1. Pro Trader (-1003354980634) → Topic #394
+2026-03-24 15:22:30,408 - __main__ - INFO -    ↓
+2026-03-24 15:22:30,408 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #258
+2026-03-24 15:22:30,408 - __main__ - INFO - 
+2026-03-24 15:22:30,408 - __main__ - INFO - 2. Pro Trader (-1003354980634) → Topic #4
+2026-03-24 15:22:30,409 - __main__ - INFO -    ↓
+2026-03-24 15:22:30,409 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #255
+2026-03-24 15:22:30,409 - __main__ - INFO - 
+2026-03-24 15:22:30,409 - __main__ - INFO - 3. Pro Trader (-1003354980634) → Topic #5
+2026-03-24 15:22:30,409 - __main__ - INFO -    ↓
+2026-03-24 15:22:30,409 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #276
+2026-03-24 15:22:30,409 - __main__ - INFO - 
+2026-03-24 15:22:30,409 - __main__ - INFO - 4. Pro Trader (-1003354980634) → Topic #1
+2026-03-24 15:22:30,409 - __main__ - INFO -    ↓
+2026-03-24 15:22:30,409 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #1
+2026-03-24 15:22:30,409 - __main__ - INFO - 
+2026-03-24 15:22:31,481 - __main__ - INFO - 5. Pro Trader Results (-1003719256941)
+2026-03-24 15:22:31,482 - __main__ - INFO -    ↓
+2026-03-24 15:22:31,482 - __main__ - INFO -    Result group. (-1003865081218)
+2026-03-24 15:22:31,482 - __main__ - INFO - 
+2026-03-24 15:22:31,998 - __main__ - INFO - 6. IQ Signals (-1003157087401)
+2026-03-24 15:22:31,998 - __main__ - INFO -    ↓
+2026-03-24 15:22:31,998 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #268
+2026-03-24 15:22:31,998 - __main__ - INFO - 
+2026-03-24 15:22:32,331 - __main__ - INFO - 7. Unknown (-1003683230844)
+2026-03-24 15:22:32,331 - __main__ - INFO -    ↓
+2026-03-24 15:22:32,331 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #259
+2026-03-24 15:22:32,331 - __main__ - INFO - 
+2026-03-24 15:22:33,416 - __main__ - INFO - 8. OBIOFLAGOS FX COMMUNITY (-1002871747055)
+2026-03-24 15:22:33,416 - __main__ - INFO -    ↓
+2026-03-24 15:22:33,416 - __main__ - INFO -    JIFU scanners + OBI THE GOD FX community (-1003621804175)
+2026-03-24 15:22:33,416 - __main__ - INFO - 
+2026-03-24 15:22:34,135 - __main__ - INFO - 9. Unknown (-1003108945324)
+2026-03-24 15:22:34,135 - __main__ - INFO -    ↓
+2026-03-24 15:22:34,136 - __main__ - INFO -    Binary Option signals (-1003850746623)
+2026-03-24 15:22:34,136 - __main__ - INFO - 
+2026-03-24 15:22:34,136 - __main__ - INFO - ================================================================================
+2026-03-24 15:22:34,136 - __main__ - INFO - ✓ Waiting for messages...
+2026-03-24 15:22:34,136 - __main__ - INFO - ================================================================================
+2026-03-24 15:24:57,841 - telethon.network.mtprotosender - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-03-24 15:24:57,843 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-03-24 15:24:57,846 - __main__ - INFO - 
+✓ Bot stopped by user

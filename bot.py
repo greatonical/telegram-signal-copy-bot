@@ -22,7 +22,10 @@ from config import (
     FORWARD_DELAY,
     LOG_FILE,
     LOG_LEVEL,
+    AUTO_TRADE_SOURCES,
+    SCHEDULED_FORWARDING,
 )
+from auto_trader.engine import auto_trader_engine
 
 # Setup logging
 logging.basicConfig(
@@ -75,6 +78,49 @@ _CONTACT_PATTERNS = re.compile(
 def _contains_contact_info(text: str) -> bool:
     """Return True if text contains a URL, phone number, or @username."""
     return bool(_CONTACT_PATTERNS.search(text))
+
+
+# ---------------------------------------------------------------------------
+# SCHEDULED FORWARDING GATE
+# ---------------------------------------------------------------------------
+
+def _build_schedule_index() -> dict:
+    """Build a lookup: (source_id, target_id) -> schedule rule."""
+    return {
+        (rule["source_id"], rule["target_id"]): rule
+        for rule in SCHEDULED_FORWARDING
+    }
+
+
+_SCHEDULE_INDEX = _build_schedule_index()
+
+
+def _is_forwarding_allowed(source_id: int, target_id: int) -> bool:
+    """Return True if a source→target pair is allowed to forward right now.
+
+    - If there is no schedule rule for this pair, forwarding is always allowed.
+    - Otherwise the current weekday must be in rule['days'].
+    - If all_day is True any time on that day is accepted.
+    - Otherwise the current local time must fall within [start_time, end_time).
+    """
+    rule = _SCHEDULE_INDEX.get((source_id, target_id))
+    if rule is None:
+        return True  # no restriction configured
+
+    now = datetime.now()
+    if now.weekday() not in rule["days"]:
+        return False
+
+    if rule.get("all_day", False):
+        return True
+
+    # Parse time window
+    start_h, start_m = map(int, rule["start_time"].split(":"))
+    end_h, end_m = map(int, rule["end_time"].split(":"))
+    current_minutes = now.hour * 60 + now.minute
+    start_minutes = start_h * 60 + start_m
+    end_minutes = end_h * 60 + end_m
+    return start_minutes <= current_minutes < end_minutes
 
 
 class SignalForwarder:
@@ -210,6 +256,14 @@ class SignalForwarder:
                 target_id = target["target_id"]
                 target_topic_id = target.get("target_topic_id")
 
+                # --- Schedule gate ---
+                if not _is_forwarding_allowed(source_id, target_id):
+                    logger.info(
+                        f"   ⏰ [{idx}/{len(targets)}] Skipped (outside schedule window) "
+                        f"for source {source_id} → target {target_id}"
+                    )
+                    continue
+
                 # Get target name for logging
                 target_name = await self.get_entity_name(target_id)
 
@@ -325,6 +379,8 @@ async def main():
     source_ids = set()
     for mapping in FORWARD_MAPPINGS:
         source_ids.add(mapping["source_id"])
+        
+    source_ids.update(AUTO_TRADE_SOURCES)
 
     logger.info(
         f"Monitoring {len(source_ids)} source(s) with {len(FORWARD_MAPPINGS)} mapping(s)"
@@ -359,6 +415,12 @@ async def main():
                         f"   ⏭️ Skipped (contact info detected) from {source_id}"
                     )
                     return
+
+            # Auto-Trading Integration branch (non-blocking)
+            if source_id in AUTO_TRADE_SOURCES:
+                text_to_process = message.message or ""
+                if text_to_process:
+                    asyncio.create_task(auto_trader_engine.process_signal(text_to_process))
 
             # Forward the message
             await forwarder.forward_message(message)
