@@ -51,6 +51,15 @@ By wrapping `process_signal` in `asyncio.create_task()`, the Telegram bot immedi
 
 ---
 
+## Dependencies
+The extension relies on the `api-iqoption-faria` package for WebSocket connection to IQ Option.
+Ensure to install it via:
+```bash
+pip install -r requirements.txt
+```
+
+---
+
 ## Configuration Variables
 
 You must supply these in your active `.env` file to empower the engine.
@@ -87,3 +96,13 @@ To test the bot securely using Telegram:
 5. Check your console. You should see logs confirming parsing, validation, and a successful trade ID from IQ Option.
 6. Check `trades.csv` in your root directory. The trade result is automatically saved.
 7. Open your IQ Option dashboard (Practice Balance) and verify the 5-minute position is currently open for EURUSD!
+
+---
+
+## Agent Context & Extending the System
+If another developer or AI agent is augmenting this system, keep the following in mind:
+
+- **Market Quirks (OTC vs Standard)**: IQ Option frequently suspends standard turbo options (1m-5m) during weekends or low liquidity hours, returning errors like `active is suspended`. The parser automatically intercepts `OTC` in signals and formats them properly (e.g., `EURUSD-OTC`). When debugging execution failures, consider testing with an OTC asset as they are almost always open.
+- **Parser Extensions**: `auto_trader/parser.py` is entirely Regex-based. To support a new signal template from a different Telegram channel, just add a new `re.search` block before validation. 
+- **DB Migration**: The system currently logs to `trades.csv`. To upgrade to PostgreSQL, simply change the `_ensure_file_exists` and `log_trade` functions in `auto_trader/tracker.py` to use an engine like SQLAlchemy.
+- **Validator Expansion**: Risk rules (e.g. max daily limit, duplicate cooldowns) live in `auto_trader/validator.py`. You can inject checking for `trading hours` or `weekend filters` symmetrically there.

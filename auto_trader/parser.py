@@ -20,6 +20,7 @@ class SignalParser:
             "asset": None,
             "direction": None,
             "expiry": None,
+            "execute_time": None,   # HH:MM as parsed from the signal (provider's local time)
             "is_valid": False,
             "raw_text": text
         }
@@ -54,7 +55,13 @@ class SignalParser:
             if m_match:
                 result["expiry"] = int(m_match.group(1))
                 
-        # 4. Validation
+        # 4. Parse Execution Time  (e.g. ⏰ 10:23 or just 10:23)
+        # Matches any HH:MM or H:MM pattern in the message.
+        time_match = re.search(r'\b(\d{1,2}):(\d{2})\b', text)
+        if time_match:
+            result["execute_time"] = f"{int(time_match.group(1)):02d}:{time_match.group(2)}"
+
+        # 5. Validation
         if result["asset"] and result["direction"] and result["expiry"]:
             result["is_valid"] = True
             

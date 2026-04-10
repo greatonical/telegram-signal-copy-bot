@@ -360,3 +360,1692 @@ AttributeError: __aenter__
 2026-03-24 15:24:57,843 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
 2026-03-24 15:24:57,846 - __main__ - INFO - 
 ✓ Bot stopped by user
+2026-04-08 20:34:26,628 - INFO - Starting Telegram Signal Bot...
+2026-04-08 20:34:26,628 - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-04-08 20:34:26,807 - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-04-08 20:34:27,926 - INFO - Session loaded successfully.
+2026-04-08 20:34:28,118 - INFO - Logged in as: TheFXgod (@the_FXgod)
+2026-04-08 20:34:28,327 - INFO - Source group verified: Pro Trader
+2026-04-08 20:34:28,524 - INFO - Target group verified: Pro Traders
+2026-04-08 20:34:28,525 - INFO - Monitoring group -1003354980634 for new signals...
+2026-04-08 20:34:28,525 - INFO - Forwarding to group -1003657608293
+2026-04-08 20:34:28,525 - INFO - Bot is running. Press Ctrl+C to stop.
+2026-04-08 20:34:29,469 - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-04-08 20:34:29,470 - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-04-08 20:34:29,472 - INFO - Shutting down bot...
+2026-04-08 20:34:29,472 - INFO - Bot shut down successfully
+2026-04-08 20:35:45,314 - INFO - Starting Telegram Signal Bot...
+2026-04-08 20:35:45,314 - INFO - Connecting to 149.154.167.51:443/TcpFull...
+2026-04-08 20:35:47,077 - INFO - Connection to 149.154.167.51:443/TcpFull complete!
+2026-04-08 20:35:47,750 - INFO - First time login detected. Please authenticate.
+2026-04-08 20:35:47,941 - INFO - Phone migrated to 4
+2026-04-08 20:35:47,941 - INFO - Reconnecting to new data center 4
+2026-04-08 20:35:48,152 - INFO - Disconnecting from 149.154.167.51:443/TcpFull...
+2026-04-08 20:35:48,153 - INFO - Disconnection from 149.154.167.51:443/TcpFull complete!
+2026-04-08 20:35:48,153 - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-04-08 20:35:49,939 - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-04-08 20:35:50,817 - INFO - OTP code sent to +2349133498864
+2026-04-08 20:36:02,626 - WARNING - 2FA is enabled on this account
+2026-04-08 20:36:16,333 - INFO - Authentication successful!
+2026-04-08 20:36:16,521 - INFO - Logged in as: Greatonic (@greatonical)
+2026-04-08 20:36:16,682 - ERROR - Group verification failed: Could not find the input entity for PeerChannel(channel_id=3354980634) (PeerChannel). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+2026-04-08 20:36:16,682 - ERROR - Fatal error: Could not find the input entity for PeerChannel(channel_id=3354980634) (PeerChannel). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 66, in start
+    await self._verify_group_access()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 117, in _verify_group_access
+    source = await self.client.get_entity(self.source_group)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 298, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 475, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerChannel(channel_id=3354980634) (PeerChannel). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+2026-04-08 20:36:16,684 - INFO - Shutting down bot...
+2026-04-08 20:36:16,685 - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-04-08 20:36:16,685 - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-04-08 20:36:16,686 - INFO - Bot shut down successfully
+2026-04-08 20:36:16,686 - ERROR - Bot crashed: Could not find the input entity for PeerChannel(channel_id=3354980634) (PeerChannel). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 202, in main
+    await bot.start()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 66, in start
+    await self._verify_group_access()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/main.py", line 117, in _verify_group_access
+    source = await self.client.get_entity(self.source_group)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 298, in get_entity
+    inputs.append(await self.get_input_entity(x))
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 475, in get_input_entity
+    raise ValueError(
+ValueError: Could not find the input entity for PeerChannel(channel_id=3354980634) (PeerChannel). Please read https://docs.telethon.dev/en/stable/concepts/entities.html to find out more details.
+2026-04-09 12:12:24,309 - __main__ - INFO - Monitoring 6 source(s) with 10 mapping(s)
+2026-04-09 12:12:24,309 - __main__ - INFO - 📡 Forwarding enabled: False
+2026-04-09 12:12:24,309 - __main__ - INFO - 📈 Auto-trading enabled: True
+2026-04-09 12:12:24,309 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-04-09 12:12:24,454 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-04-09 12:12:25,942 - __main__ - INFO - ✓ Bot started as Greatonic (@greatonical)
+2026-04-09 12:12:25,942 - __main__ - INFO - ✓ Monitoring 6 source(s) with 10 mapping(s)
+2026-04-09 12:12:25,942 - __main__ - INFO - ================================================================================
+2026-04-09 12:12:25,943 - __main__ - INFO - ACTIVE MAPPINGS:
+2026-04-09 12:12:25,943 - __main__ - INFO - ================================================================================
+2026-04-09 12:12:26,320 - __main__ - INFO - 1. Unknown (-1003354980634) → Topic #394
+2026-04-09 12:12:26,320 - __main__ - INFO -    ↓
+2026-04-09 12:12:26,320 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #258
+2026-04-09 12:12:26,320 - __main__ - INFO - 
+2026-04-09 12:12:26,320 - __main__ - INFO - 2. Unknown (-1003354980634) → Topic #4
+2026-04-09 12:12:26,320 - __main__ - INFO -    ↓
+2026-04-09 12:12:26,320 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #255
+2026-04-09 12:12:26,320 - __main__ - INFO - 
+2026-04-09 12:12:26,320 - __main__ - INFO - 3. Unknown (-1003354980634) → Topic #5
+2026-04-09 12:12:26,320 - __main__ - INFO -    ↓
+2026-04-09 12:12:26,320 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #276
+2026-04-09 12:12:26,321 - __main__ - INFO - 
+2026-04-09 12:12:26,321 - __main__ - INFO - 4. Unknown (-1003354980634) → Topic #1
+2026-04-09 12:12:26,321 - __main__ - INFO -    ↓
+2026-04-09 12:12:26,321 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #1
+2026-04-09 12:12:26,321 - __main__ - INFO - 
+2026-04-09 12:12:26,710 - __main__ - INFO - 5. Unknown (-1003719256941)
+2026-04-09 12:12:26,710 - __main__ - INFO -    ↓
+2026-04-09 12:12:26,710 - __main__ - INFO -    Result group. (-1003865081218)
+2026-04-09 12:12:26,710 - __main__ - INFO - 
+2026-04-09 12:12:26,911 - __main__ - INFO - 6. Unknown (-1003157087401)
+2026-04-09 12:12:26,911 - __main__ - INFO -    ↓
+2026-04-09 12:12:26,911 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #268
+2026-04-09 12:12:26,911 - __main__ - INFO - 
+2026-04-09 12:12:27,129 - __main__ - INFO - 7. Unknown (-1003683230844)
+2026-04-09 12:12:27,129 - __main__ - INFO -    ↓
+2026-04-09 12:12:27,129 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #259
+2026-04-09 12:12:27,129 - __main__ - INFO - 
+2026-04-09 12:12:27,523 - __main__ - INFO - 8. Unknown (-1002871747055)
+2026-04-09 12:12:27,523 - __main__ - INFO -    ↓
+2026-04-09 12:12:27,523 - __main__ - INFO -    Unknown (-1003621804175)
+2026-04-09 12:12:27,523 - __main__ - INFO - 
+2026-04-09 12:12:27,925 - __main__ - INFO - 9. Gilly option signals (-1003771929527)
+2026-04-09 12:12:27,925 - __main__ - INFO -    ↓
+2026-04-09 12:12:27,926 - __main__ - INFO -    Unknown (-1003850746623)
+2026-04-09 12:12:27,926 - __main__ - INFO - 
+2026-04-09 12:12:28,155 - __main__ - INFO - 10. Gilly option signals (-1003771929527)
+2026-04-09 12:12:28,155 - __main__ - INFO -    ↓
+2026-04-09 12:12:28,156 - __main__ - INFO -    Unknown (-1002885383779)
+2026-04-09 12:12:28,156 - __main__ - INFO - 
+2026-04-09 12:12:28,156 - __main__ - INFO - ================================================================================
+2026-04-09 12:12:28,156 - __main__ - INFO - ✓ Waiting for messages...
+2026-04-09 12:12:28,156 - __main__ - INFO - ================================================================================
+2026-04-09 12:12:46,161 - telethon.network.mtprotosender - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-04-09 12:12:46,162 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-04-09 12:12:46,166 - __main__ - INFO - 
+✓ Bot stopped by user
+2026-04-09 12:13:19,017 - __main__ - INFO - Monitoring 6 source(s) with 10 mapping(s)
+2026-04-09 12:13:19,017 - __main__ - INFO - 📡 Forwarding enabled: False
+2026-04-09 12:13:19,017 - __main__ - INFO - 📈 Auto-trading enabled: True
+2026-04-09 12:13:19,017 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-04-09 12:13:19,174 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-04-09 12:13:20,503 - __main__ - INFO - ✓ Bot started as Greatonic (@greatonical)
+2026-04-09 12:13:20,503 - __main__ - INFO - ✓ Monitoring 6 source(s) with 10 mapping(s)
+2026-04-09 12:13:20,503 - __main__ - INFO - ================================================================================
+2026-04-09 12:13:20,503 - __main__ - INFO - ACTIVE MAPPINGS:
+2026-04-09 12:13:20,503 - __main__ - INFO - ================================================================================
+2026-04-09 12:13:20,846 - __main__ - INFO - 1. Unknown (-1003354980634) → Topic #394
+2026-04-09 12:13:20,847 - __main__ - INFO -    ↓
+2026-04-09 12:13:20,847 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #258
+2026-04-09 12:13:20,847 - __main__ - INFO - 
+2026-04-09 12:13:20,847 - __main__ - INFO - 2. Unknown (-1003354980634) → Topic #4
+2026-04-09 12:13:20,847 - __main__ - INFO -    ↓
+2026-04-09 12:13:20,847 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #255
+2026-04-09 12:13:20,847 - __main__ - INFO - 
+2026-04-09 12:13:20,847 - __main__ - INFO - 3. Unknown (-1003354980634) → Topic #5
+2026-04-09 12:13:20,847 - __main__ - INFO -    ↓
+2026-04-09 12:13:20,848 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #276
+2026-04-09 12:13:20,848 - __main__ - INFO - 
+2026-04-09 12:13:20,848 - __main__ - INFO - 4. Unknown (-1003354980634) → Topic #1
+2026-04-09 12:13:20,848 - __main__ - INFO -    ↓
+2026-04-09 12:13:20,848 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #1
+2026-04-09 12:13:20,848 - __main__ - INFO - 
+2026-04-09 12:13:21,218 - __main__ - INFO - 5. Unknown (-1003719256941)
+2026-04-09 12:13:21,218 - __main__ - INFO -    ↓
+2026-04-09 12:13:21,218 - __main__ - INFO -    Result group. (-1003865081218)
+2026-04-09 12:13:21,218 - __main__ - INFO - 
+2026-04-09 12:13:21,448 - __main__ - INFO - 6. Unknown (-1003157087401)
+2026-04-09 12:13:21,449 - __main__ - INFO -    ↓
+2026-04-09 12:13:21,449 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #268
+2026-04-09 12:13:21,449 - __main__ - INFO - 
+2026-04-09 12:13:21,643 - __main__ - INFO - 7. Unknown (-1003683230844)
+2026-04-09 12:13:21,643 - __main__ - INFO -    ↓
+2026-04-09 12:13:21,643 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #259
+2026-04-09 12:13:21,643 - __main__ - INFO - 
+2026-04-09 12:13:22,067 - __main__ - INFO - 8. Unknown (-1002871747055)
+2026-04-09 12:13:22,068 - __main__ - INFO -    ↓
+2026-04-09 12:13:22,068 - __main__ - INFO -    Unknown (-1003621804175)
+2026-04-09 12:13:22,068 - __main__ - INFO - 
+2026-04-09 12:13:22,497 - __main__ - INFO - 9. Gilly option signals (-1003771929527)
+2026-04-09 12:13:22,497 - __main__ - INFO -    ↓
+2026-04-09 12:13:22,497 - __main__ - INFO -    Unknown (-1003850746623)
+2026-04-09 12:13:22,497 - __main__ - INFO - 
+2026-04-09 12:13:22,839 - __main__ - INFO - 10. Gilly option signals (-1003771929527)
+2026-04-09 12:13:22,840 - __main__ - INFO -    ↓
+2026-04-09 12:13:22,840 - __main__ - INFO -    Unknown (-1002885383779)
+2026-04-09 12:13:22,840 - __main__ - INFO - 
+2026-04-09 12:13:22,840 - __main__ - INFO - ================================================================================
+2026-04-09 12:13:22,840 - __main__ - INFO - ✓ Waiting for messages...
+2026-04-09 12:13:22,840 - __main__ - INFO - ================================================================================
+2026-04-09 12:15:35,021 - __main__ - INFO - 📨 New message from -1003771929527: 📊 EURJPY-OTC
+⏰ 08:16
+⌛️ 1 Minute
+🔼 CALL BUY 🟢...
+2026-04-09 12:15:35,022 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-09 12:15:35,023 - auto_trader.engine - INFO - AutoTrader Parsed Signal: EURJPY-OTC CALL 1m | Scheduled: 08:16
+2026-04-09 12:15:35,023 - auto_trader.engine - INFO - AutoTrader: Current minute is :15, signal minute is :16. Sleeping 25.0s...
+2026-04-09 12:16:00,024 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-09 12:16:00,025 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-09 12:16:00,033 - auto_trader.executor - INFO - Connecting to IQ Option...
+2026-04-09 12:16:06,924 - auto_trader.executor - INFO - Connected to IQ Option successfully.
+2026-04-09 12:16:07,143 - auto_trader.executor - INFO - Using PRACTICE account. Balance: 10846.7
+2026-04-09 12:16:07,144 - auto_trader.executor - INFO - Executing Trade: EURJPY-OTC | CALL | 1m | $1.0
+2026-04-09 12:16:07,429 - auto_trader.executor - INFO - Trade placed successfully! ID: 13785104474
+2026-04-09 12:16:07,430 - auto_trader.engine - INFO - AutoTrader: Trade successfully executed! ID: 13785104474
+2026-04-09 12:23:32,384 - __main__ - INFO - 📨 New message from -1003771929527: 📊 USDMXN-OTC
+⏰ 08:24
+⌛️ 1 Minute
+🔽 PUT SELL 🔴...
+2026-04-09 12:23:32,385 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-09 12:23:32,385 - auto_trader.engine - INFO - AutoTrader Parsed Signal: USDMXN-OTC PUT 1m | Scheduled: 08:24
+2026-04-09 12:23:32,385 - auto_trader.engine - INFO - AutoTrader: Current minute is :23, signal minute is :24. Sleeping 28.0s...
+2026-04-09 12:24:00,391 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-09 12:24:00,394 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-09 12:24:00,396 - auto_trader.executor - INFO - Executing Trade: USDMXN-OTC | PUT | 1m | $1.0
+2026-04-09 12:24:00,401 - auto_trader.executor - ERROR - Exception during trade execution: 'USDMXN-OTC'
+2026-04-09 12:24:00,401 - auto_trader.engine - ERROR - AutoTrader: Trade execution failed: 'USDMXN-OTC'
+2026-04-09 12:28:20,500 - telethon.client.updates - INFO - Got difference for channel 1940077808 updates
+2026-04-09 12:28:20,700 - telethon.client.updates - INFO - Got difference for channel 2135710857 updates
+2026-04-09 12:29:21,080 - telethon.client.updates - INFO - Got difference for channel 2135710857 updates
+2026-04-09 12:35:30,046 - __main__ - INFO - 📨 New message from -1003771929527: 📊 CADCHF-OTC
+⏰ 08:36
+⌛️ 1 Minute
+🔽 PUT SELL 🔴...
+2026-04-09 12:35:30,046 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-09 12:35:30,047 - auto_trader.engine - INFO - AutoTrader Parsed Signal: CADCHF-OTC PUT 1m | Scheduled: 08:36
+2026-04-09 12:35:30,047 - auto_trader.engine - INFO - AutoTrader: Current minute is :35, signal minute is :36. Sleeping 30.0s...
+2026-04-09 12:36:00,048 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-09 12:36:00,050 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-09 12:36:00,050 - auto_trader.executor - INFO - Executing Trade: CADCHF-OTC | PUT | 1m | $1.0
+2026-04-09 12:36:00,051 - auto_trader.executor - ERROR - Exception during trade execution: 'CADCHF-OTC'
+2026-04-09 12:36:00,051 - auto_trader.engine - ERROR - AutoTrader: Trade execution failed: 'CADCHF-OTC'
+2026-04-09 12:40:07,993 - __main__ - INFO - 📨 New message from -1003771929527: 📊 USDTRY-OTC
+⏰ 08:40
+⌛️ 1 Minute
+🔼 CALL BUY 🟢...
+2026-04-09 12:40:07,995 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-09 12:40:07,995 - auto_trader.engine - INFO - AutoTrader Parsed Signal: USDTRY-OTC CALL 1m | Scheduled: 08:40
+2026-04-09 12:40:07,995 - auto_trader.engine - INFO - AutoTrader: Already in signal minute :40. Executing immediately.
+2026-04-09 12:40:07,995 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-09 12:40:07,995 - auto_trader.executor - INFO - Executing Trade: USDTRY-OTC | CALL | 1m | $1.0
+2026-04-09 12:40:07,996 - auto_trader.executor - ERROR - Exception during trade execution: 'USDTRY-OTC'
+2026-04-09 12:40:07,996 - auto_trader.engine - ERROR - AutoTrader: Trade execution failed: 'USDTRY-OTC'
+2026-04-09 12:43:37,229 - telethon.network.mtprotosender - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-04-09 12:43:37,231 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-04-09 12:43:37,234 - __main__ - INFO - 
+✓ Bot stopped by user
+2026-04-09 12:43:39,248 - __main__ - INFO - Monitoring 6 source(s) with 10 mapping(s)
+2026-04-09 12:43:39,248 - __main__ - INFO - 📡 Forwarding enabled: False
+2026-04-09 12:43:39,248 - __main__ - INFO - 📈 Auto-trading enabled: True
+2026-04-09 12:43:39,248 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-04-09 12:43:39,401 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-04-09 12:43:40,696 - __main__ - INFO - ✓ Bot started as Greatonic (@greatonical)
+2026-04-09 12:43:40,696 - __main__ - INFO - ✓ Monitoring 6 source(s) with 10 mapping(s)
+2026-04-09 12:43:40,696 - __main__ - INFO - ================================================================================
+2026-04-09 12:43:40,696 - __main__ - INFO - ACTIVE MAPPINGS:
+2026-04-09 12:43:40,696 - __main__ - INFO - ================================================================================
+2026-04-09 12:43:41,050 - __main__ - INFO - 1. Unknown (-1003354980634) → Topic #394
+2026-04-09 12:43:41,050 - __main__ - INFO -    ↓
+2026-04-09 12:43:41,050 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #258
+2026-04-09 12:43:41,050 - __main__ - INFO - 
+2026-04-09 12:43:41,051 - __main__ - INFO - 2. Unknown (-1003354980634) → Topic #4
+2026-04-09 12:43:41,051 - __main__ - INFO -    ↓
+2026-04-09 12:43:41,051 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #255
+2026-04-09 12:43:41,051 - __main__ - INFO - 
+2026-04-09 12:43:41,051 - __main__ - INFO - 3. Unknown (-1003354980634) → Topic #5
+2026-04-09 12:43:41,051 - __main__ - INFO -    ↓
+2026-04-09 12:43:41,051 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #276
+2026-04-09 12:43:41,051 - __main__ - INFO - 
+2026-04-09 12:43:41,051 - __main__ - INFO - 4. Unknown (-1003354980634) → Topic #1
+2026-04-09 12:43:41,051 - __main__ - INFO -    ↓
+2026-04-09 12:43:41,051 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #1
+2026-04-09 12:43:41,051 - __main__ - INFO - 
+2026-04-09 12:43:41,373 - __main__ - INFO - 5. Unknown (-1003719256941)
+2026-04-09 12:43:41,374 - __main__ - INFO -    ↓
+2026-04-09 12:43:41,374 - __main__ - INFO -    Result group. (-1003865081218)
+2026-04-09 12:43:41,374 - __main__ - INFO - 
+2026-04-09 12:43:41,537 - __main__ - INFO - 6. Unknown (-1003157087401)
+2026-04-09 12:43:41,537 - __main__ - INFO -    ↓
+2026-04-09 12:43:41,537 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #268
+2026-04-09 12:43:41,537 - __main__ - INFO - 
+2026-04-09 12:43:41,697 - __main__ - INFO - 7. Unknown (-1003683230844)
+2026-04-09 12:43:41,698 - __main__ - INFO -    ↓
+2026-04-09 12:43:41,698 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #259
+2026-04-09 12:43:41,698 - __main__ - INFO - 
+2026-04-09 12:43:42,041 - __main__ - INFO - 8. Unknown (-1002871747055)
+2026-04-09 12:43:42,041 - __main__ - INFO -    ↓
+2026-04-09 12:43:42,041 - __main__ - INFO -    Unknown (-1003621804175)
+2026-04-09 12:43:42,041 - __main__ - INFO - 
+2026-04-09 12:43:42,401 - __main__ - INFO - 9. Gilly option signals (-1003771929527)
+2026-04-09 12:43:42,401 - __main__ - INFO -    ↓
+2026-04-09 12:43:42,401 - __main__ - INFO -    Unknown (-1003850746623)
+2026-04-09 12:43:42,401 - __main__ - INFO - 
+2026-04-09 12:43:42,590 - __main__ - INFO - 10. Gilly option signals (-1003771929527)
+2026-04-09 12:43:42,591 - __main__ - INFO -    ↓
+2026-04-09 12:43:42,591 - __main__ - INFO -    Unknown (-1002885383779)
+2026-04-09 12:43:42,591 - __main__ - INFO - 
+2026-04-09 12:43:42,591 - __main__ - INFO - ================================================================================
+2026-04-09 12:43:42,591 - __main__ - INFO - ✓ Waiting for messages...
+2026-04-09 12:43:42,591 - __main__ - INFO - ================================================================================
+2026-04-09 12:44:23,146 - __main__ - INFO - 📨 New message from -1003771929527: 📊 USDTRY-OTC
+⏰ 08:45
+⌛️ 1 Minute
+🔽 PUT SELL 🔴...
+2026-04-09 12:44:23,149 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-09 12:44:23,150 - auto_trader.engine - INFO - AutoTrader Parsed Signal: USDTRY-OTC PUT 1m | Scheduled: 08:45
+2026-04-09 12:44:23,150 - auto_trader.engine - INFO - AutoTrader: Current minute is :44, signal minute is :45. Sleeping 37.0s...
+2026-04-09 12:45:00,151 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-09 12:45:00,153 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-09 12:45:00,155 - auto_trader.executor - INFO - Connecting to IQ Option...
+2026-04-09 12:45:07,739 - auto_trader.executor - INFO - Connected to IQ Option successfully.
+2026-04-09 12:45:07,956 - auto_trader.executor - INFO - Using PRACTICE account. Balance: 10695.7
+2026-04-09 12:45:07,956 - auto_trader.executor - INFO - Executing Trade: USDTRY-OTC | PUT | 1m | $1.0
+2026-04-09 12:45:07,957 - auto_trader.executor - ERROR - Asset lookup failed ('USDTRY-OTC') — session likely stale. Marking disconnected for next trade.
+2026-04-09 12:45:07,957 - auto_trader.executor - INFO - Attempting reconnect and retry...
+2026-04-09 12:45:07,957 - auto_trader.executor - INFO - Connecting to IQ Option...
+2026-04-09 12:45:09,017 - auto_trader.executor - INFO - Connected to IQ Option successfully.
+2026-04-09 12:45:09,234 - auto_trader.executor - INFO - Using PRACTICE account. Balance: 10695.7
+2026-04-09 12:45:09,235 - auto_trader.executor - ERROR - Retry also failed: 'USDTRY-OTC'
+2026-04-09 12:45:09,235 - auto_trader.engine - ERROR - AutoTrader: Trade execution failed: 'USDTRY-OTC'
+2026-04-09 12:48:44,813 - iqoptionapi.ws.client - ERROR - [Errno 54] Connection reset by peer
+2026-04-09 12:48:44,814 - iqoptionapi.ws.client - ERROR - [Errno 54] Connection reset by peer
+2026-04-09 12:49:00,313 - telethon.network.mtprotosender - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-04-09 12:49:00,314 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-04-09 12:49:00,319 - __main__ - INFO - 
+✓ Bot stopped by user
+2026-04-09 12:49:02,497 - __main__ - INFO - Monitoring 6 source(s) with 10 mapping(s)
+2026-04-09 12:49:02,497 - __main__ - INFO - 📡 Forwarding enabled: False
+2026-04-09 12:49:02,497 - __main__ - INFO - 📈 Auto-trading enabled: True
+2026-04-09 12:49:02,497 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-04-09 12:49:03,045 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-04-09 12:49:04,551 - __main__ - INFO - ✓ Bot started as Greatonic (@greatonical)
+2026-04-09 12:49:04,552 - __main__ - INFO - ✓ Monitoring 6 source(s) with 10 mapping(s)
+2026-04-09 12:49:04,552 - __main__ - INFO - ================================================================================
+2026-04-09 12:49:04,552 - __main__ - INFO - ACTIVE MAPPINGS:
+2026-04-09 12:49:04,552 - __main__ - INFO - ================================================================================
+2026-04-09 12:49:04,996 - __main__ - INFO - 1. Unknown (-1003354980634) → Topic #394
+2026-04-09 12:49:04,997 - __main__ - INFO -    ↓
+2026-04-09 12:49:04,997 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #258
+2026-04-09 12:49:04,997 - __main__ - INFO - 
+2026-04-09 12:49:04,997 - __main__ - INFO - 2. Unknown (-1003354980634) → Topic #4
+2026-04-09 12:49:04,997 - __main__ - INFO -    ↓
+2026-04-09 12:49:04,997 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #255
+2026-04-09 12:49:04,997 - __main__ - INFO - 
+2026-04-09 12:49:04,997 - __main__ - INFO - 3. Unknown (-1003354980634) → Topic #5
+2026-04-09 12:49:04,997 - __main__ - INFO -    ↓
+2026-04-09 12:49:04,998 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #276
+2026-04-09 12:49:04,998 - __main__ - INFO - 
+2026-04-09 12:49:04,998 - __main__ - INFO - 4. Unknown (-1003354980634) → Topic #1
+2026-04-09 12:49:04,998 - __main__ - INFO -    ↓
+2026-04-09 12:49:04,998 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #1
+2026-04-09 12:49:04,998 - __main__ - INFO - 
+2026-04-09 12:49:05,523 - __main__ - INFO - 5. Unknown (-1003719256941)
+2026-04-09 12:49:05,523 - __main__ - INFO -    ↓
+2026-04-09 12:49:05,524 - __main__ - INFO -    Result group. (-1003865081218)
+2026-04-09 12:49:05,524 - __main__ - INFO - 
+2026-04-09 12:49:05,696 - __main__ - INFO - 6. Unknown (-1003157087401)
+2026-04-09 12:49:05,697 - __main__ - INFO -    ↓
+2026-04-09 12:49:05,697 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #268
+2026-04-09 12:49:05,697 - __main__ - INFO - 
+2026-04-09 12:49:05,851 - __main__ - INFO - 7. Unknown (-1003683230844)
+2026-04-09 12:49:05,851 - __main__ - INFO -    ↓
+2026-04-09 12:49:05,851 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #259
+2026-04-09 12:49:05,851 - __main__ - INFO - 
+2026-04-09 12:49:06,221 - __main__ - INFO - 8. Unknown (-1002871747055)
+2026-04-09 12:49:06,221 - __main__ - INFO -    ↓
+2026-04-09 12:49:06,221 - __main__ - INFO -    Unknown (-1003621804175)
+2026-04-09 12:49:06,222 - __main__ - INFO - 
+2026-04-09 12:49:06,692 - __main__ - INFO - 9. Gilly option signals (-1003771929527)
+2026-04-09 12:49:06,693 - __main__ - INFO -    ↓
+2026-04-09 12:49:06,693 - __main__ - INFO -    Unknown (-1003850746623)
+2026-04-09 12:49:06,693 - __main__ - INFO - 
+2026-04-09 12:49:06,972 - __main__ - INFO - 10. Gilly option signals (-1003771929527)
+2026-04-09 12:49:06,972 - __main__ - INFO -    ↓
+2026-04-09 12:49:06,972 - __main__ - INFO -    Unknown (-1002885383779)
+2026-04-09 12:49:06,973 - __main__ - INFO - 
+2026-04-09 12:49:06,973 - __main__ - INFO - ================================================================================
+2026-04-09 12:49:06,973 - __main__ - INFO - ✓ Waiting for messages...
+2026-04-09 12:49:06,973 - __main__ - INFO - ================================================================================
+2026-04-09 12:52:22,897 - __main__ - INFO - 📨 New message from -1003771929527: 📊 EURJPY-OTC
+⏰ 08:53
+⌛️ 1 Minute
+🔽 PUT SELL 🔴...
+2026-04-09 12:52:22,899 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-09 12:52:22,900 - auto_trader.engine - INFO - AutoTrader Parsed Signal: EURJPY-OTC PUT 1m | Scheduled: 08:53
+2026-04-09 12:52:22,900 - auto_trader.engine - INFO - AutoTrader: Current minute is :52, signal minute is :53. Sleeping 38.0s...
+2026-04-09 12:53:00,903 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-09 12:53:00,905 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-09 12:53:00,910 - auto_trader.executor - INFO - Connecting to IQ Option...
+2026-04-09 12:53:08,381 - auto_trader.executor - INFO - Connected to IQ Option successfully.
+2026-04-09 12:53:08,643 - auto_trader.executor - INFO - Using PRACTICE account. Balance: 10695.7
+2026-04-09 12:53:08,644 - auto_trader.executor - INFO - Executing Trade: EURJPY-OTC | PUT | 1m | $1.0
+2026-04-09 12:53:08,931 - auto_trader.executor - INFO - Trade placed successfully! ID: 13785182318
+2026-04-09 12:53:08,932 - auto_trader.engine - INFO - AutoTrader: Trade successfully executed! ID: 13785182318
+2026-04-09 12:57:23,208 - __main__ - INFO - 📨 New message from -1003771929527: 📊 AUDJPY-OTC
+⏰ 08:58
+⌛️ 1 Minute
+🔼 CALL BUY 🟢...
+2026-04-09 12:57:23,209 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-09 12:57:23,209 - auto_trader.engine - INFO - AutoTrader Parsed Signal: AUDJPY-OTC CALL 1m | Scheduled: 08:58
+2026-04-09 12:57:23,209 - auto_trader.engine - INFO - AutoTrader: Current minute is :57, signal minute is :58. Sleeping 37.0s...
+2026-04-09 12:58:00,210 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-09 12:58:00,210 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-09 12:58:00,211 - auto_trader.executor - INFO - Executing Trade: AUDJPY-OTC | CALL | 1m | $1.0
+2026-04-09 12:58:00,211 - auto_trader.executor - ERROR - Asset lookup failed ('AUDJPY-OTC') — session likely stale. Marking disconnected for next trade.
+2026-04-09 12:58:00,211 - auto_trader.executor - INFO - Attempting reconnect and retry...
+2026-04-09 12:58:00,211 - auto_trader.executor - INFO - Connecting to IQ Option...
+2026-04-09 12:58:01,919 - auto_trader.executor - INFO - Connected to IQ Option successfully.
+2026-04-09 12:58:02,109 - auto_trader.executor - INFO - Using PRACTICE account. Balance: 10696.55
+2026-04-09 12:58:02,109 - auto_trader.executor - ERROR - Retry also failed: 'AUDJPY-OTC'
+2026-04-09 12:58:02,109 - auto_trader.engine - ERROR - AutoTrader: Trade execution failed: 'AUDJPY-OTC'
+2026-04-09 13:01:42,811 - __main__ - INFO - 📨 New message from -1003771929527: 📊 USDMXN-OTC
+⏰ 09:02
+⌛️ 1 Minute
+🔼 CALL BUY 🟢...
+2026-04-09 13:01:42,812 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-09 13:01:42,812 - auto_trader.engine - INFO - AutoTrader Parsed Signal: USDMXN-OTC CALL 1m | Scheduled: 09:02
+2026-04-09 13:01:42,812 - auto_trader.engine - INFO - AutoTrader: Current minute is :01, signal minute is :02. Sleeping 18.0s...
+2026-04-09 13:02:00,813 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-09 13:02:00,814 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-09 13:02:00,815 - auto_trader.executor - INFO - Executing Trade: USDMXN-OTC | CALL | 1m | $1.0
+2026-04-09 13:02:00,815 - auto_trader.executor - ERROR - Asset lookup failed ('USDMXN-OTC') — session likely stale. Marking disconnected for next trade.
+2026-04-09 13:02:00,815 - auto_trader.executor - INFO - Attempting reconnect and retry...
+2026-04-09 13:02:00,816 - auto_trader.executor - INFO - Connecting to IQ Option...
+2026-04-09 13:02:02,108 - auto_trader.executor - INFO - Connected to IQ Option successfully.
+2026-04-09 13:02:02,345 - auto_trader.executor - INFO - Using PRACTICE account. Balance: 10696.55
+2026-04-09 13:02:02,345 - auto_trader.executor - ERROR - Retry also failed: 'USDMXN-OTC'
+2026-04-09 13:02:02,345 - auto_trader.engine - ERROR - AutoTrader: Trade execution failed: 'USDMXN-OTC'
+2026-04-09 13:04:04,242 - telethon.client.updates - INFO - Got difference for account updates
+2026-04-09 13:04:04,432 - telethon.client.updates - INFO - Got difference for channel 2135710857 updates
+2026-04-09 13:04:04,611 - telethon.client.updates - INFO - Got difference for channel 2605508292 updates
+2026-04-09 13:04:04,799 - telethon.client.updates - INFO - Got difference for channel 2445757529 updates
+2026-04-09 13:04:51,252 - telethon.client.updates - INFO - Got difference for channel 2135710857 updates
+2026-04-09 13:05:53,346 - telethon.client.updates - INFO - Got difference for channel 2135710857 updates
+2026-04-09 13:06:50,527 - __main__ - INFO - 📨 New message from -1003771929527: 📊 USDTRY-OTC
+⏰ 09:07
+⌛️ 1 Minute
+🔼 CALL BUY 🟢...
+2026-04-09 13:06:50,528 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-09 13:06:50,528 - auto_trader.engine - INFO - AutoTrader Parsed Signal: USDTRY-OTC CALL 1m | Scheduled: 09:07
+2026-04-09 13:06:50,528 - auto_trader.engine - INFO - AutoTrader: Current minute is :06, signal minute is :07. Sleeping 10.0s...
+2026-04-09 13:07:00,530 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-09 13:07:00,531 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-09 13:07:00,531 - auto_trader.executor - INFO - Executing Trade: USDTRY-OTC | CALL | 1m | $1.0
+2026-04-09 13:07:00,532 - auto_trader.executor - ERROR - Asset lookup failed ('USDTRY-OTC') — session likely stale. Marking disconnected for next trade.
+2026-04-09 13:07:00,532 - auto_trader.executor - INFO - Attempting reconnect and retry...
+2026-04-09 13:07:00,532 - auto_trader.executor - INFO - Connecting to IQ Option...
+2026-04-09 13:07:01,932 - auto_trader.executor - INFO - Connected to IQ Option successfully.
+2026-04-09 13:07:02,185 - auto_trader.executor - INFO - Using PRACTICE account. Balance: 10696.55
+2026-04-09 13:07:02,185 - auto_trader.executor - ERROR - Retry also failed: 'USDTRY-OTC'
+2026-04-09 13:07:02,185 - auto_trader.engine - ERROR - AutoTrader: Trade execution failed: 'USDTRY-OTC'
+2026-04-09 13:07:04,586 - telethon.network.mtprotosender - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-04-09 13:07:04,586 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-04-09 13:07:04,589 - __main__ - INFO - 
+✓ Bot stopped by user
+2026-04-09 13:07:06,668 - __main__ - INFO - Monitoring 6 source(s) with 10 mapping(s)
+2026-04-09 13:07:06,668 - __main__ - INFO - 📡 Forwarding enabled: False
+2026-04-09 13:07:06,668 - __main__ - INFO - 📈 Auto-trading enabled: True
+2026-04-09 13:07:06,668 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-04-09 13:07:06,830 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-04-09 13:07:08,168 - __main__ - INFO - ✓ Bot started as Greatonic (@greatonical)
+2026-04-09 13:07:08,168 - __main__ - INFO - ✓ Monitoring 6 source(s) with 10 mapping(s)
+2026-04-09 13:07:08,168 - __main__ - INFO - ================================================================================
+2026-04-09 13:07:08,168 - __main__ - INFO - ACTIVE MAPPINGS:
+2026-04-09 13:07:08,168 - __main__ - INFO - ================================================================================
+2026-04-09 13:07:08,518 - __main__ - INFO - 1. Unknown (-1003354980634) → Topic #394
+2026-04-09 13:07:08,519 - __main__ - INFO -    ↓
+2026-04-09 13:07:08,519 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #258
+2026-04-09 13:07:08,519 - __main__ - INFO - 
+2026-04-09 13:07:08,519 - __main__ - INFO - 2. Unknown (-1003354980634) → Topic #4
+2026-04-09 13:07:08,519 - __main__ - INFO -    ↓
+2026-04-09 13:07:08,519 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #255
+2026-04-09 13:07:08,519 - __main__ - INFO - 
+2026-04-09 13:07:08,519 - __main__ - INFO - 3. Unknown (-1003354980634) → Topic #5
+2026-04-09 13:07:08,519 - __main__ - INFO -    ↓
+2026-04-09 13:07:08,519 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #276
+2026-04-09 13:07:08,519 - __main__ - INFO - 
+2026-04-09 13:07:08,519 - __main__ - INFO - 4. Unknown (-1003354980634) → Topic #1
+2026-04-09 13:07:08,519 - __main__ - INFO -    ↓
+2026-04-09 13:07:08,519 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #1
+2026-04-09 13:07:08,519 - __main__ - INFO - 
+2026-04-09 13:07:08,940 - __main__ - INFO - 5. Unknown (-1003719256941)
+2026-04-09 13:07:08,940 - __main__ - INFO -    ↓
+2026-04-09 13:07:08,940 - __main__ - INFO -    Result group. (-1003865081218)
+2026-04-09 13:07:08,940 - __main__ - INFO - 
+2026-04-09 13:07:09,134 - __main__ - INFO - 6. Unknown (-1003157087401)
+2026-04-09 13:07:09,135 - __main__ - INFO -    ↓
+2026-04-09 13:07:09,135 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #268
+2026-04-09 13:07:09,135 - __main__ - INFO - 
+2026-04-09 13:07:09,337 - __main__ - INFO - 7. Unknown (-1003683230844)
+2026-04-09 13:07:09,337 - __main__ - INFO -    ↓
+2026-04-09 13:07:09,337 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #259
+2026-04-09 13:07:09,337 - __main__ - INFO - 
+2026-04-09 13:07:09,700 - __main__ - INFO - 8. Unknown (-1002871747055)
+2026-04-09 13:07:09,700 - __main__ - INFO -    ↓
+2026-04-09 13:07:09,700 - __main__ - INFO -    Unknown (-1003621804175)
+2026-04-09 13:07:09,700 - __main__ - INFO - 
+2026-04-09 13:07:10,092 - __main__ - INFO - 9. Gilly option signals (-1003771929527)
+2026-04-09 13:07:10,093 - __main__ - INFO -    ↓
+2026-04-09 13:07:10,093 - __main__ - INFO -    Unknown (-1003850746623)
+2026-04-09 13:07:10,093 - __main__ - INFO - 
+2026-04-09 13:07:10,288 - __main__ - INFO - 10. Gilly option signals (-1003771929527)
+2026-04-09 13:07:10,289 - __main__ - INFO -    ↓
+2026-04-09 13:07:10,289 - __main__ - INFO -    Unknown (-1002885383779)
+2026-04-09 13:07:10,289 - __main__ - INFO - 
+2026-04-09 13:07:10,289 - __main__ - INFO - ================================================================================
+2026-04-09 13:07:10,289 - __main__ - INFO - ✓ Waiting for messages...
+2026-04-09 13:07:10,289 - __main__ - INFO - ================================================================================
+2026-04-09 13:08:01,765 - telethon.network.mtprotosender - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-04-09 13:08:01,767 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-04-09 13:08:01,771 - __main__ - INFO - 
+✓ Bot stopped by user
+2026-04-09 13:08:03,050 - __main__ - INFO - Monitoring 6 source(s) with 10 mapping(s)
+2026-04-09 13:08:03,050 - __main__ - INFO - 📡 Forwarding enabled: False
+2026-04-09 13:08:03,050 - __main__ - INFO - 📈 Auto-trading enabled: True
+2026-04-09 13:08:03,050 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-04-09 13:08:03,215 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-04-09 13:08:04,735 - __main__ - INFO - ✓ Bot started as Greatonic (@greatonical)
+2026-04-09 13:08:04,736 - __main__ - INFO - ✓ Monitoring 6 source(s) with 10 mapping(s)
+2026-04-09 13:08:04,736 - __main__ - INFO - ================================================================================
+2026-04-09 13:08:04,736 - __main__ - INFO - ACTIVE MAPPINGS:
+2026-04-09 13:08:04,736 - __main__ - INFO - ================================================================================
+2026-04-09 13:08:05,553 - __main__ - INFO - 1. Unknown (-1003354980634) → Topic #394
+2026-04-09 13:08:05,553 - __main__ - INFO -    ↓
+2026-04-09 13:08:05,554 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #258
+2026-04-09 13:08:05,554 - __main__ - INFO - 
+2026-04-09 13:08:05,554 - __main__ - INFO - 2. Unknown (-1003354980634) → Topic #4
+2026-04-09 13:08:05,554 - __main__ - INFO -    ↓
+2026-04-09 13:08:05,554 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #255
+2026-04-09 13:08:05,554 - __main__ - INFO - 
+2026-04-09 13:08:05,554 - __main__ - INFO - 3. Unknown (-1003354980634) → Topic #5
+2026-04-09 13:08:05,555 - __main__ - INFO -    ↓
+2026-04-09 13:08:05,555 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #276
+2026-04-09 13:08:05,555 - __main__ - INFO - 
+2026-04-09 13:08:05,555 - __main__ - INFO - 4. Unknown (-1003354980634) → Topic #1
+2026-04-09 13:08:05,555 - __main__ - INFO -    ↓
+2026-04-09 13:08:05,555 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #1
+2026-04-09 13:08:05,555 - __main__ - INFO - 
+2026-04-09 13:08:05,924 - __main__ - INFO - 5. Unknown (-1003719256941)
+2026-04-09 13:08:05,924 - __main__ - INFO -    ↓
+2026-04-09 13:08:05,924 - __main__ - INFO -    Result group. (-1003865081218)
+2026-04-09 13:08:05,924 - __main__ - INFO - 
+2026-04-09 13:08:06,153 - __main__ - INFO - 6. Unknown (-1003157087401)
+2026-04-09 13:08:06,153 - __main__ - INFO -    ↓
+2026-04-09 13:08:06,153 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #268
+2026-04-09 13:08:06,153 - __main__ - INFO - 
+2026-04-09 13:08:06,327 - __main__ - INFO - 7. Unknown (-1003683230844)
+2026-04-09 13:08:06,328 - __main__ - INFO -    ↓
+2026-04-09 13:08:06,328 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #259
+2026-04-09 13:08:06,328 - __main__ - INFO - 
+2026-04-09 13:08:06,649 - __main__ - INFO - 8. Unknown (-1002871747055)
+2026-04-09 13:08:06,649 - __main__ - INFO -    ↓
+2026-04-09 13:08:06,649 - __main__ - INFO -    Unknown (-1003621804175)
+2026-04-09 13:08:06,649 - __main__ - INFO - 
+2026-04-09 13:08:07,010 - __main__ - INFO - 9. Gilly option signals (-1003771929527)
+2026-04-09 13:08:07,011 - __main__ - INFO -    ↓
+2026-04-09 13:08:07,011 - __main__ - INFO -    Unknown (-1003850746623)
+2026-04-09 13:08:07,011 - __main__ - INFO - 
+2026-04-09 13:08:07,217 - __main__ - INFO - 10. Gilly option signals (-1003771929527)
+2026-04-09 13:08:07,217 - __main__ - INFO -    ↓
+2026-04-09 13:08:07,217 - __main__ - INFO -    Unknown (-1002885383779)
+2026-04-09 13:08:07,217 - __main__ - INFO - 
+2026-04-09 13:08:07,217 - __main__ - INFO - ================================================================================
+2026-04-09 13:08:07,217 - __main__ - INFO - ✓ Waiting for messages...
+2026-04-09 13:08:07,217 - __main__ - INFO - ================================================================================
+2026-04-09 13:12:03,449 - __main__ - INFO - 📨 New message from -1003771929527: 📊 EURAUD-OTC
+⏰ 09:12
+⌛️ 1 Minute
+🔼 CALL BUY 🟢...
+2026-04-09 13:12:03,450 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-09 13:12:03,452 - auto_trader.engine - INFO - AutoTrader Parsed Signal: EURAUD-OTC CALL 1m | Scheduled: 09:12
+2026-04-09 13:12:03,452 - auto_trader.engine - INFO - AutoTrader: Already in signal minute :12. Executing immediately.
+2026-04-09 13:12:03,452 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-09 13:12:03,454 - auto_trader.executor - INFO - Connecting to IQ Option...
+2026-04-09 13:12:11,856 - auto_trader.executor - INFO - Connected to IQ Option successfully.
+2026-04-09 13:12:12,071 - auto_trader.executor - INFO - Using PRACTICE account. Balance: 10696.55
+2026-04-09 13:12:12,071 - auto_trader.executor - INFO - Waiting for asset list from IQ Option...
+2026-04-09 13:12:15,697 - auto_trader.executor - INFO - Asset list ready. Executor is ready to trade.
+2026-04-09 13:12:15,697 - auto_trader.executor - INFO - Executing Trade: EURAUD-OTC | CALL | 1m | $1.0
+2026-04-09 13:12:15,697 - auto_trader.executor - ERROR - Asset lookup failed ('EURAUD-OTC') — session likely stale. Marking disconnected for next trade.
+2026-04-09 13:12:15,697 - auto_trader.executor - INFO - Attempting reconnect and retry...
+2026-04-09 13:12:15,697 - auto_trader.executor - INFO - Connecting to IQ Option...
+2026-04-09 13:12:17,002 - auto_trader.executor - INFO - Connected to IQ Option successfully.
+2026-04-09 13:12:17,219 - auto_trader.executor - INFO - Using PRACTICE account. Balance: 10696.55
+2026-04-09 13:12:17,219 - auto_trader.executor - INFO - Waiting for asset list from IQ Option...
+2026-04-09 13:12:20,768 - auto_trader.executor - INFO - Asset list ready. Executor is ready to trade.
+2026-04-09 13:12:20,769 - auto_trader.executor - ERROR - Retry also failed: 'EURAUD-OTC'
+2026-04-09 13:12:20,769 - auto_trader.engine - ERROR - AutoTrader: Trade execution failed: 'EURAUD-OTC'
+2026-04-09 13:12:34,554 - telethon.client.updates - INFO - Got difference for channel 2460469916 updates
+2026-04-09 13:16:35,954 - __main__ - INFO - 📨 New message from -1003771929527: 📊 EURAUD-OTC
+⏰ 09:17
+⌛️ 1 Minute
+🔽 PUT SELL 🔴...
+2026-04-09 13:16:35,955 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-09 13:16:35,956 - auto_trader.engine - INFO - AutoTrader Parsed Signal: EURAUD-OTC PUT 1m | Scheduled: 09:17
+2026-04-09 13:16:35,956 - auto_trader.engine - INFO - AutoTrader: Current minute is :16, signal minute is :17. Sleeping 25.0s...
+2026-04-09 13:17:00,957 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-09 13:17:00,959 - auto_trader.validator - WARNING - Duplicate signal for EURAUD-OTC within 300s. Skipping.
+2026-04-09 13:17:00,959 - auto_trader.engine - INFO - AutoTrader: Signal failed validation.
+2026-04-09 13:19:37,818 - telethon.client.updates - INFO - Got difference for account updates
+2026-04-09 13:19:38,028 - telethon.client.updates - INFO - Got difference for channel 1621425154 updates
+2026-04-09 13:20:53,318 - __main__ - INFO - 📨 New message from -1003771929527: 📊 AUDJPY-OTC
+⏰ 09:21
+⌛️ 1 Minute
+🔼 CALL BUY 🟢...
+2026-04-09 13:20:53,320 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-09 13:20:53,322 - auto_trader.engine - INFO - AutoTrader Parsed Signal: AUDJPY-OTC CALL 1m | Scheduled: 09:21
+2026-04-09 13:20:53,322 - auto_trader.engine - INFO - AutoTrader: Current minute is :20, signal minute is :21. Sleeping 7.0s...
+2026-04-09 13:21:00,324 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-09 13:21:00,325 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-09 13:21:00,326 - auto_trader.executor - INFO - Executing Trade: AUDJPY-OTC | CALL | 1m | $1.0
+2026-04-09 13:21:00,326 - auto_trader.executor - ERROR - Asset lookup failed ('AUDJPY-OTC') — session likely stale. Marking disconnected for next trade.
+2026-04-09 13:21:00,326 - auto_trader.executor - INFO - Attempting reconnect and retry...
+2026-04-09 13:21:00,326 - auto_trader.executor - INFO - Connecting to IQ Option...
+2026-04-09 13:21:02,194 - auto_trader.executor - INFO - Connected to IQ Option successfully.
+2026-04-09 13:21:02,391 - auto_trader.executor - INFO - Using PRACTICE account. Balance: 10696.55
+2026-04-09 13:21:02,391 - auto_trader.executor - INFO - Waiting for asset list from IQ Option...
+2026-04-09 13:21:06,522 - auto_trader.executor - INFO - Asset list ready. Executor is ready to trade.
+2026-04-09 13:21:06,522 - auto_trader.executor - ERROR - Retry also failed: 'AUDJPY-OTC'
+2026-04-09 13:21:06,522 - auto_trader.engine - ERROR - AutoTrader: Trade execution failed: 'AUDJPY-OTC'
+2026-04-09 13:21:19,115 - telethon.network.mtprotosender - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-04-09 13:21:19,116 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-04-09 13:21:19,120 - __main__ - INFO - 
+✓ Bot stopped by user
+2026-04-09 13:21:21,630 - __main__ - INFO - Monitoring 6 source(s) with 10 mapping(s)
+2026-04-09 13:21:21,630 - __main__ - INFO - 📡 Forwarding enabled: False
+2026-04-09 13:21:21,630 - __main__ - INFO - 📈 Auto-trading enabled: True
+2026-04-09 13:21:21,630 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-04-09 13:21:21,811 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-04-09 13:21:23,075 - __main__ - INFO - ✓ Bot started as Greatonic (@greatonical)
+2026-04-09 13:21:23,075 - __main__ - INFO - ✓ Monitoring 6 source(s) with 10 mapping(s)
+2026-04-09 13:21:23,075 - __main__ - INFO - ================================================================================
+2026-04-09 13:21:23,075 - __main__ - INFO - ACTIVE MAPPINGS:
+2026-04-09 13:21:23,075 - __main__ - INFO - ================================================================================
+2026-04-09 13:21:23,442 - __main__ - INFO - 1. Unknown (-1003354980634) → Topic #394
+2026-04-09 13:21:23,442 - __main__ - INFO -    ↓
+2026-04-09 13:21:23,443 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #258
+2026-04-09 13:21:23,443 - __main__ - INFO - 
+2026-04-09 13:21:23,443 - __main__ - INFO - 2. Unknown (-1003354980634) → Topic #4
+2026-04-09 13:21:23,443 - __main__ - INFO -    ↓
+2026-04-09 13:21:23,443 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #255
+2026-04-09 13:21:23,443 - __main__ - INFO - 
+2026-04-09 13:21:23,443 - __main__ - INFO - 3. Unknown (-1003354980634) → Topic #5
+2026-04-09 13:21:23,443 - __main__ - INFO -    ↓
+2026-04-09 13:21:23,443 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #276
+2026-04-09 13:21:23,444 - __main__ - INFO - 
+2026-04-09 13:21:23,444 - __main__ - INFO - 4. Unknown (-1003354980634) → Topic #1
+2026-04-09 13:21:23,444 - __main__ - INFO -    ↓
+2026-04-09 13:21:23,444 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #1
+2026-04-09 13:21:23,444 - __main__ - INFO - 
+2026-04-09 13:21:23,841 - __main__ - INFO - 5. Unknown (-1003719256941)
+2026-04-09 13:21:23,841 - __main__ - INFO -    ↓
+2026-04-09 13:21:23,841 - __main__ - INFO -    Result group. (-1003865081218)
+2026-04-09 13:21:23,841 - __main__ - INFO - 
+2026-04-09 13:21:24,046 - __main__ - INFO - 6. Unknown (-1003157087401)
+2026-04-09 13:21:24,047 - __main__ - INFO -    ↓
+2026-04-09 13:21:24,047 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #268
+2026-04-09 13:21:24,047 - __main__ - INFO - 
+2026-04-09 13:21:24,213 - __main__ - INFO - 7. Unknown (-1003683230844)
+2026-04-09 13:21:24,213 - __main__ - INFO -    ↓
+2026-04-09 13:21:24,213 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #259
+2026-04-09 13:21:24,213 - __main__ - INFO - 
+2026-04-09 13:21:24,572 - __main__ - INFO - 8. Unknown (-1002871747055)
+2026-04-09 13:21:24,573 - __main__ - INFO -    ↓
+2026-04-09 13:21:24,573 - __main__ - INFO -    Unknown (-1003621804175)
+2026-04-09 13:21:24,573 - __main__ - INFO - 
+2026-04-09 13:21:24,931 - __main__ - INFO - 9. Gilly option signals (-1003771929527)
+2026-04-09 13:21:24,931 - __main__ - INFO -    ↓
+2026-04-09 13:21:24,931 - __main__ - INFO -    Unknown (-1003850746623)
+2026-04-09 13:21:24,931 - __main__ - INFO - 
+2026-04-09 13:21:25,130 - __main__ - INFO - 10. Gilly option signals (-1003771929527)
+2026-04-09 13:21:25,130 - __main__ - INFO -    ↓
+2026-04-09 13:21:25,130 - __main__ - INFO -    Unknown (-1002885383779)
+2026-04-09 13:21:25,130 - __main__ - INFO - 
+2026-04-09 13:21:25,130 - __main__ - INFO - ================================================================================
+2026-04-09 13:21:25,130 - __main__ - INFO - ✓ Waiting for messages...
+2026-04-09 13:21:25,130 - __main__ - INFO - ================================================================================
+2026-04-09 13:28:31,208 - __main__ - INFO - 📨 New message from -1003771929527: 📊 EURJPY-OTC
+⏰ 09:29
+⌛️ 1 Minute
+🔼 CALL BUY 🟢...
+2026-04-09 13:28:31,210 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-09 13:28:31,211 - auto_trader.engine - INFO - AutoTrader Parsed Signal: EURJPY-OTC CALL 1m | Scheduled: 09:29
+2026-04-09 13:28:31,211 - auto_trader.engine - INFO - AutoTrader: Current minute is :28, signal minute is :29. Sleeping 29.0s...
+2026-04-09 13:29:00,215 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-09 13:29:00,215 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-09 13:29:00,217 - auto_trader.executor - INFO - Connecting to IQ Option...
+2026-04-09 13:29:07,987 - auto_trader.executor - INFO - Connected to IQ Option successfully.
+2026-04-09 13:29:08,194 - auto_trader.executor - INFO - Using PRACTICE account. Balance: 10696.55
+2026-04-09 13:29:08,194 - auto_trader.executor - INFO - Waiting for asset list from IQ Option...
+2026-04-09 13:29:12,299 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-297' coro=<AutoTraderEngine.process_signal() done, defined at /Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/auto_trader/engine.py:54> exception=AttributeError("'IQ_Option' object has no attribute 'actives'")>
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/auto_trader/engine.py", line 121, in process_signal
+    execution_result = await asyncio.to_thread(self.executor.execute_trade, parsed)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/auto_trader/executor.py", line 113, in execute_trade
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/auto_trader/executor.py", line 65, in _ensure_connected
+    self.api.get_all_open_time()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/auto_trader/executor.py", line 52, in connect
+    api.connect() returns as soon as authentication succeeds, but
+AttributeError: 'IQ_Option' object has no attribute 'actives'
+2026-04-09 13:29:13,721 - telethon.network.mtprotosender - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-04-09 13:29:13,722 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-04-09 13:29:13,727 - __main__ - INFO - 
+✓ Bot stopped by user
+2026-04-09 13:35:46,975 - __main__ - INFO - Monitoring 6 source(s) with 10 mapping(s)
+2026-04-09 13:35:46,989 - __main__ - INFO - 📡 Forwarding enabled: False
+2026-04-09 13:35:47,002 - __main__ - INFO - 📈 Auto-trading enabled: True
+2026-04-09 13:35:47,013 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-04-09 13:35:47,219 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-04-09 13:35:48,937 - __main__ - INFO - ✓ Bot started as Greatonic (@greatonical)
+2026-04-09 13:35:48,938 - __main__ - INFO - ✓ Monitoring 6 source(s) with 10 mapping(s)
+2026-04-09 13:35:48,938 - __main__ - INFO - ================================================================================
+2026-04-09 13:35:48,938 - __main__ - INFO - ACTIVE MAPPINGS:
+2026-04-09 13:35:48,938 - __main__ - INFO - ================================================================================
+2026-04-09 13:35:49,303 - __main__ - INFO - 1. Unknown (-1003354980634) → Topic #394
+2026-04-09 13:35:49,303 - __main__ - INFO -    ↓
+2026-04-09 13:35:49,303 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #258
+2026-04-09 13:35:49,303 - __main__ - INFO - 
+2026-04-09 13:35:49,303 - __main__ - INFO - 2. Unknown (-1003354980634) → Topic #4
+2026-04-09 13:35:49,303 - __main__ - INFO -    ↓
+2026-04-09 13:35:49,303 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #255
+2026-04-09 13:35:49,303 - __main__ - INFO - 
+2026-04-09 13:35:49,303 - __main__ - INFO - 3. Unknown (-1003354980634) → Topic #5
+2026-04-09 13:35:49,303 - __main__ - INFO -    ↓
+2026-04-09 13:35:49,303 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #276
+2026-04-09 13:35:49,303 - __main__ - INFO - 
+2026-04-09 13:35:49,303 - __main__ - INFO - 4. Unknown (-1003354980634) → Topic #1
+2026-04-09 13:35:49,303 - __main__ - INFO -    ↓
+2026-04-09 13:35:49,303 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #1
+2026-04-09 13:35:49,303 - __main__ - INFO - 
+2026-04-09 13:35:49,798 - __main__ - INFO - 5. Unknown (-1003719256941)
+2026-04-09 13:35:49,798 - __main__ - INFO -    ↓
+2026-04-09 13:35:49,798 - __main__ - INFO -    Result group. (-1003865081218)
+2026-04-09 13:35:49,798 - __main__ - INFO - 
+2026-04-09 13:35:49,977 - __main__ - INFO - 6. Unknown (-1003157087401)
+2026-04-09 13:35:49,977 - __main__ - INFO -    ↓
+2026-04-09 13:35:49,978 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #268
+2026-04-09 13:35:49,978 - __main__ - INFO - 
+2026-04-09 13:35:50,163 - __main__ - INFO - 7. Unknown (-1003683230844)
+2026-04-09 13:35:50,163 - __main__ - INFO -    ↓
+2026-04-09 13:35:50,163 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #259
+2026-04-09 13:35:50,163 - __main__ - INFO - 
+2026-04-09 13:35:50,657 - __main__ - INFO - 8. Unknown (-1002871747055)
+2026-04-09 13:35:50,658 - __main__ - INFO -    ↓
+2026-04-09 13:35:50,658 - __main__ - INFO -    Unknown (-1003621804175)
+2026-04-09 13:35:50,658 - __main__ - INFO - 
+2026-04-09 13:35:51,163 - __main__ - INFO - 9. Gilly option signals (-1003771929527)
+2026-04-09 13:35:51,163 - __main__ - INFO -    ↓
+2026-04-09 13:35:51,163 - __main__ - INFO -    Unknown (-1003850746623)
+2026-04-09 13:35:51,163 - __main__ - INFO - 
+2026-04-09 13:35:51,393 - __main__ - INFO - 10. Gilly option signals (-1003771929527)
+2026-04-09 13:35:51,393 - __main__ - INFO -    ↓
+2026-04-09 13:35:51,393 - __main__ - INFO -    Unknown (-1002885383779)
+2026-04-09 13:35:51,393 - __main__ - INFO - 
+2026-04-09 13:35:51,393 - __main__ - INFO - ================================================================================
+2026-04-09 13:35:51,393 - __main__ - INFO - ✓ Waiting for messages...
+2026-04-09 13:35:51,393 - __main__ - INFO - ================================================================================
+2026-04-09 13:35:54,197 - auto_trader.executor - INFO - Connected to IQ Option successfully.
+2026-04-09 13:35:54,430 - auto_trader.executor - INFO - Using PRACTICE account. Balance: 10696.55
+2026-04-09 13:35:58,889 - auto_trader.executor - INFO - Waiting for asset list to populate...
+2026-04-09 13:36:13,944 - auto_trader.executor - ERROR - No assets received after 15s. Trades will likely fail.
+2026-04-09 13:36:43,570 - telethon.network.mtprotosender - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-04-09 13:36:43,571 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-04-09 13:36:43,574 - __main__ - INFO - 
+✓ Bot stopped by user
+2026-04-09 13:42:39,381 - __main__ - INFO - Monitoring 6 source(s) with 10 mapping(s)
+2026-04-09 13:42:39,393 - __main__ - INFO - 📡 Forwarding enabled: False
+2026-04-09 13:42:39,405 - __main__ - INFO - 📈 Auto-trading enabled: True
+2026-04-09 13:42:39,417 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-04-09 13:42:39,644 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-04-09 13:42:41,174 - __main__ - INFO - ✓ Bot started as Greatonic (@greatonical)
+2026-04-09 13:42:41,175 - __main__ - INFO - ✓ Monitoring 6 source(s) with 10 mapping(s)
+2026-04-09 13:42:41,175 - __main__ - INFO - ================================================================================
+2026-04-09 13:42:41,175 - __main__ - INFO - ACTIVE MAPPINGS:
+2026-04-09 13:42:41,175 - __main__ - INFO - ================================================================================
+2026-04-09 13:42:41,551 - __main__ - INFO - 1. Unknown (-1003354980634) → Topic #394
+2026-04-09 13:42:41,551 - __main__ - INFO -    ↓
+2026-04-09 13:42:41,551 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #258
+2026-04-09 13:42:41,551 - __main__ - INFO - 
+2026-04-09 13:42:41,551 - __main__ - INFO - 2. Unknown (-1003354980634) → Topic #4
+2026-04-09 13:42:41,551 - __main__ - INFO -    ↓
+2026-04-09 13:42:41,551 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #255
+2026-04-09 13:42:41,552 - __main__ - INFO - 
+2026-04-09 13:42:41,552 - __main__ - INFO - 3. Unknown (-1003354980634) → Topic #5
+2026-04-09 13:42:41,552 - __main__ - INFO -    ↓
+2026-04-09 13:42:41,552 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #276
+2026-04-09 13:42:41,552 - __main__ - INFO - 
+2026-04-09 13:42:41,552 - __main__ - INFO - 4. Unknown (-1003354980634) → Topic #1
+2026-04-09 13:42:41,552 - __main__ - INFO -    ↓
+2026-04-09 13:42:41,552 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #1
+2026-04-09 13:42:41,552 - __main__ - INFO - 
+2026-04-09 13:42:41,947 - __main__ - INFO - 5. Unknown (-1003719256941)
+2026-04-09 13:42:41,947 - __main__ - INFO -    ↓
+2026-04-09 13:42:41,947 - __main__ - INFO -    Result group. (-1003865081218)
+2026-04-09 13:42:41,947 - __main__ - INFO - 
+2026-04-09 13:42:42,108 - __main__ - INFO - 6. Unknown (-1003157087401)
+2026-04-09 13:42:42,108 - __main__ - INFO -    ↓
+2026-04-09 13:42:42,108 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #268
+2026-04-09 13:42:42,108 - __main__ - INFO - 
+2026-04-09 13:42:42,284 - __main__ - INFO - 7. Unknown (-1003683230844)
+2026-04-09 13:42:42,284 - __main__ - INFO -    ↓
+2026-04-09 13:42:42,284 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #259
+2026-04-09 13:42:42,285 - __main__ - INFO - 
+2026-04-09 13:42:42,679 - __main__ - INFO - 8. Unknown (-1002871747055)
+2026-04-09 13:42:42,679 - __main__ - INFO -    ↓
+2026-04-09 13:42:42,679 - __main__ - INFO -    Unknown (-1003621804175)
+2026-04-09 13:42:42,679 - __main__ - INFO - 
+2026-04-09 13:42:43,013 - __main__ - INFO - 9. Gilly option signals (-1003771929527)
+2026-04-09 13:42:43,013 - __main__ - INFO -    ↓
+2026-04-09 13:42:43,014 - __main__ - INFO -    Unknown (-1003850746623)
+2026-04-09 13:42:43,014 - __main__ - INFO - 
+2026-04-09 13:42:43,213 - __main__ - INFO - 10. Gilly option signals (-1003771929527)
+2026-04-09 13:42:43,214 - __main__ - INFO -    ↓
+2026-04-09 13:42:43,214 - __main__ - INFO -    Unknown (-1002885383779)
+2026-04-09 13:42:43,214 - __main__ - INFO - 
+2026-04-09 13:42:43,214 - __main__ - INFO - ================================================================================
+2026-04-09 13:42:43,214 - __main__ - INFO - ✓ Waiting for messages...
+2026-04-09 13:42:43,214 - __main__ - INFO - ================================================================================
+2026-04-09 13:42:47,447 - auto_trader.executor - INFO - Connected to IQ Option successfully.
+2026-04-09 13:42:47,703 - auto_trader.executor - INFO - Using PRACTICE account. Balance: 10696.55
+2026-04-09 13:42:47,703 - auto_trader.executor - INFO - Fetching live asset list from IQ Option...
+2026-04-09 13:42:49,165 - auto_trader.executor - INFO - Asset list loaded: 604 total assets (169 OTC). Ready to trade.
+2026-04-09 13:43:42,427 - telethon.client.updates - INFO - Got difference for channel 3771929527 updates
+2026-04-09 13:43:42,429 - __main__ - INFO - 📨 New message from -1003771929527: 📊 GBPAUD-OTC
+⏰ 09:44
+⌛️ 1 Minute
+🔽 PUT SELL 🔴...
+2026-04-09 13:43:42,429 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-09 13:43:42,430 - auto_trader.engine - INFO - AutoTrader Parsed Signal: GBPAUD-OTC PUT 1m | Scheduled: 09:44
+2026-04-09 13:43:42,430 - auto_trader.engine - INFO - AutoTrader: Current minute is :43, signal minute is :44. Sleeping 18.0s...
+2026-04-09 13:44:00,431 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-09 13:44:00,432 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-09 13:44:00,433 - auto_trader.executor - INFO - Executing Trade: GBPAUD-OTC | PUT | 1m | $1.0
+2026-04-09 13:44:00,747 - auto_trader.executor - INFO - Trade placed successfully! ID: 13785307995
+2026-04-09 13:44:00,747 - auto_trader.engine - INFO - AutoTrader: Trade successfully executed! ID: 13785307995
+2026-04-09 13:47:41,693 - __main__ - INFO - 📨 New message from -1003771929527: 📊 USDTRY-OTC
+⏰ 09:48
+⌛️ 1 Minute
+🔼 CALL BUY 🟢...
+2026-04-09 13:47:41,694 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-09 13:47:41,695 - auto_trader.engine - INFO - AutoTrader Parsed Signal: USDTRY-OTC CALL 1m | Scheduled: 09:48
+2026-04-09 13:47:41,695 - auto_trader.engine - INFO - AutoTrader: Current minute is :47, signal minute is :48. Sleeping 19.0s...
+2026-04-09 13:48:00,696 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-09 13:48:00,697 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-09 13:48:00,698 - auto_trader.executor - INFO - Executing Trade: USDTRY-OTC | CALL | 1m | $1.0
+2026-04-09 13:48:00,971 - auto_trader.executor - INFO - Trade placed successfully! ID: 13785319371
+2026-04-09 13:48:00,972 - auto_trader.engine - INFO - AutoTrader: Trade successfully executed! ID: 13785319371
+2026-04-09 13:54:01,999 - __main__ - INFO - 📨 New message from -1003771929527: 📊 GBPAUD-OTC
+⏰ 09:54
+⌛️ 1 Minute
+🔼 CALL BUY 🟢...
+2026-04-09 13:54:02,000 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-09 13:54:02,000 - auto_trader.engine - INFO - AutoTrader Parsed Signal: GBPAUD-OTC CALL 1m | Scheduled: 09:54
+2026-04-09 13:54:02,000 - auto_trader.engine - INFO - AutoTrader: Already in signal minute :54. Executing immediately.
+2026-04-09 13:54:02,000 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-09 13:54:02,001 - auto_trader.executor - INFO - Executing Trade: GBPAUD-OTC | CALL | 1m | $1.0
+2026-04-09 13:54:02,351 - auto_trader.executor - INFO - Trade placed successfully! ID: 13785335222
+2026-04-09 13:54:02,351 - auto_trader.engine - INFO - AutoTrader: Trade successfully executed! ID: 13785335222
+2026-04-09 13:55:26,337 - telethon.client.updates - INFO - Got difference for account updates
+2026-04-09 13:55:26,529 - telethon.client.updates - INFO - Got difference for channel 3771929527 updates
+2026-04-09 14:16:14,122 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132321, ignoring (see FAQ for details)
+2026-04-09 14:16:14,123 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132405, ignoring (see FAQ for details)
+2026-04-09 14:16:14,124 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132285, ignoring (see FAQ for details)
+2026-04-09 14:16:14,124 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132433, ignoring (see FAQ for details)
+2026-04-09 14:16:14,125 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606538777, ignoring (see FAQ for details)
+2026-04-09 14:16:14,125 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606538781, ignoring (see FAQ for details)
+2026-04-09 14:16:14,125 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606538785, ignoring (see FAQ for details)
+2026-04-09 14:16:14,410 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606538773, ignoring (see FAQ for details)
+2026-04-09 14:16:14,411 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606538793, ignoring (see FAQ for details)
+2026-04-09 14:16:14,411 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606538789, ignoring (see FAQ for details)
+2026-04-09 14:16:14,412 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,414 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132225, ignoring (see FAQ for details)
+2026-04-09 14:16:14,414 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,416 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132269, ignoring (see FAQ for details)
+2026-04-09 14:16:14,416 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,564 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606538757, ignoring (see FAQ for details)
+2026-04-09 14:16:14,565 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,565 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606538769, ignoring (see FAQ for details)
+2026-04-09 14:16:14,565 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,566 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606538765, ignoring (see FAQ for details)
+2026-04-09 14:16:14,566 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,567 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606538761, ignoring (see FAQ for details)
+2026-04-09 14:16:14,567 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,573 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606538753, ignoring (see FAQ for details)
+2026-04-09 14:16:14,573 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,574 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132281, ignoring (see FAQ for details)
+2026-04-09 14:16:14,574 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,582 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132329, ignoring (see FAQ for details)
+2026-04-09 14:16:14,582 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,583 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132389, ignoring (see FAQ for details)
+2026-04-09 14:16:14,583 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,604 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132401, ignoring (see FAQ for details)
+2026-04-09 14:16:14,605 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,723 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132357, ignoring (see FAQ for details)
+2026-04-09 14:16:14,723 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,735 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132377, ignoring (see FAQ for details)
+2026-04-09 14:16:14,735 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,736 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132385, ignoring (see FAQ for details)
+2026-04-09 14:16:14,736 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,742 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132333, ignoring (see FAQ for details)
+2026-04-09 14:16:14,742 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,743 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132409, ignoring (see FAQ for details)
+2026-04-09 14:16:14,744 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,744 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132429, ignoring (see FAQ for details)
+2026-04-09 14:16:14,744 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,745 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132361, ignoring (see FAQ for details)
+2026-04-09 14:16:14,745 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,755 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132461, ignoring (see FAQ for details)
+2026-04-09 14:16:14,755 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,756 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132481, ignoring (see FAQ for details)
+2026-04-09 14:16:14,756 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,762 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132413, ignoring (see FAQ for details)
+2026-04-09 14:16:14,762 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,763 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132373, ignoring (see FAQ for details)
+2026-04-09 14:16:14,764 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,769 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132301, ignoring (see FAQ for details)
+2026-04-09 14:16:14,769 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,771 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132349, ignoring (see FAQ for details)
+2026-04-09 14:16:14,771 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,778 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132345, ignoring (see FAQ for details)
+2026-04-09 14:16:14,778 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,779 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132457, ignoring (see FAQ for details)
+2026-04-09 14:16:14,779 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,788 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132477, ignoring (see FAQ for details)
+2026-04-09 14:16:14,789 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,907 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132381, ignoring (see FAQ for details)
+2026-04-09 14:16:14,907 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,908 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132417, ignoring (see FAQ for details)
+2026-04-09 14:16:14,908 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,918 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132313, ignoring (see FAQ for details)
+2026-04-09 14:16:14,918 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,919 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132353, ignoring (see FAQ for details)
+2026-04-09 14:16:14,919 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,920 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132325, ignoring (see FAQ for details)
+2026-04-09 14:16:14,920 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,926 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132229, ignoring (see FAQ for details)
+2026-04-09 14:16:14,926 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,927 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132289, ignoring (see FAQ for details)
+2026-04-09 14:16:14,927 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,945 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132317, ignoring (see FAQ for details)
+2026-04-09 14:16:14,945 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,955 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132365, ignoring (see FAQ for details)
+2026-04-09 14:16:14,955 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,972 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132437, ignoring (see FAQ for details)
+2026-04-09 14:16:14,972 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,972 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744248606132369, ignoring (see FAQ for details)
+2026-04-09 14:16:14,972 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,973 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725990945, ignoring (see FAQ for details)
+2026-04-09 14:16:14,973 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,973 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725990957, ignoring (see FAQ for details)
+2026-04-09 14:16:14,973 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,973 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725990949, ignoring (see FAQ for details)
+2026-04-09 14:16:14,973 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,974 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725990933, ignoring (see FAQ for details)
+2026-04-09 14:16:14,974 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,974 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725990941, ignoring (see FAQ for details)
+2026-04-09 14:16:14,974 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,974 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725990937, ignoring (see FAQ for details)
+2026-04-09 14:16:14,974 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,975 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725990953, ignoring (see FAQ for details)
+2026-04-09 14:16:14,975 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,979 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725990929, ignoring (see FAQ for details)
+2026-04-09 14:16:14,979 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,980 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725990921, ignoring (see FAQ for details)
+2026-04-09 14:16:14,980 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,981 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725990913, ignoring (see FAQ for details)
+2026-04-09 14:16:14,981 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,981 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725990925, ignoring (see FAQ for details)
+2026-04-09 14:16:14,982 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,982 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725990917, ignoring (see FAQ for details)
+2026-04-09 14:16:14,982 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,988 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725477977, ignoring (see FAQ for details)
+2026-04-09 14:16:14,988 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,989 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478125, ignoring (see FAQ for details)
+2026-04-09 14:16:14,989 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,996 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478101, ignoring (see FAQ for details)
+2026-04-09 14:16:14,996 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:14,997 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478181, ignoring (see FAQ for details)
+2026-04-09 14:16:14,997 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,006 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478037, ignoring (see FAQ for details)
+2026-04-09 14:16:15,006 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,007 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725477973, ignoring (see FAQ for details)
+2026-04-09 14:16:15,007 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,013 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478053, ignoring (see FAQ for details)
+2026-04-09 14:16:15,013 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,014 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478045, ignoring (see FAQ for details)
+2026-04-09 14:16:15,014 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,031 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478069, ignoring (see FAQ for details)
+2026-04-09 14:16:15,031 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,032 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478157, ignoring (see FAQ for details)
+2026-04-09 14:16:15,032 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,035 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478049, ignoring (see FAQ for details)
+2026-04-09 14:16:15,035 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,041 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478029, ignoring (see FAQ for details)
+2026-04-09 14:16:15,041 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,076 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478041, ignoring (see FAQ for details)
+2026-04-09 14:16:15,076 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,077 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478025, ignoring (see FAQ for details)
+2026-04-09 14:16:15,077 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,078 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725477997, ignoring (see FAQ for details)
+2026-04-09 14:16:15,078 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,079 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478105, ignoring (see FAQ for details)
+2026-04-09 14:16:15,079 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,087 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478073, ignoring (see FAQ for details)
+2026-04-09 14:16:15,087 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,087 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478021, ignoring (see FAQ for details)
+2026-04-09 14:16:15,088 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,095 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478153, ignoring (see FAQ for details)
+2026-04-09 14:16:15,095 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,096 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478089, ignoring (see FAQ for details)
+2026-04-09 14:16:15,096 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,103 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725477993, ignoring (see FAQ for details)
+2026-04-09 14:16:15,103 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,104 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478033, ignoring (see FAQ for details)
+2026-04-09 14:16:15,104 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,111 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478161, ignoring (see FAQ for details)
+2026-04-09 14:16:15,111 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,112 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478129, ignoring (see FAQ for details)
+2026-04-09 14:16:15,112 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,119 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478109, ignoring (see FAQ for details)
+2026-04-09 14:16:15,119 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,120 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478165, ignoring (see FAQ for details)
+2026-04-09 14:16:15,120 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,127 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725477969, ignoring (see FAQ for details)
+2026-04-09 14:16:15,127 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,128 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478077, ignoring (see FAQ for details)
+2026-04-09 14:16:15,128 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,134 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478085, ignoring (see FAQ for details)
+2026-04-09 14:16:15,134 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,142 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478001, ignoring (see FAQ for details)
+2026-04-09 14:16:15,142 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,156 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877725478081, ignoring (see FAQ for details)
+2026-04-09 14:16:15,156 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,157 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744877878000641, ignoring (see FAQ for details)
+2026-04-09 14:16:15,157 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,157 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744957279346705, ignoring (see FAQ for details)
+2026-04-09 14:16:15,157 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,171 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744957279346701, ignoring (see FAQ for details)
+2026-04-09 14:16:15,171 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,171 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744957279346713, ignoring (see FAQ for details)
+2026-04-09 14:16:15,171 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,177 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744957279346697, ignoring (see FAQ for details)
+2026-04-09 14:16:15,177 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,177 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744957279538177, ignoring (see FAQ for details)
+2026-04-09 14:16:15,177 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,177 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744957279538181, ignoring (see FAQ for details)
+2026-04-09 14:16:15,177 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,178 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626744957279346709, ignoring (see FAQ for details)
+2026-04-09 14:16:15,178 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,178 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745135898002449, ignoring (see FAQ for details)
+2026-04-09 14:16:15,178 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,179 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745135898002453, ignoring (see FAQ for details)
+2026-04-09 14:16:15,179 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,193 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745135898002473, ignoring (see FAQ for details)
+2026-04-09 14:16:15,193 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,193 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745135898002445, ignoring (see FAQ for details)
+2026-04-09 14:16:15,193 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,194 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745135898002457, ignoring (see FAQ for details)
+2026-04-09 14:16:15,194 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,201 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745135898002469, ignoring (see FAQ for details)
+2026-04-09 14:16:15,201 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,202 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745135898002461, ignoring (see FAQ for details)
+2026-04-09 14:16:15,202 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,206 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745135898002477, ignoring (see FAQ for details)
+2026-04-09 14:16:15,206 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,207 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745135898002465, ignoring (see FAQ for details)
+2026-04-09 14:16:15,207 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,207 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745135898205185, ignoring (see FAQ for details)
+2026-04-09 14:16:15,207 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,207 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745139815777281, ignoring (see FAQ for details)
+2026-04-09 14:16:15,207 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,207 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745148059419649, ignoring (see FAQ for details)
+2026-04-09 14:16:15,207 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,208 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745224015065125, ignoring (see FAQ for details)
+2026-04-09 14:16:15,208 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,208 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745224015261697, ignoring (see FAQ for details)
+2026-04-09 14:16:15,208 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,208 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745224015065089, ignoring (see FAQ for details)
+2026-04-09 14:16:15,208 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,210 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745224015065117, ignoring (see FAQ for details)
+2026-04-09 14:16:15,210 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,211 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745224015065105, ignoring (see FAQ for details)
+2026-04-09 14:16:15,212 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,212 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745224015065109, ignoring (see FAQ for details)
+2026-04-09 14:16:15,212 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,214 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745224015065113, ignoring (see FAQ for details)
+2026-04-09 14:16:15,214 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,221 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745224015065093, ignoring (see FAQ for details)
+2026-04-09 14:16:15,221 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,226 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745224015065121, ignoring (see FAQ for details)
+2026-04-09 14:16:15,226 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,226 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745224561453057, ignoring (see FAQ for details)
+2026-04-09 14:16:15,226 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,232 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745338350977049, ignoring (see FAQ for details)
+2026-04-09 14:16:15,232 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,232 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745338350977037, ignoring (see FAQ for details)
+2026-04-09 14:16:15,232 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,235 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745338350977041, ignoring (see FAQ for details)
+2026-04-09 14:16:15,235 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,236 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745338350977061, ignoring (see FAQ for details)
+2026-04-09 14:16:15,236 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,236 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745338351157253, ignoring (see FAQ for details)
+2026-04-09 14:16:15,236 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,240 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745338351157249, ignoring (see FAQ for details)
+2026-04-09 14:16:15,240 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,240 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745338350977045, ignoring (see FAQ for details)
+2026-04-09 14:16:15,240 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,244 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745390378275849, ignoring (see FAQ for details)
+2026-04-09 14:16:15,244 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,244 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745390378275877, ignoring (see FAQ for details)
+2026-04-09 14:16:15,244 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,248 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745390378275873, ignoring (see FAQ for details)
+2026-04-09 14:16:15,248 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,248 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745390378481665, ignoring (see FAQ for details)
+2026-04-09 14:16:15,248 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,249 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745390378481669, ignoring (see FAQ for details)
+2026-04-09 14:16:15,249 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,249 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745435224718337, ignoring (see FAQ for details)
+2026-04-09 14:16:15,249 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,250 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745435224427533, ignoring (see FAQ for details)
+2026-04-09 14:16:15,250 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,251 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745550924328961, ignoring (see FAQ for details)
+2026-04-09 14:16:15,251 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,253 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745550924163089, ignoring (see FAQ for details)
+2026-04-09 14:16:15,253 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,259 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745600085433369, ignoring (see FAQ for details)
+2026-04-09 14:16:15,259 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,259 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745600085433357, ignoring (see FAQ for details)
+2026-04-09 14:16:15,259 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,261 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745600085433361, ignoring (see FAQ for details)
+2026-04-09 14:16:15,261 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,261 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745600085433365, ignoring (see FAQ for details)
+2026-04-09 14:16:15,261 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,264 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745600085433345, ignoring (see FAQ for details)
+2026-04-09 14:16:15,264 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,266 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745600085628929, ignoring (see FAQ for details)
+2026-04-09 14:16:15,266 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,267 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745651313262593, ignoring (see FAQ for details)
+2026-04-09 14:16:15,267 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,268 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745651313084441, ignoring (see FAQ for details)
+2026-04-09 14:16:15,268 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,274 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745651313084437, ignoring (see FAQ for details)
+2026-04-09 14:16:15,274 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,274 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745651346302977, ignoring (see FAQ for details)
+2026-04-09 14:16:15,274 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,274 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745683122999297, ignoring (see FAQ for details)
+2026-04-09 14:16:15,274 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,274 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745729526689821, ignoring (see FAQ for details)
+2026-04-09 14:16:15,274 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,285 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745729526870017, ignoring (see FAQ for details)
+2026-04-09 14:16:15,285 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,285 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745729526689817, ignoring (see FAQ for details)
+2026-04-09 14:16:15,285 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,285 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745776156079117, ignoring (see FAQ for details)
+2026-04-09 14:16:15,285 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,286 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745776156229633, ignoring (see FAQ for details)
+2026-04-09 14:16:15,286 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,286 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745855660806177, ignoring (see FAQ for details)
+2026-04-09 14:16:15,286 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,286 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745855661002757, ignoring (see FAQ for details)
+2026-04-09 14:16:15,286 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,286 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745855661002753, ignoring (see FAQ for details)
+2026-04-09 14:16:15,286 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,287 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745855660806165, ignoring (see FAQ for details)
+2026-04-09 14:16:15,287 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,287 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745855660806185, ignoring (see FAQ for details)
+2026-04-09 14:16:15,287 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,287 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745855660806181, ignoring (see FAQ for details)
+2026-04-09 14:16:15,287 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,288 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745855660806173, ignoring (see FAQ for details)
+2026-04-09 14:16:15,288 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,293 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745855660806153, ignoring (see FAQ for details)
+2026-04-09 14:16:15,293 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,293 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745855660806169, ignoring (see FAQ for details)
+2026-04-09 14:16:15,293 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,298 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745968922573825, ignoring (see FAQ for details)
+2026-04-09 14:16:15,298 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,299 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626745968922416141, ignoring (see FAQ for details)
+2026-04-09 14:16:15,299 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,300 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626746096332537865, ignoring (see FAQ for details)
+2026-04-09 14:16:15,300 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,300 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626746096332537869, ignoring (see FAQ for details)
+2026-04-09 14:16:15,300 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,301 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626746096332537857, ignoring (see FAQ for details)
+2026-04-09 14:16:15,301 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,301 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626746096332537861, ignoring (see FAQ for details)
+2026-04-09 14:16:15,301 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,301 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626746096332337177, ignoring (see FAQ for details)
+2026-04-09 14:16:15,301 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,302 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626746096332337189, ignoring (see FAQ for details)
+2026-04-09 14:16:15,302 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,308 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626746096332337201, ignoring (see FAQ for details)
+2026-04-09 14:16:15,308 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,308 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626746199637618693, ignoring (see FAQ for details)
+2026-04-09 14:16:15,308 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,312 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626746199637618697, ignoring (see FAQ for details)
+2026-04-09 14:16:15,312 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,312 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626746199637618701, ignoring (see FAQ for details)
+2026-04-09 14:16:15,312 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,315 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626746199637618705, ignoring (see FAQ for details)
+2026-04-09 14:16:15,315 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,316 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626746199637618689, ignoring (see FAQ for details)
+2026-04-09 14:16:15,316 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,316 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626746291634417681, ignoring (see FAQ for details)
+2026-04-09 14:16:15,316 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,316 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626746291634581505, ignoring (see FAQ for details)
+2026-04-09 14:16:15,316 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,317 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626746291634417677, ignoring (see FAQ for details)
+2026-04-09 14:16:15,317 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,318 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626746295279240193, ignoring (see FAQ for details)
+2026-04-09 14:16:15,318 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,318 - telethon.network.mtprotostate - WARNING - Server sent a very old message with ID 7626746308685931521, ignoring (see FAQ for details)
+2026-04-09 14:16:15,318 - telethon.network.mtprotosender - WARNING - Security error while unpacking a received message: Too many messages had to be ignored consecutively
+2026-04-09 14:16:15,568 - telethon.client.updates - INFO - Got difference for account updates
+2026-04-09 14:16:15,776 - telethon.client.updates - INFO - Got difference for channel 1621425154 updates
+2026-04-09 14:16:16,519 - telethon.client.updates - INFO - Got difference for channel 2445757529 updates
+2026-04-09 14:16:16,724 - telethon.client.updates - INFO - Got difference for channel 3107286367 updates
+2026-04-09 14:16:16,976 - telethon.client.updates - INFO - Got difference for channel 3657608293 updates
+2026-04-09 14:16:17,166 - telethon.client.updates - INFO - Got difference for channel 1516541544 updates
+2026-04-09 14:16:17,347 - telethon.client.updates - INFO - Got difference for channel 2079338285 updates
+2026-04-09 14:16:17,545 - telethon.client.updates - INFO - Got difference for channel 1759865583 updates
+2026-04-09 14:16:17,752 - telethon.client.updates - INFO - Got difference for channel 3771929527 updates
+2026-04-09 14:16:17,753 - __main__ - INFO - 📨 New message from -1003771929527: 📊 USDTRY-OTC
+⏰ 10:03
+⌛️ 1 Minute
+🔽 PUT SELL 🔴...
+2026-04-09 14:16:17,754 - __main__ - INFO - 📨 New message from -1003771929527: 📊 AUDJPY-OTC
+⏰ 10:09
+⌛️ 1 Minute
+🔽 PUT SELL 🔴...
+2026-04-09 14:16:17,754 - __main__ - INFO - 📨 New message from -1003771929527: 📊 AUDUSD-OTC
+⏰ 10:14
+⌛️ 1 Minute
+🔼 CALL BUY 🟢...
+2026-04-09 14:16:17,754 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-09 14:16:17,754 - auto_trader.engine - INFO - AutoTrader Parsed Signal: USDTRY-OTC PUT 1m | Scheduled: 10:03
+2026-04-09 14:16:17,754 - auto_trader.engine - WARNING - AutoTrader: Signal minute :03 has already passed (current :16). Skipping.
+2026-04-09 14:16:17,756 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-09 14:16:17,756 - auto_trader.engine - INFO - AutoTrader Parsed Signal: AUDJPY-OTC PUT 1m | Scheduled: 10:09
+2026-04-09 14:16:17,756 - auto_trader.engine - WARNING - AutoTrader: Signal minute :09 has already passed (current :16). Skipping.
+2026-04-09 14:16:17,756 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-09 14:16:17,756 - auto_trader.engine - INFO - AutoTrader Parsed Signal: AUDUSD-OTC CALL 1m | Scheduled: 10:14
+2026-04-09 14:16:17,756 - auto_trader.engine - WARNING - AutoTrader: Signal minute :14 has already passed (current :16). Skipping.
+2026-04-09 14:18:40,318 - telethon.client.updates - INFO - Got difference for channel 2135710857 updates
+2026-04-09 14:18:40,534 - telethon.client.updates - INFO - Got difference for channel 2445757529 updates
+2026-04-09 14:19:17,078 - __main__ - INFO - 📨 New message from -1003771929527: 📊 CADCHF-OTC
+⏰ 10:20
+⌛️ 1 Minute
+🔼 CALL BUY 🟢...
+2026-04-09 14:19:17,079 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-09 14:19:17,080 - auto_trader.engine - INFO - AutoTrader Parsed Signal: CADCHF-OTC CALL 1m | Scheduled: 10:20
+2026-04-09 14:19:17,080 - auto_trader.engine - INFO - AutoTrader: Current minute is :19, signal minute is :20. Sleeping 43.0s...
+2026-04-09 14:19:30,043 - telethon.client.updates - INFO - Got difference for channel 1621425154 updates
+2026-04-09 14:20:00,081 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-09 14:20:00,083 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-09 14:20:00,084 - auto_trader.executor - INFO - Executing Trade: CADCHF-OTC | CALL | 1m | $1.0
+2026-04-09 14:20:05,088 - root - ERROR - **warning** buy late 5 sec
+2026-04-09 14:20:05,088 - auto_trader.executor - ERROR - Trade rejected by broker: None
+2026-04-09 14:20:05,088 - auto_trader.engine - ERROR - AutoTrader: Trade execution failed: None
+2026-04-09 14:20:42,323 - iqoptionapi.ws.client - ERROR - [Errno 60] Operation timed out
+2026-04-09 14:21:16,363 - telethon.client.updates - INFO - Got difference for channel 2135710857 updates
+2026-04-09 14:22:41,571 - telethon.network.mtprotosender - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-04-09 14:22:41,573 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-04-09 14:22:41,577 - __main__ - INFO - 
+✓ Bot stopped by user
+2026-04-09 14:22:45,901 - __main__ - INFO - Monitoring 6 source(s) with 10 mapping(s)
+2026-04-09 14:22:45,913 - __main__ - INFO - 📡 Forwarding enabled: False
+2026-04-09 14:22:45,925 - __main__ - INFO - 📈 Auto-trading enabled: True
+2026-04-09 14:22:45,938 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-04-09 14:22:46,141 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-04-09 14:22:47,618 - __main__ - INFO - ✓ Bot started as Greatonic (@greatonical)
+2026-04-09 14:22:47,618 - __main__ - INFO - ✓ Monitoring 6 source(s) with 10 mapping(s)
+2026-04-09 14:22:47,618 - __main__ - INFO - ================================================================================
+2026-04-09 14:22:47,618 - __main__ - INFO - ACTIVE MAPPINGS:
+2026-04-09 14:22:47,618 - __main__ - INFO - ================================================================================
+2026-04-09 14:22:47,970 - __main__ - INFO - 1. Unknown (-1003354980634) → Topic #394
+2026-04-09 14:22:47,970 - __main__ - INFO -    ↓
+2026-04-09 14:22:47,970 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #258
+2026-04-09 14:22:47,970 - __main__ - INFO - 
+2026-04-09 14:22:47,970 - __main__ - INFO - 2. Unknown (-1003354980634) → Topic #4
+2026-04-09 14:22:47,970 - __main__ - INFO -    ↓
+2026-04-09 14:22:47,970 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #255
+2026-04-09 14:22:47,970 - __main__ - INFO - 
+2026-04-09 14:22:47,971 - __main__ - INFO - 3. Unknown (-1003354980634) → Topic #5
+2026-04-09 14:22:47,971 - __main__ - INFO -    ↓
+2026-04-09 14:22:47,971 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #276
+2026-04-09 14:22:47,971 - __main__ - INFO - 
+2026-04-09 14:22:47,971 - __main__ - INFO - 4. Unknown (-1003354980634) → Topic #1
+2026-04-09 14:22:47,971 - __main__ - INFO -    ↓
+2026-04-09 14:22:47,971 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #1
+2026-04-09 14:22:47,971 - __main__ - INFO - 
+2026-04-09 14:22:48,304 - __main__ - INFO - 5. Unknown (-1003719256941)
+2026-04-09 14:22:48,305 - __main__ - INFO -    ↓
+2026-04-09 14:22:48,305 - __main__ - INFO -    Result group. (-1003865081218)
+2026-04-09 14:22:48,305 - __main__ - INFO - 
+2026-04-09 14:22:48,466 - __main__ - INFO - 6. Unknown (-1003157087401)
+2026-04-09 14:22:48,466 - __main__ - INFO -    ↓
+2026-04-09 14:22:48,466 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #268
+2026-04-09 14:22:48,466 - __main__ - INFO - 
+2026-04-09 14:22:48,640 - __main__ - INFO - 7. Unknown (-1003683230844)
+2026-04-09 14:22:48,640 - __main__ - INFO -    ↓
+2026-04-09 14:22:48,640 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #259
+2026-04-09 14:22:48,640 - __main__ - INFO - 
+2026-04-09 14:22:49,010 - __main__ - INFO - 8. Unknown (-1002871747055)
+2026-04-09 14:22:49,010 - __main__ - INFO -    ↓
+2026-04-09 14:22:49,010 - __main__ - INFO -    Unknown (-1003621804175)
+2026-04-09 14:22:49,010 - __main__ - INFO - 
+2026-04-09 14:22:49,371 - __main__ - INFO - 9. Gilly option signals (-1003771929527)
+2026-04-09 14:22:49,371 - __main__ - INFO -    ↓
+2026-04-09 14:22:49,371 - __main__ - INFO -    Unknown (-1003850746623)
+2026-04-09 14:22:49,371 - __main__ - INFO - 
+2026-04-09 14:22:49,533 - __main__ - INFO - 10. Gilly option signals (-1003771929527)
+2026-04-09 14:22:49,534 - __main__ - INFO -    ↓
+2026-04-09 14:22:49,534 - __main__ - INFO -    Unknown (-1002885383779)
+2026-04-09 14:22:49,534 - __main__ - INFO - 
+2026-04-09 14:22:49,534 - __main__ - INFO - ================================================================================
+2026-04-09 14:22:49,534 - __main__ - INFO - ✓ Waiting for messages...
+2026-04-09 14:22:49,534 - __main__ - INFO - ================================================================================
+2026-04-09 14:22:52,639 - auto_trader.executor - INFO - Connected to IQ Option successfully.
+2026-04-09 14:22:52,866 - auto_trader.executor - INFO - Using PRACTICE account. Balance: 10695.4
+2026-04-09 14:22:52,866 - auto_trader.executor - INFO - Fetching live asset list from IQ Option...
+2026-04-09 14:22:54,230 - auto_trader.executor - INFO - Asset list loaded: 604 total assets (169 OTC). Ready to trade.
+2026-04-09 14:24:24,015 - telethon.client.updates - INFO - Got difference for account updates
+2026-04-09 14:24:24,411 - telethon.client.updates - INFO - Got difference for channel 1621425154 updates
+2026-04-09 14:24:48,151 - telethon.client.updates - INFO - Got difference for channel 1621425154 updates
+2026-04-09 14:28:22,374 - __main__ - INFO - 📨 New message from -1003771929527: 📊 EURJPY-OTC
+⏰ 10:29
+⌛️ 1 Minute
+🔽 PUT SELL 🔴...
+2026-04-09 14:28:22,374 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-09 14:28:22,375 - auto_trader.engine - INFO - AutoTrader Parsed Signal: EURJPY-OTC PUT 1m | Scheduled: 10:29
+2026-04-09 14:28:22,376 - auto_trader.engine - INFO - AutoTrader: Current minute is :28, signal minute is :29. Sleeping 38.0s...
+2026-04-09 14:29:00,376 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-09 14:29:00,377 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-09 14:29:00,377 - auto_trader.executor - INFO - Executing Trade: EURJPY-OTC | PUT | 1m | $1.0
+2026-04-09 14:29:00,672 - auto_trader.executor - INFO - Trade placed successfully! ID: 13785424261
+2026-04-09 14:29:00,673 - auto_trader.engine - INFO - AutoTrader: Trade successfully executed! ID: 13785424261
+2026-04-09 14:29:22,783 - telethon.client.updates - INFO - Got difference for channel 1621425154 updates
+2026-04-09 14:32:22,441 - __main__ - INFO - 📨 New message from -1003771929527: 📊 USDMXN-OTC
+⏰ 10:33
+⌛️ 1 Minute
+🔼 CALL BUY 🟢...
+2026-04-09 14:32:22,442 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-09 14:32:22,442 - auto_trader.engine - INFO - AutoTrader Parsed Signal: USDMXN-OTC CALL 1m | Scheduled: 10:33
+2026-04-09 14:32:22,442 - auto_trader.engine - INFO - AutoTrader: Current minute is :32, signal minute is :33. Sleeping 38.0s...
+2026-04-09 14:33:00,445 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-09 14:33:00,446 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-09 14:33:00,447 - auto_trader.executor - INFO - Executing Trade: USDMXN-OTC | CALL | 1m | $1.0
+2026-04-09 14:33:00,773 - auto_trader.executor - INFO - Trade placed successfully! ID: 13785436128
+2026-04-09 14:33:00,773 - auto_trader.engine - INFO - AutoTrader: Trade successfully executed! ID: 13785436128
+2026-04-09 14:34:23,422 - telethon.client.updates - INFO - Got difference for channel 1621425154 updates
+2026-04-09 14:36:32,961 - __main__ - INFO - 📨 New message from -1003771929527: 📊 AUDJPY-OTC
+⏰ 10:37
+⌛️ 1 Minute
+🔽 PUT SELL 🔴...
+2026-04-09 14:36:32,963 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-09 14:36:32,964 - auto_trader.engine - INFO - AutoTrader Parsed Signal: AUDJPY-OTC PUT 1m | Scheduled: 10:37
+2026-04-09 14:36:32,964 - auto_trader.engine - INFO - AutoTrader: Current minute is :36, signal minute is :37. Sleeping 28.0s...
+2026-04-09 14:37:00,966 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-09 14:37:00,966 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-09 14:37:00,967 - auto_trader.executor - INFO - Executing Trade: AUDJPY-OTC | PUT | 1m | $1.0
+2026-04-09 14:37:01,254 - auto_trader.executor - INFO - Trade placed successfully! ID: 13785447921
+2026-04-09 14:37:01,254 - auto_trader.engine - INFO - AutoTrader: Trade successfully executed! ID: 13785447921
+2026-04-09 14:42:05,551 - __main__ - INFO - 📨 New message from -1003771929527: 📊 CADCHF-OTC
+⏰ 10:42
+⌛️ 1 Minute
+🔽 PUT SELL 🔴...
+2026-04-09 14:42:05,552 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-09 14:42:05,552 - auto_trader.engine - INFO - AutoTrader Parsed Signal: CADCHF-OTC PUT 1m | Scheduled: 10:42
+2026-04-09 14:42:05,552 - auto_trader.engine - INFO - AutoTrader: Already in signal minute :42. Executing immediately.
+2026-04-09 14:42:05,552 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-09 14:42:05,552 - auto_trader.executor - INFO - Executing Trade: CADCHF-OTC | PUT | 1m | $1.0
+2026-04-09 14:42:05,860 - auto_trader.executor - INFO - Trade placed successfully! ID: 13785462519
+2026-04-09 14:42:05,860 - auto_trader.engine - INFO - AutoTrader: Trade successfully executed! ID: 13785462519
+2026-04-09 14:48:33,991 - telethon.network.mtprotosender - INFO - Closing current connection to begin reconnect...
+2026-04-09 14:48:33,993 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-04-09 14:48:33,993 - telethon.network.mtprotosender - WARNING - Attempt 1 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 14:48:34,996 - telethon.network.mtprotosender - WARNING - Attempt 2 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 14:48:35,999 - telethon.network.mtprotosender - WARNING - Attempt 3 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 14:48:37,003 - telethon.network.mtprotosender - WARNING - Attempt 4 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 14:48:38,005 - telethon.network.mtprotosender - WARNING - Attempt 5 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 14:48:39,008 - telethon.network.mtprotosender - WARNING - Attempt 6 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 14:48:40,011 - telethon.network.mtprotosender - INFO - Failed reconnection attempt 1 with ConnectionError
+2026-04-09 14:48:41,013 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-04-09 14:48:41,014 - telethon.network.mtprotosender - WARNING - Attempt 1 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 14:48:42,017 - telethon.network.mtprotosender - WARNING - Attempt 2 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 14:48:43,020 - telethon.network.mtprotosender - WARNING - Attempt 3 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 14:48:44,023 - telethon.network.mtprotosender - WARNING - Attempt 4 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 14:48:45,025 - telethon.network.mtprotosender - WARNING - Attempt 5 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 14:48:46,028 - telethon.network.mtprotosender - WARNING - Attempt 6 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 15:04:25,918 - telethon.network.mtprotosender - INFO - Failed reconnection attempt 2 with ConnectionError
+2026-04-09 15:04:26,919 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-04-09 15:04:26,921 - telethon.network.mtprotosender - WARNING - Attempt 1 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 15:04:27,924 - telethon.network.mtprotosender - WARNING - Attempt 2 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 15:04:28,927 - telethon.network.mtprotosender - WARNING - Attempt 3 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 15:04:29,929 - telethon.network.mtprotosender - WARNING - Attempt 4 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 15:21:58,666 - telethon.network.mtprotosender - WARNING - Attempt 5 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 15:21:59,670 - telethon.network.mtprotosender - WARNING - Attempt 6 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 15:22:00,672 - telethon.network.mtprotosender - INFO - Failed reconnection attempt 3 with ConnectionError
+2026-04-09 15:22:01,675 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-04-09 15:22:01,676 - telethon.network.mtprotosender - WARNING - Attempt 1 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 15:22:02,680 - telethon.network.mtprotosender - WARNING - Attempt 2 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 15:38:03,435 - telethon.network.mtprotosender - WARNING - Attempt 3 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 15:38:04,438 - telethon.network.mtprotosender - WARNING - Attempt 4 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 15:38:05,442 - telethon.network.mtprotosender - WARNING - Attempt 5 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 15:38:06,445 - telethon.network.mtprotosender - WARNING - Attempt 6 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 15:38:07,448 - telethon.network.mtprotosender - INFO - Failed reconnection attempt 4 with ConnectionError
+2026-04-09 15:55:44,199 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-04-09 15:55:44,199 - telethon.network.mtprotosender - WARNING - Attempt 1 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 15:55:45,201 - telethon.network.mtprotosender - WARNING - Attempt 2 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 15:55:46,204 - telethon.network.mtprotosender - WARNING - Attempt 3 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 15:55:47,209 - telethon.network.mtprotosender - WARNING - Attempt 4 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 15:55:48,213 - telethon.network.mtprotosender - WARNING - Attempt 5 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 16:10:56,080 - telethon.network.mtprotosender - WARNING - Attempt 6 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-09 16:10:57,081 - telethon.network.mtprotosender - INFO - Failed reconnection attempt 5 with ConnectionError
+2026-04-09 16:10:58,083 - telethon.network.mtprotosender - ERROR - Automatic reconnection failed 5 time(s)
+2026-04-09 16:10:58,084 - telethon.network.mtprotosender - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-04-09 16:10:58,084 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-04-09 16:10:58,084 - asyncio - ERROR - Future exception was never retrieved
+future: <Future finished exception=ConnectionError('Connection to Telegram failed 5 time(s)')>
+ConnectionError: Connection to Telegram failed 5 time(s)
+2026-04-09 16:10:58,084 - telethon.network.mtprotosender - INFO - Not disconnecting (already have no connection)
+2026-04-09 16:10:58,088 - __main__ - ERROR - ❌ Bot crashed: Connection to Telegram failed 5 time(s)
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/bot.py", line 510, in <module>
+    asyncio.run(main())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/bot.py", line 490, in main
+    await client.run_until_disconnected()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/updates.py", line 36, in _run_until_disconnected
+    result = await self.disconnected
+ConnectionError: Connection to Telegram failed 5 time(s)
+2026-04-10 11:50:56,206 - __main__ - INFO - Monitoring 6 source(s) with 10 mapping(s)
+2026-04-10 11:50:56,218 - __main__ - INFO - 📡 Forwarding enabled: False
+2026-04-10 11:50:56,230 - __main__ - INFO - 📈 Auto-trading enabled: True
+2026-04-10 11:50:56,242 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-04-10 11:50:56,445 - telethon.network.mtprotosender - INFO - Connection to 149.154.167.92:443/TcpFull complete!
+2026-04-10 11:50:58,046 - __main__ - INFO - ✓ Bot started as Greatonic (@greatonical)
+2026-04-10 11:50:58,047 - __main__ - INFO - ✓ Monitoring 6 source(s) with 10 mapping(s)
+2026-04-10 11:50:58,047 - __main__ - INFO - ================================================================================
+2026-04-10 11:50:58,047 - __main__ - INFO - ACTIVE MAPPINGS:
+2026-04-10 11:50:58,047 - __main__ - INFO - ================================================================================
+2026-04-10 11:50:58,485 - __main__ - INFO - 1. Unknown (-1003354980634) → Topic #394
+2026-04-10 11:50:58,485 - __main__ - INFO -    ↓
+2026-04-10 11:50:58,485 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #258
+2026-04-10 11:50:58,485 - __main__ - INFO - 
+2026-04-10 11:50:58,485 - __main__ - INFO - 2. Unknown (-1003354980634) → Topic #4
+2026-04-10 11:50:58,485 - __main__ - INFO -    ↓
+2026-04-10 11:50:58,485 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #255
+2026-04-10 11:50:58,485 - __main__ - INFO - 
+2026-04-10 11:50:58,485 - __main__ - INFO - 3. Unknown (-1003354980634) → Topic #5
+2026-04-10 11:50:58,485 - __main__ - INFO -    ↓
+2026-04-10 11:50:58,485 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #276
+2026-04-10 11:50:58,485 - __main__ - INFO - 
+2026-04-10 11:50:58,485 - __main__ - INFO - 4. Unknown (-1003354980634) → Topic #1
+2026-04-10 11:50:58,485 - __main__ - INFO -    ↓
+2026-04-10 11:50:58,485 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #1
+2026-04-10 11:50:58,485 - __main__ - INFO - 
+2026-04-10 11:50:58,863 - __main__ - INFO - 5. Unknown (-1003719256941)
+2026-04-10 11:50:58,863 - __main__ - INFO -    ↓
+2026-04-10 11:50:58,863 - __main__ - INFO -    Result group. (-1003865081218)
+2026-04-10 11:50:58,863 - __main__ - INFO - 
+2026-04-10 11:50:59,099 - __main__ - INFO - 6. Unknown (-1003157087401)
+2026-04-10 11:50:59,099 - __main__ - INFO -    ↓
+2026-04-10 11:50:59,099 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #268
+2026-04-10 11:50:59,100 - __main__ - INFO - 
+2026-04-10 11:50:59,321 - __main__ - INFO - 7. Unknown (-1003683230844)
+2026-04-10 11:50:59,321 - __main__ - INFO -    ↓
+2026-04-10 11:50:59,321 - __main__ - INFO -    Pro Traders (-1003657608293) → Topic #259
+2026-04-10 11:50:59,321 - __main__ - INFO - 
+2026-04-10 11:50:59,777 - __main__ - INFO - 8. Unknown (-1002871747055)
+2026-04-10 11:50:59,789 - __main__ - INFO -    ↓
+2026-04-10 11:50:59,802 - __main__ - INFO -    Unknown (-1003621804175)
+2026-04-10 11:50:59,808 - __main__ - INFO - 
+2026-04-10 11:51:00,570 - __main__ - INFO - 9. Gilly option signals (-1003771929527)
+2026-04-10 11:51:00,571 - __main__ - INFO -    ↓
+2026-04-10 11:51:00,571 - __main__ - INFO -    Unknown (-1003850746623)
+2026-04-10 11:51:00,571 - __main__ - INFO - 
+2026-04-10 11:51:00,799 - __main__ - INFO - 10. Gilly option signals (-1003771929527)
+2026-04-10 11:51:00,799 - __main__ - INFO -    ↓
+2026-04-10 11:51:00,799 - __main__ - INFO -    Unknown (-1002885383779)
+2026-04-10 11:51:00,799 - __main__ - INFO - 
+2026-04-10 11:51:00,799 - __main__ - INFO - ================================================================================
+2026-04-10 11:51:00,799 - __main__ - INFO - ✓ Waiting for messages...
+2026-04-10 11:51:00,799 - __main__ - INFO - ================================================================================
+2026-04-10 11:51:00,883 - auto_trader.executor - INFO - Connected to IQ Option successfully.
+2026-04-10 11:51:01,096 - auto_trader.executor - INFO - Using PRACTICE account. Balance: 10695.1
+2026-04-10 11:51:01,096 - auto_trader.executor - INFO - Fetching live asset list from IQ Option...
+2026-04-10 11:51:02,848 - auto_trader.executor - INFO - Asset list loaded: 604 total assets (169 OTC). Ready to trade.
+2026-04-10 12:01:35,178 - __main__ - INFO - 📨 New message from -1003771929527: 📊 USDMXN-OTC
+⏰ 08:02
+⌛️ 1 Minute
+🔽 PUT SELL 🔴...
+2026-04-10 12:01:35,179 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-10 12:01:35,180 - auto_trader.engine - INFO - AutoTrader Parsed Signal: USDMXN-OTC PUT 1m | Scheduled: 08:02
+2026-04-10 12:01:35,180 - auto_trader.engine - INFO - AutoTrader: Current minute is :01, signal minute is :02. Sleeping 25.0s...
+2026-04-10 12:02:00,181 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-10 12:02:00,183 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-10 12:02:00,184 - auto_trader.executor - INFO - Executing Trade: USDMXN-OTC | PUT | 1m | $1.0
+2026-04-10 12:02:00,462 - auto_trader.executor - INFO - Trade placed successfully! ID: 13788302413
+2026-04-10 12:02:00,462 - auto_trader.engine - INFO - AutoTrader: Trade successfully executed! ID: 13788302413
+2026-04-10 12:05:57,876 - telethon.client.updates - INFO - Got difference for account updates
+2026-04-10 12:08:51,867 - __main__ - INFO - 📨 New message from -1003771929527: 📊 USDMXN-OTC
+⏰ 08:09
+⌛️ 1 Minute
+🔼 CALL BUY 🟢...
+2026-04-10 12:08:51,868 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-10 12:08:51,868 - auto_trader.engine - INFO - AutoTrader Parsed Signal: USDMXN-OTC CALL 1m | Scheduled: 08:09
+2026-04-10 12:08:51,868 - auto_trader.engine - INFO - AutoTrader: Current minute is :08, signal minute is :09. Sleeping 9.0s...
+2026-04-10 12:09:00,869 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-10 12:09:00,870 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-10 12:09:00,870 - auto_trader.executor - INFO - Executing Trade: USDMXN-OTC | CALL | 1m | $1.0
+2026-04-10 12:09:01,146 - auto_trader.executor - INFO - Trade placed successfully! ID: 13788314959
+2026-04-10 12:09:01,146 - auto_trader.engine - INFO - AutoTrader: Trade successfully executed! ID: 13788314959
+2026-04-10 12:11:18,706 - telethon.client.updates - INFO - Got difference for channel 2237131764 updates
+2026-04-10 12:13:35,238 - __main__ - INFO - 📨 New message from -1003771929527: 📊 AUDJPY-OTC
+⏰ 08:14
+⌛️ 1 Minute
+🔼 CALL BUY 🟢...
+2026-04-10 12:13:35,239 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-10 12:13:35,239 - auto_trader.engine - INFO - AutoTrader Parsed Signal: AUDJPY-OTC CALL 1m | Scheduled: 08:14
+2026-04-10 12:13:35,239 - auto_trader.engine - INFO - AutoTrader: Current minute is :13, signal minute is :14. Sleeping 25.0s...
+2026-04-10 12:14:00,240 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-10 12:14:00,240 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-10 12:14:00,240 - auto_trader.executor - INFO - Executing Trade: AUDJPY-OTC | CALL | 1m | $1.0
+2026-04-10 12:14:00,540 - auto_trader.executor - INFO - Trade placed successfully! ID: 13788324021
+2026-04-10 12:14:00,540 - auto_trader.engine - INFO - AutoTrader: Trade successfully executed! ID: 13788324021
+2026-04-10 12:24:57,432 - __main__ - INFO - 📨 New message from -1003771929527: 📊 USDTRY-OTC
+⏰ 08:25
+⌛️ 1 Minute
+🔼 CALL BUY 🟢...
+2026-04-10 12:24:57,432 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-10 12:24:57,433 - auto_trader.engine - INFO - AutoTrader Parsed Signal: USDTRY-OTC CALL 1m | Scheduled: 08:25
+2026-04-10 12:24:57,433 - auto_trader.engine - INFO - AutoTrader: Current minute is :24, signal minute is :25. Sleeping 3.0s...
+2026-04-10 12:25:00,434 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-10 12:25:00,435 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-10 12:25:00,435 - auto_trader.executor - INFO - Executing Trade: USDTRY-OTC | CALL | 1m | $1.0
+2026-04-10 12:25:00,701 - auto_trader.executor - INFO - Trade placed successfully! ID: 13788343840
+2026-04-10 12:25:00,702 - auto_trader.engine - INFO - AutoTrader: Trade successfully executed! ID: 13788343840
+2026-04-10 12:28:45,612 - __main__ - INFO - 📨 New message from -1003771929527: 📊 AUDUSD-OTC
+⏰ 08:29
+⌛️ 1 Minute
+🔽 PUT SELL 🔴...
+2026-04-10 12:28:45,613 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-10 12:28:45,613 - auto_trader.engine - INFO - AutoTrader Parsed Signal: AUDUSD-OTC PUT 1m | Scheduled: 08:29
+2026-04-10 12:28:45,613 - auto_trader.engine - INFO - AutoTrader: Current minute is :28, signal minute is :29. Sleeping 15.0s...
+2026-04-10 12:29:00,613 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-10 12:29:00,614 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-10 12:29:00,614 - auto_trader.executor - INFO - Executing Trade: AUDUSD-OTC | PUT | 1m | $1.0
+2026-04-10 12:29:00,879 - auto_trader.executor - INFO - Trade placed successfully! ID: 13788350852
+2026-04-10 12:29:00,879 - auto_trader.engine - INFO - AutoTrader: Trade successfully executed! ID: 13788350852
+2026-04-10 12:30:58,824 - telethon.client.updates - INFO - Got difference for channel 1153944985 updates
+2026-04-10 12:36:10,998 - __main__ - INFO - 📨 New message from -1003771929527: 📊 USDMXN-OTC
+⏰ 08:37
+⌛️ 1 Minute
+🔼 CALL BUY 🟢...
+2026-04-10 12:36:10,999 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-10 12:36:10,999 - auto_trader.engine - INFO - AutoTrader Parsed Signal: USDMXN-OTC CALL 1m | Scheduled: 08:37
+2026-04-10 12:36:11,000 - auto_trader.engine - INFO - AutoTrader: Current minute is :36, signal minute is :37. Sleeping 49.0s...
+2026-04-10 12:37:00,000 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-10 12:37:00,001 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-10 12:37:00,002 - auto_trader.executor - INFO - Executing Trade: USDMXN-OTC | CALL | 1m | $1.0
+2026-04-10 12:37:00,293 - auto_trader.executor - INFO - Trade placed successfully! ID: 13788365990
+2026-04-10 12:37:00,293 - auto_trader.engine - INFO - AutoTrader: Trade successfully executed! ID: 13788365990
+2026-04-10 12:40:46,072 - __main__ - INFO - 📨 New message from -1003771929527: 📊 AUDJPY-OTC
+⏰ 08:41
+⌛️ 1 Minute
+🔽 PUT SELL 🔴...
+2026-04-10 12:40:46,073 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-10 12:40:46,073 - auto_trader.engine - INFO - AutoTrader Parsed Signal: AUDJPY-OTC PUT 1m | Scheduled: 08:41
+2026-04-10 12:40:46,073 - auto_trader.engine - INFO - AutoTrader: Current minute is :40, signal minute is :41. Sleeping 14.0s...
+2026-04-10 12:41:00,074 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-10 12:41:00,075 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-10 12:41:00,076 - auto_trader.executor - INFO - Executing Trade: AUDJPY-OTC | PUT | 1m | $1.0
+2026-04-10 12:41:00,352 - auto_trader.executor - INFO - Trade placed successfully! ID: 13788372827
+2026-04-10 12:41:00,353 - auto_trader.engine - INFO - AutoTrader: Trade successfully executed! ID: 13788372827
+2026-04-10 12:44:20,986 - __main__ - INFO - 📨 New message from -1003771929527: 📊 EURAUD-OTC
+⏰ 08:45
+⌛️ 1 Minute
+🔽 PUT SELL 🔴...
+2026-04-10 12:44:20,988 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-10 12:44:20,988 - auto_trader.engine - INFO - AutoTrader Parsed Signal: EURAUD-OTC PUT 1m | Scheduled: 08:45
+2026-04-10 12:44:20,988 - auto_trader.engine - INFO - AutoTrader: Current minute is :44, signal minute is :45. Sleeping 40.0s...
+2026-04-10 12:45:00,997 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-10 12:45:00,999 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-10 12:45:01,000 - auto_trader.executor - INFO - Executing Trade: EURAUD-OTC | PUT | 1m | $1.0
+2026-04-10 12:45:01,249 - auto_trader.executor - INFO - Trade placed successfully! ID: 13788380824
+2026-04-10 12:45:01,250 - auto_trader.engine - INFO - AutoTrader: Trade successfully executed! ID: 13788380824
+2026-04-10 12:50:58,433 - __main__ - INFO - 📨 New message from -1003771929527: 📊 GBPAUD-OTC
+⏰ 08:51
+⌛️ 1 Minute
+🔼 CALL BUY 🟢...
+2026-04-10 12:50:58,434 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-10 12:50:58,434 - auto_trader.engine - INFO - AutoTrader Parsed Signal: GBPAUD-OTC CALL 1m | Scheduled: 08:51
+2026-04-10 12:50:58,434 - auto_trader.engine - INFO - AutoTrader: Current minute is :50, signal minute is :51. Sleeping 2.0s...
+2026-04-10 12:51:00,436 - auto_trader.engine - INFO - AutoTrader: Scheduled minute reached. Executing trade now.
+2026-04-10 12:51:00,436 - auto_trader.engine - INFO - AutoTrader: Signal validated. Handing off to executor...
+2026-04-10 12:51:00,437 - auto_trader.executor - INFO - Executing Trade: GBPAUD-OTC | CALL | 1m | $1.0
+2026-04-10 12:51:00,887 - auto_trader.executor - INFO - Trade placed successfully! ID: 13788392193
+2026-04-10 12:51:00,888 - auto_trader.engine - INFO - AutoTrader: Trade successfully executed! ID: 13788392193
+2026-04-10 12:52:06,207 - telethon.client.updates - INFO - Got difference for account updates
+2026-04-10 12:59:42,808 - __main__ - INFO - 📨 New message from -1003771929527: 📊 USDMXN-OTC
+⏰ 09:00
+⌛️ 1 Minute
+🔽 PUT SELL 🔴...
+2026-04-10 12:59:42,809 - auto_trader.engine - INFO - AutoTrader received new signal text. Processing...
+2026-04-10 12:59:42,809 - auto_trader.engine - INFO - AutoTrader Parsed Signal: USDMXN-OTC PUT 1m | Scheduled: 09:00
+2026-04-10 12:59:42,810 - auto_trader.engine - WARNING - AutoTrader: Signal minute :00 has already passed (current :59). Skipping.
+2026-04-10 13:11:21,708 - telethon.client.updates - INFO - Got difference for account updates
+2026-04-10 13:11:21,877 - telethon.client.updates - INFO - Got difference for channel 2135710857 updates
+2026-04-10 13:30:59,584 - telethon.client.updates - INFO - Got difference for channel 1153944985 updates
+2026-04-10 13:39:46,788 - telethon.client.updates - INFO - Got difference for channel 2135710857 updates
+2026-04-10 13:41:22,152 - telethon.client.updates - INFO - Got difference for account updates
+2026-04-10 13:54:46,960 - telethon.client.updates - INFO - Got difference for channel 2135710857 updates
+2026-04-10 13:56:22,777 - telethon.client.updates - INFO - Got difference for account updates
+2026-04-10 14:09:47,124 - telethon.client.updates - INFO - Got difference for channel 2135710857 updates
+2026-04-10 14:27:26,742 - telethon.network.connection.connection - WARNING - Server closed the connection: [Errno 49] Can't assign requested address
+2026-04-10 14:27:26,745 - telethon.network.mtprotosender - INFO - Connection closed while receiving data: [Errno 49] Can't assign requested address
+2026-04-10 14:27:26,745 - telethon.network.mtprotosender - INFO - Closing current connection to begin reconnect...
+2026-04-10 14:27:26,745 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-04-10 14:27:26,746 - telethon.network.connection.connection - INFO - <class 'OSError'> during disconnect: [Errno 49] Can't assign requested address
+2026-04-10 14:27:26,747 - telethon.network.mtprotosender - WARNING - Attempt 1 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:07,389 - telethon.network.mtprotosender - WARNING - Attempt 2 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:08,391 - telethon.network.mtprotosender - WARNING - Attempt 3 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:09,394 - telethon.network.mtprotosender - WARNING - Attempt 4 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:10,397 - telethon.network.mtprotosender - WARNING - Attempt 5 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:11,400 - telethon.network.mtprotosender - WARNING - Attempt 6 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:12,401 - telethon.network.mtprotosender - INFO - Failed reconnection attempt 1 with ConnectionError
+2026-04-10 14:42:13,403 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-04-10 14:42:13,404 - telethon.network.mtprotosender - WARNING - Attempt 1 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:14,407 - telethon.network.mtprotosender - WARNING - Attempt 2 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:15,410 - telethon.network.mtprotosender - WARNING - Attempt 3 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:16,413 - telethon.network.mtprotosender - WARNING - Attempt 4 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:17,416 - telethon.network.mtprotosender - WARNING - Attempt 5 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:18,419 - telethon.network.mtprotosender - WARNING - Attempt 6 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:19,420 - telethon.network.mtprotosender - INFO - Failed reconnection attempt 2 with ConnectionError
+2026-04-10 14:42:20,421 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-04-10 14:42:20,424 - telethon.network.mtprotosender - WARNING - Attempt 1 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:21,427 - telethon.network.mtprotosender - WARNING - Attempt 2 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:22,431 - telethon.network.mtprotosender - WARNING - Attempt 3 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:23,434 - telethon.network.mtprotosender - WARNING - Attempt 4 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:24,436 - telethon.network.mtprotosender - WARNING - Attempt 5 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:25,440 - telethon.network.mtprotosender - WARNING - Attempt 6 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:26,442 - telethon.network.mtprotosender - INFO - Failed reconnection attempt 3 with ConnectionError
+2026-04-10 14:42:27,445 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-04-10 14:42:27,446 - telethon.network.mtprotosender - WARNING - Attempt 1 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:28,447 - telethon.network.mtprotosender - WARNING - Attempt 2 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:29,451 - telethon.network.mtprotosender - WARNING - Attempt 3 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:30,454 - telethon.network.mtprotosender - WARNING - Attempt 4 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:31,457 - telethon.network.mtprotosender - WARNING - Attempt 5 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:32,461 - telethon.network.mtprotosender - WARNING - Attempt 6 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:33,463 - telethon.network.mtprotosender - INFO - Failed reconnection attempt 4 with ConnectionError
+2026-04-10 14:42:34,465 - telethon.network.mtprotosender - INFO - Connecting to 149.154.167.92:443/TcpFull...
+2026-04-10 14:42:34,466 - telethon.network.mtprotosender - WARNING - Attempt 1 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:35,470 - telethon.network.mtprotosender - WARNING - Attempt 2 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:36,473 - telethon.network.mtprotosender - WARNING - Attempt 3 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:37,477 - telethon.network.mtprotosender - WARNING - Attempt 4 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:38,479 - telethon.network.mtprotosender - WARNING - Attempt 5 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:39,483 - telethon.network.mtprotosender - WARNING - Attempt 6 at connecting failed: OSError: [Errno 51] Network is unreachable
+2026-04-10 14:42:40,486 - telethon.network.mtprotosender - INFO - Failed reconnection attempt 5 with ConnectionError
+2026-04-10 14:58:32,523 - telethon.network.mtprotosender - ERROR - Automatic reconnection failed 5 time(s)
+2026-04-10 14:58:32,524 - telethon.network.mtprotosender - INFO - Disconnecting from 149.154.167.92:443/TcpFull...
+2026-04-10 14:58:32,524 - telethon.network.mtprotosender - INFO - Disconnection from 149.154.167.92:443/TcpFull complete!
+2026-04-10 14:58:32,524 - telethon.client.updates - INFO - Cannot get difference for channel 3657608293 since the network is down: ConnectionError: Connection to Telegram failed 5 time(s)
+2026-04-10 14:58:32,524 - telethon.network.mtprotosender - INFO - Not disconnecting (already have no connection)
+2026-04-10 14:58:32,526 - __main__ - ERROR - ❌ Bot crashed: Connection to Telegram failed 5 time(s)
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/bot.py", line 510, in <module>
+    asyncio.run(main())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/bot.py", line 490, in main
+    await client.run_until_disconnected()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/updates.py", line 36, in _run_until_disconnected
+    result = await self.disconnected
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/updates.py", line 354, in _update_loop
+    diff = await self(get_diff)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 92, in _call
+    result = await future
+ConnectionError: Connection to Telegram failed 5 time(s)
+2026-04-10 14:58:32,552 - asyncio - ERROR - Future exception was never retrieved
+future: <Future finished exception=ConnectionError('Connection to Telegram failed 5 time(s)')>
+Traceback (most recent call last):
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/bot.py", line 510, in <module>
+    asyncio.run(main())
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/bot.py", line 490, in main
+    await client.run_until_disconnected()
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/updates.py", line 36, in _run_until_disconnected
+    result = await self.disconnected
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/updates.py", line 354, in _update_loop
+    diff = await self(get_diff)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 30, in __call__
+    return await self._call(self._sender, request, ordered=ordered)
+  File "/Users/admin/Documents/Projects/BotsProjects/telegram-signal-copy-bot/venv/lib/python3.9/site-packages/telethon/client/users.py", line 92, in _call
+    result = await future
+ConnectionError: Connection to Telegram failed 5 time(s)

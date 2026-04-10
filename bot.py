@@ -24,6 +24,8 @@ from config import (
     LOG_LEVEL,
     AUTO_TRADE_SOURCES,
     SCHEDULED_FORWARDING,
+    ENABLE_FORWARDING,
+    ENABLE_AUTO_TRADING,
 )
 from auto_trader.engine import auto_trader_engine
 
@@ -385,6 +387,8 @@ async def main():
     logger.info(
         f"Monitoring {len(source_ids)} source(s) with {len(FORWARD_MAPPINGS)} mapping(s)"
     )
+    logger.info(f"📡 Forwarding enabled: {ENABLE_FORWARDING}")
+    logger.info(f"📈 Auto-trading enabled: {ENABLE_AUTO_TRADING}")
 
     # Register event handler for new messages
     @client.on(events.NewMessage(chats=list(source_ids)))
@@ -417,13 +421,16 @@ async def main():
                     return
 
             # Auto-Trading Integration branch (non-blocking)
-            if source_id in AUTO_TRADE_SOURCES:
+            if ENABLE_AUTO_TRADING and source_id in AUTO_TRADE_SOURCES:
                 text_to_process = message.message or ""
                 if text_to_process:
                     asyncio.create_task(auto_trader_engine.process_signal(text_to_process))
 
             # Forward the message
-            await forwarder.forward_message(message)
+            if ENABLE_FORWARDING:
+                await forwarder.forward_message(message)
+            else:
+                logger.debug("   ⏭️ Forwarding disabled — skipping.")
 
         except Exception as e:
             logger.error(f"❌ Error handling message: {e}", exc_info=True)

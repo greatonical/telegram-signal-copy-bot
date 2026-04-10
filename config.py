@@ -165,6 +165,14 @@ LOG_FILE = "logs/bot.log"
 LOG_LEVEL = "INFO"  # DEBUG, INFO, WARNING, ERROR
 
 # ============================================================================
+# FEATURE FLAGS
+# ============================================================================
+# Set to "false" in .env to disable without removing any other config.
+# Default: both enabled.
+ENABLE_FORWARDING = os.getenv("ENABLE_FORWARDING", "true").lower() == "true"
+ENABLE_AUTO_TRADING = os.getenv("ENABLE_AUTO_TRADING", "true").lower() == "true"
+
+# ============================================================================
 # AUTO-TRADING CONFIGURATION
 # ============================================================================
 IQ_OPTION_EMAIL = os.getenv("IQ_OPTION_EMAIL", "")
@@ -172,6 +180,11 @@ IQ_OPTION_PASSWORD = os.getenv("IQ_OPTION_PASSWORD", "")
 TRADE_AMOUNT = float(os.getenv("TRADE_AMOUNT", "1.0"))
 MAX_DAILY_LOSS = float(os.getenv("MAX_DAILY_LOSS", "10.0"))
 USE_PRACTICE_ACCOUNT = os.getenv("USE_PRACTICE_ACCOUNT", "true").lower() == "true"
+
+# Maximum seconds to wait for an upcoming signal minute.
+# Signals arriving more than this many seconds before their scheduled minute are skipped.
+# Default 120 = wait at most 2 minutes.
+SIGNAL_MAX_WAIT_SECONDS = int(os.getenv("SIGNAL_MAX_WAIT_SECONDS", "120"))
 
 # Parse comma-separated list of group IDs
 AUTO_TRADE_SOURCES_STR = os.getenv("AUTO_TRADE_SOURCES", "")
@@ -212,12 +225,13 @@ if AUTO_TRADE_SOURCES_STR:
 
 SCHEDULED_FORWARDING = [
     {
-        "source_id": -1003771929527,   # Gilly Options Signals
-        "target_id": -1002885383779,   # Free Signals channel
+        "source_id": -1003771929527,  # Gilly Options Signals
+        "target_id": -1002885383779,  # Free Signals channel
         # Days: 0=Mon, 2=Wed, 4=Fri
-        "days": [0, 2, 4],
+        "days": [5],
+        # "days": [0, 2, 4],
         # Set all_day=True to forward throughout the whole day on the days above
-        "all_day": False,
+        "all_day": True,
         # Time window (ignored when all_day=True)
         "start_time": "17:00",
         "end_time": "20:00",
