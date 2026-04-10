@@ -1,5 +1,7 @@
-# Environment variables - tracked for deployment
-# .env
+# Environment variables - ignore all env files except .env.example
+.env
+.env.*
+!.env.example
 
 # Telegram session files - tracked for deployment persistence
 # *.session
